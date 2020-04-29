@@ -14,12 +14,14 @@ body {
 
 nav {
   border: 1px solid black;
-  display: inline;
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+
 }
 
 .nav-text {
-  font-family: 'Vollkorn SC', Helvetica;
-  width: 60%;
+  font-family: Helvetica;
+  width: 80%;
 }
 
 .header-image {
@@ -28,5 +30,5 @@ nav {
 }
 
 .pointer {
-  width: 20%;
+  width: 10%;
 }
