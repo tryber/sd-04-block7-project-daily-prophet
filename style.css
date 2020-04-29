@@ -46,7 +46,12 @@ aside {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(200, end) forwards paused;
+  animation: article-grow 4s;
+  animation-play-state: paused;
+  background-color: white;
+  opacity: 0;
+  transition: all 1s;
+  width: 30%;
   z-index: 20;
 }
 
@@ -67,15 +72,17 @@ aside {
   }
 }
 
-@keyframes article-grow {
+@keyframes article-bigger {
 
   from {
     background-color: white;
+    font-weight: 100;
     transform: scale(1);
   }
 
   to {
     background-color: lightgoldenrodyellow;
+    font-weight: 900;
     padding: 40px;
     transform: scale(1.5);
     transition: steps(200);
@@ -93,7 +100,7 @@ footer nav {
   padding: 10px;
 }
 
-@media only screen and ( max-width : 760px ) {
+@media only screen and (max-width : 760px) {
 
   article {
     background-color: white;
@@ -102,7 +109,7 @@ footer nav {
   }
 }
 
-@media only screen and ( min-width : 1170px ) {
+@media only screen and (min-width : 1170px) {
 
   .container-layout {
     background-color: white;
@@ -113,7 +120,7 @@ footer nav {
   }
 }
 
-@media only screen and ( orientation : landscape ) {
+@media only screen and (orientation : landscape) {
 
   .container-orientation {
     border: 1px solid black;
