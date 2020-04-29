@@ -1,0 +1,71 @@
+.container-layout {
+  background-color: white;
+  height: 100%;
+  transition: all 2s;
+}
+
+.container-orientation {
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 2s;
+}
+
+.fly {
+  animation: flying 2s steps(2, end) 3s 3 alternate forwards;
+  width: 5em;
+}
+
+@keyframes flying {
+
+  100% {
+    transform: translate(100px, -100px) scale(0.9) skew(45deg, 45deg);
+  }
+}
+
+section {
+  padding: 4%;
+}
+
+article {
+  border: 1px solid black;
+  margin: 4%;
+  transition: all 2s;
+}
+
+.article-animation {
+  animation: article-grow 4s ease 0s infinite alternate forwards;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation: article-grow 4s ease 0s infinite alternate forwards;
+  animation-play-state: running;
+  font-weight: 900;
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
