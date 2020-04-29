@@ -6,12 +6,34 @@ body {
   padding: 0;
 }
 
-.prophet {
-  display: flex;
+.header {
+  text-align: center;
 }
 
-@media screen and (max-width: 720px) {
-  .prophet {
+.up-line {
+  border-top: 0.1875em solid #1c1915;
+  border-bottom: 1px solid #1c1915;
+  height: 0.125em;
+  margin: 0.5em auto;
+}
+
+.down-line {
+  border-top: 1px solid #1c1915;
+  border-bottom: 0.1875em solid #1c1915;
+  height: 0.125em;
+  margin: 0.5em auto;
+}
+
+.title {
+  margin-left: 32px;
+}
+
+.shield {
+  width: 155px;
+}
+
+@media screen and (max-width : 720px) {
+  .title {
     display: none;
   }
 }
