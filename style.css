@@ -123,10 +123,10 @@ a {
 
 .article-animation {
   animation-duration: 4s;
-  animation-name: grow;
+  animation-name: article-grow;
 }
 
-@keyframes grow {
+@keyframes article-grow {
 
   from {
     font-weight: 400;
