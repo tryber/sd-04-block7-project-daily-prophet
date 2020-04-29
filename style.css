@@ -1,12 +1,12 @@
 body {
-  background-color: grey;
+  background-color: black;
   margin: 0;
   padding: 0;
 }
 
-.container-layout {
-  background-color: red;
-  border: 2px solid black;
+.content-general {
+  background-color: blanchedalmond;
+  border: 1px solid black;
   border-radius: 10px;
   box-sizing: border-box;
   margin: 10px;
@@ -37,14 +37,14 @@ body {
 
 @media screen and ( max-width : 760px ) {
 
-  body {
-    background-color: white;
+.container-layout {
+    background-color: yellow;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
 
-  body {
-    background-color: black;
+.container-layout {
+    background-color: red;
   }
 }
