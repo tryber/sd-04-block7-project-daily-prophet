@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .container-layout {
   background-color: rgb(150, 150, 150);
   display: flex;
@@ -37,22 +31,23 @@
   padding: 0 20px;
 }
 
-@media ( max-width: 760px ) {
-  
-    .container-layout {
-  background-color:rgb(255, 255, 0);
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
   }
 }
 
-@media ( min-width: 1170px ) {
+@media ( min-width : 1170px ) {
 
-   .container-layout {
-    background-color:rgb(255, 0, 0);
+  .container-layout {
+    background-color: red;
   }
 }
 
-@media ( orientation: landscape ) {
+@media ( orientation : landscape ) {
+
   .container-orientation {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid red;
   }
 }
