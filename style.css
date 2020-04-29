@@ -1,10 +1,10 @@
 body {
-  color: rgb(28, 25, 21);
   background-color: rgb(28, 25, 21);
-  font-family: 'Kreon', serif;
+  color: rgb(28, 25, 21);
+  display: flex;
+  font-family: Kreon, serif;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 img {
@@ -16,11 +16,11 @@ img {
 }
 
 .main {
+  background-color: rgb(255, 248, 238);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 248, 238);
   margin: 20px auto;
-  border-radius: 10px;
   padding: 10px;
 }
 
@@ -36,23 +36,29 @@ header hr {
 }
 
 .bot-hr {
-  border-top: 1px solid rgb(28, 25, 21);
   border-bottom: 2px solid rgb(28, 25, 21);
+  border-top: 1px solid rgb(28, 25, 21);
 }
 
 .row {
   display: flex;
-  justify-content: center;
-  align-content: space-around;
   flex-wrap: wrap;
-  margin: 0;
+  justify-content: space-around;
+}
+
+.col.s3 {
+  margin: 5px 0;
 }
 
 .caption {
-  font-weight: 700;
-  letter-spacing: 0.3125em;
-  text-align: center;
   font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.313em;
+  text-align: center;
+}
+
+section {
+  margin: 5px 0;
 }
 
 article {
@@ -61,12 +67,92 @@ article {
 }
 
 .title {
+  font-size: 2.9em;
+  font-weight: 700;
   margin: 0;
-  font-size: 3em;
   text-align: center;
 }
 
-p {
+.subtitle {
+  font-size: 1.5em;
+  font-weight: 700;
   margin: 0;
+  text-align: center;
+}
+
+.highlight {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(28, 25, 21);
+  color: rgb(255, 248, 238);
+  width: 100%;
+  height: 30%;
+}
+
+p {
   font-size: 1.2em;
+  margin: 0;
+}
+
+@media screen and (min-width: 760px){
+
+  .Dnone-760{
+    display: initial;
+  }
+
+  .top-hr {
+    margin-bottom: -1.3em;
+  }
+
+  header img:nth-child(1) {
+    width: 15%;
+  }
+
+  header img:nth-child(2) {
+    width: 75%;
+  }
+  
+  .left-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+
+  .highlight {
+    width: 70%;
+    align-self: flex-end;
+  }
+
+  .subtitle {
+    font-size: 2.5em;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .col.s2 {
+    width: 45%;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  .col.s3 {
+    width: 30%;
+  }
+
+  .col.s11 {
+    width: 91%;
+  }
+
+  article {
+    padding: 5px 12px;
+  }
+
+  section {
+    margin: 10px 0;
+  }
 }
