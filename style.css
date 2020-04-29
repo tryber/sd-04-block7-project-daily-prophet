@@ -41,3 +41,26 @@
   height: 100px;
   position: relative;
 }
+
+.skew:hover{
+  transform: skewX(30deg) translate(30px) rotate(3deg) scale(0.1, 0.3);
+}
+
+.skew{
+  transition: 1s ease-in-out;
+}
+
+.article-animation{
+  animation: article-grow 4s;
+}
+
+@keyframes article-grow {
+  from{
+
+  }
+
+  to{
+    transform: scale(1.5);
+    font-weight: bold;
+  }
+}
