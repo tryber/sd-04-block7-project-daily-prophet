@@ -32,11 +32,16 @@ html , body {
 }
 
 .article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
   transition: font-size 4s;
 }
 
 .article-animation:active {
-  animation: article-grow 4s;
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: running;
 }
 
 img {
