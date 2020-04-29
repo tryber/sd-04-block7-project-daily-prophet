@@ -14,13 +14,9 @@ body {
 
 nav {
   border: 1px solid black;
-  display: grid;
-  grid-column: 1fr 1fr 1fr;
-
 }
 
 .nav-text {
-  font-family: Helvetica;
   width: 80%;
 }
 
