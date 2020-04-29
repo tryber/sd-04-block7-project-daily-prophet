@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  margin: 0;
+  margin: 16px;
   padding: 0;
 }
 
@@ -11,15 +11,15 @@ body {
 }
 
 .up-line {
-  border-top: 0.1875em solid #1c1915;
   border-bottom: 1px solid #1c1915;
+  border-top: 0.1875em solid #1c1915;
   height: 0.125em;
   margin: 0.5em auto;
 }
 
 .down-line {
-  border-top: 1px solid #1c1915;
   border-bottom: 0.1875em solid #1c1915;
+  border-top: 1px solid #1c1915;
   height: 0.125em;
   margin: 0.5em auto;
 }
@@ -28,12 +28,52 @@ body {
   margin-left: 32px;
 }
 
-.shield {
-  width: 155px;
+.section-1 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (max-width : 720px) {
-  .title {
-    display: none;
-  }
+.exclusive {
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  padding: 8px;
+  width: 20%;
+}
+
+.article-1 {
+  border: 1px solid black;
+  display: flex;
+  margin-left: 32px;
+  padding: 0 2px;
+}
+
+.title-article-1 {
+  text-align: center;
+  width: 50%;
+}
+
+.title-mugglers-1 {
+  font-size: 24px;
+}
+
+.title-mugglers-2 {
+  font-size: 18px;
+}
+
+.content-article-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.to-page {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-to-page {
+  padding: 2px;
+  color: white;
 }
