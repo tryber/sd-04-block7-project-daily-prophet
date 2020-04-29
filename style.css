@@ -7,11 +7,9 @@ html , body {
 
 h1 {
   font-size: 4em;
-  transform: skew(10deg, -3deg) scale(1.5);
-  transition-duration: 5s;
 }
 
-h2 , h3 , p {
+h3 , p {
   padding: 10px;
 }
 
@@ -34,7 +32,30 @@ header {
 
 h1:hover {
   cursor: pointer;
+  transform: skew(10deg, -3deg) scale(1.5);
+  transition-duration: 5s;
+}
 
+h2 {
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: italic;
+  animation-timing-function: ease-in-out;
+  padding: 10px;
+}
+
+@keyframes italic {
+
+  from {
+    font-size: 1em;
+    transform: skew(-10deg) translate(-5px);
+  }
+
+  to {
+    font-size: 1.1em;
+    transform: skew(10deg) translate(5px);
+  }
 }
 
 .subtitle , section {
@@ -50,8 +71,6 @@ section {
 img {
   align-self: center;
   margin-left: -30%;
-  transform: translateX(600px);
-  transition-duration: 5s;
   width: 10%;
 }
 
