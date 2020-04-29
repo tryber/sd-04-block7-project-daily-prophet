@@ -1,3 +1,35 @@
+article {
+  border: 1px solid black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 0 auto 40px;
+  width: 60%;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 120%;
+}
+
+footer {
+  border: 1px;
+  width: 100%;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header {
+  margin-bottom: 10px;
+  width: 80%;
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -17,61 +49,6 @@
   .container-orientation {
     border: 1px solid black;
   }
-}
-
-.container1 {
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-header {
-  margin-bottom: 10px;
-  width: 80%;
-}
-
-.container-layout {
-  align-items: flex-start;
-  border: 1px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
-.container-layout section {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 10px 0;
-  min-width: 300px;
-  width: 50vw;
-}
-
-article {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  border: 1px solid black;
-  margin: 0 auto 40px;
-  width: 60%;
-}
-
-aside {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 120%;
-}
-
-.fly {
-  animation: flying 3s ease 3s 3 alternate forwards;
-  width: 30%;
-  z-index: 100;
-}
-
-.article-animation {
-  animation: article-grow 4s steps(4, end);
-  animation-play-state: paused;
 }
 
 @keyframes flying {
@@ -108,13 +85,36 @@ aside {
   }
 }
 
-footer {
-  border: 1px;
-  width: 100%;
+.article-animation {
+  animation: article-grow 4s steps(4, end);
+  animation-play-state: paused;
 }
 
-footer nav {
+.container1 {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-layout {
+  align-items: flex-start;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.container-layout section {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  list-style: none;
+  margin: 10px 0;
+  min-width: 300px;
+  width: 50vw;
+}
+
+.fly {
+  animation: flying 3s ease 3s 3 alternate forwards;
+  width: 30%;
+  z-index: 100;
 }
