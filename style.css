@@ -19,8 +19,46 @@ body {
 
 }
 
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale( 0.5 , 2.0 );
+  }
+
+  50% {
+    transform: scale( 1.5 , 0.5 );
+  }
+
+  75% {
+    transform: scale( 1.75 , 0.75 );
+  }
+
+  100% {
+    transform: scale( 1.0 , 1.0 );
+  }
+
+}
+
+.initial-scale {
+  animation       : scaling 4s linear infinite alternate;
+  background-color: rgb( 216 , 216 , 191 );
+  color           : rgb( 34 , 138 , 138 );
+  height          : 100px;
+  margin-left     : 50%;
+  margin-top      : 5%;
+  width           : 75px;
+}
+
 section {
-  background : rgb(216, 216, 191);
+  background : rgb( 216 , 216 , 191 );
   float      : left;
   height     : 760px;
   margin-left: 64px;
@@ -31,11 +69,11 @@ section {
 }
 
 .main-container {
-  background-color: seagreen;
+  background-color: seashell;
 }
 
 aside {
-  background  : rgb(216, 216, 191);
+  background  : rgb( 216 , 216 , 191 );
   float       : right;
   height      : 400px;
   margin-right: 63px;
@@ -45,11 +83,11 @@ aside {
 }
 
 footer {
-  background-color: yellow;
+  background-color: seashell;
   float           : left;
   margin-bottom   : 20px;
   margin-left     : 64px;
   margin-top      : 20px;
   text-align      : center;
-  width           : 1200px;
+  width           : 1160px;
 }
