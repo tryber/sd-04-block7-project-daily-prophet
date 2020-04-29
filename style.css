@@ -1,3 +1,24 @@
+@media ( max-width : 760px ) {
+
+    .container-layout {
+      background-color: white;
+    }
+  }
+  
+  @media ( min-width : 1170px ) {
+  
+    .container-layout {
+      background-color: whitesmoke;
+    }
+  }
+  
+  @media screen and ( orientation : landscape ) {
+  
+    .container-orientation {
+      border: 1px solid black;
+    }
+  }
+
 .container1 {
   background-color: white;
   display: flex;
@@ -46,8 +67,8 @@ aside {
 }
 
 .article-animation {
-    animation: article-grow 4s steps(200, end) forwards paused;
-    z-index: 10;
+  animation: article-bigger 4s forwards paused;
+  transition: animation steps(200, end);
 }
 
 @keyframes flying {
@@ -93,31 +114,4 @@ footer nav {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-}
-
-@media only screen and ( max-width : 760px ) {
-
-  article {
-    background-color: white;
-    margin: 45px auto;
-    width: 66%;
-  }
-}
-
-@media only screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color: white;
-  }
-
-  article {
-    width: 60%;
-  }
-}
-
-@media only screen and ( orientation : landscape ) {
-
-  .container-orientation {
-    border: 1px solid black;
-  }
 }
