@@ -13,8 +13,10 @@
     background-color: red;
   }
 }
+
 @media screen and ( orientation : landscape ) {
 
   .container-layout {
     border: 1px solid red;
   }
+}
