@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-layout {
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
