@@ -2,7 +2,22 @@
   background-color: bisque;
 }
 
-header img {
+img {
+  box-sizing: border-box;
+}
+
+.topheader-imgshield {
+  display: block;
+  float: left;
+  height: auto;
+  margin-top: 2.1875em;
+  max-width: none;
+  width: 6.25em;
+}
+
+.newspaper-topheader-imglogo {
+  display: block;
+  padding: 0 0.5em;
   width: 100%;
 }
 
@@ -25,4 +40,56 @@ header img {
   .container-orientation {
     border: 1px solid red;
   }
+}
+
+.fly {
+	pointer-events: none;
+}
+
+.fly > * {
+  animation-delay: 1s;
+  animation: fly 60s linear alternate;
+  left: 0;
+  pointer-events: none !important;
+  position: fixed;
+  top: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  width: 5%;
+  z-index: 999999;
+}
+
+@keyframes fly {
+
+	98.001%, 0% {
+    display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg) skew(30deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg) skew(15deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg) scale(50%)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg) scale(20%)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg) scale(20%)
+	}
 }
