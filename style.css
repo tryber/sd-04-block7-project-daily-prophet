@@ -18,18 +18,21 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 10px 20px;
-  padding: 0;
+  margin: 10px auto;
 }
 
 .nav img {
-  background-color: white;
+  background-color: transparent;
+  border-bottom: 5px double black;
+  border-top: 5px double black;
+  margin: 2px;
   padding: 10px;
   width: 100%;
 }
 
 .nav small {
   background-color: white;
+  opacity: 0.5;
   padding: 0 20px;
 }
 
@@ -91,6 +94,10 @@
 
   .container-layout {
     background-color: red;
+  }
+
+  .header {
+    height: 165px;
   }
 }
 
