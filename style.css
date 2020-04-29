@@ -21,6 +21,34 @@
   }
 }
 
+section {
+  padding: 4%;
+}
+
+article {
+  border: 1px solid black;
+  margin: 4%;
+  transition: all 2s;
+}
+
+.article-animation {
+  animation: article-grow 4s ease 0s infinite alternate forwards;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation: article-grow 4s ease 0s infinite alternate forwards;
+  animation-play-state: running;
+  font-weight: 900;
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -28,16 +56,16 @@
   }
 }
 
-@media screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color: red;
-  }
-}
-
 @media screen and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
   }
 }
