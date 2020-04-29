@@ -1,8 +1,9 @@
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
+    background-color: yellow;
     width: 760px;
-    background-color: rgb(255, 255, 0);
+    
   }
 
   .titulo-inicial {
@@ -18,8 +19,9 @@
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
+    background-color: red;
     width: 1170px;
-    background-color: rgb(255, 0, 0);
+    
   }
 
   .titulo {
