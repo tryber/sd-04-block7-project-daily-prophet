@@ -7,7 +7,9 @@ body {
 }
 
 .corpo {
-  background-color: white;
+  background-color: #fff8ee;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 nav {
@@ -16,7 +18,8 @@ nav {
 }
 
 .nav-text {
-  font-family: 'Vollkorn SC';
+  font-family: 'Vollkorn SC', Helvetica;
+  width: 60%;
 }
 
 .header-image {
@@ -25,6 +28,5 @@ nav {
 }
 
 .pointer {
-  height: 70px;
-  width: 160px;
+  width: 20%;
 }
