@@ -22,7 +22,7 @@ body {
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
@@ -31,12 +31,17 @@ body {
 @keyframes flying {
 
   from {
-    margin-left: 70%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  50% {
+    margin-left: 30%;
     margin-top: 20%;
   }
 
   to {
-    margin-left: 0;
+    margin-left: 83%;
     margin-top: 0;
   }
 }
