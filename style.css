@@ -1,0 +1,135 @@
+body {
+  background: url('imgs/newspaperBackground.jpg');
+  background-size: 100%;
+  cursor: url('imgs/magicWand1.png'), auto;
+  font-family: 'Slabo 27px', serif;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+h2 {
+  font-family: Special Elite, cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+ol {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.firstLetter {
+  font-family: Special Elite, cursive;
+  font-size: 3em;
+  text-shadow: 2px 2px yellow;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-1 {
+  justify-content: center;
+}
+
+.section-2 {
+  display: flex;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dayliLogo {
+  width: 100%;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  border-top: 5px solid black;
+  height: 1px;
+  width: 100%;
+}
+
+.voldemort {
+  border: 5px solid black;
+  border-radius: 10%;
+  float: right;
+  overflow: hidden;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background: yellow;
+  }
+
+  .insignia {
+    width: 0;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .section-2 {
+    display: block;
+  }
+
+  .lineM {
+    border-bottom: 2px solid black;
+    border-top: 5px solid black;
+    height: 1px;
+    width: 100%;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@media screen and ( min-width : 761px ) {
+
+  .container-layout {
+    background: red;
+  }
+
+  .insignia {
+    width: 15%;
+  }
+}
