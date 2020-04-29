@@ -1,0 +1,193 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.main-scenario {
+  align-items: flex-end;
+  background-color: rgb(9, 108, 201);
+  display: flex;
+  height: 75vh;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@keyframes sky {
+
+  0% {
+    background-color: rgb(9, 108, 201);
+  }
+
+  30% {
+    background-color: rgb(2, 44, 83);
+  }
+
+  60% {
+    background-color: rgb(2, 26, 51);
+  }
+
+  100% {
+    background-color: rgb(1, 16, 31);
+  }
+
+}
+
+.sky {
+  animation-delay: 3s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-name: sky;
+  animation-timing-function: linear;
+}
+
+@keyframes flying {
+
+  0% {
+    margin-bottom: 0;
+    margin-left: 0;
+    transform: rotate(0deg);
+  }
+
+  20% {
+    margin-bottom: 15%;
+    margin-left: 5vw;
+    transform: rotate(22.5deg);
+  }
+
+  50% {
+    margin-bottom: 20%;
+    margin-left: 10vw;
+    transform: rotate(45deg);
+  }
+
+  100% {
+    margin-bottom: 25%;
+    margin-left: 20vw;
+    transform: rotate(90deg);
+  }
+
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-name: flying;
+  animation-timing-function: linear;
+}
+
+.rocket {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  padding: 0;
+  width: 42.43px;
+}
+
+.rocket-main {
+  background-color: powderblue;
+  border-radius: 100% 0;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.rocket-window {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid red;
+}
+
+.rocket-behind {
+  background-color: powderblue;
+  border-radius: 1px;
+  height: 8px;
+  left: 50px;
+  width: 15px;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  /* @keyframes flying {
+    0% {
+      margin-bottom: 0;
+      margin-left: 0;
+      transform: rotate(0deg);
+    }
+    20% {
+      margin-bottom: 45%;
+      margin-left: 5vw;
+      transform: rotate(22.5deg);
+    }
+    50% {
+      margin-bottom: 50%;
+      margin-left: 10vw;
+      transform: rotate(45deg);
+    }
+    100% {
+      margin-bottom: 55%;
+      margin-left: 20vw;
+      transform: rotate(90deg);
+    }
+  } */
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+  /* @keyframes flying {
+    0% {
+      margin-bottom: 0;
+      margin-left: 0;
+      transform: rotate(0deg);
+    }
+    20% {
+      margin-bottom: 15%;
+      margin-left: 5vw;
+      transform: rotate(22.5deg);
+    }
+    50% {
+      margin-bottom: 20%;
+      margin-left: 10vw;
+      transform: rotate(45deg);
+    }
+    100% {
+      margin-bottom: 25%;
+      margin-left: 20vw;
+      transform: rotate(90deg);
+    }
+  } */
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+}
+
+@media screen and ( min-width : 1170px ) and ( orientation : landscape ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
