@@ -36,3 +36,10 @@ h1 {
     background-color: red;
   }
 }
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: red 1px;
+  }
+}
