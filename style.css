@@ -1,22 +1,22 @@
 body {
-  background-color: antiquewhite; /* color desbug */
+	background-color: antiquewhite; /* color desbug */
 	margin: 0;
 }
 
-@media ( max-width: 760px ) {
+@media ( max-width : 760px ) {
 
   .container-layout {
-    background-color: yellow;
+		background-color: yellow;
 	}
-	
-} 
 
-@media ( min-width: 1170px ) {
+}
+
+@media ( min-width : 1170px ) {
 
   .container-layout {
-    background-color: red;
+		background-color: red;
 	}
-	
+
 }
 
 section {
