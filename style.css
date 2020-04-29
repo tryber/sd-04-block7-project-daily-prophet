@@ -139,7 +139,7 @@ h4 {
 
 }
 
-.article-animation {
+.article {
   animation-duration: 4s;
   animation-name: article-grow;
 }
