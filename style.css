@@ -9,7 +9,6 @@
   display: flex;
   height: 140px;
   justify-content: space-around;
-  margin: 10px;
   width: 100%;
 }
 
@@ -24,9 +23,7 @@
   background-color: transparent;
   border-bottom: 5px double black;
   border-top: 5px double black;
-  margin: 2px;
-  padding: 10px;
-  width: 100%;
+  width: 98%;
 }
 
 .nav small {
@@ -84,6 +81,26 @@
   width: 40%;
 }
 
+.aside img {
+  align-items: flex-end;
+  animation: sirius 200ms linear;
+  animation-direction: alternate;
+  animation-iteration-count: 30;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@keyframes sirius {
+
+  0% {
+    transform: scale(1.02, 1.01);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -92,6 +109,10 @@
 
   .fly {
     width: 100px;
+  }
+
+  .image-logo {
+    width: 80%;
   }
 }
 
