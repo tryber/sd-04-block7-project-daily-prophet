@@ -1,0 +1,36 @@
+.container-layout {
+  background-color: white;
+  height: 100%;
+}
+
+.container-orientation {
+  border: 1 solid black;
+}
+
+@media screen and  ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : portrait ) {
+
+  .container-orientation {
+    border: 1px solid blue;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
