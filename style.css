@@ -22,12 +22,16 @@
 }
 
 @keyframes flying {
-
-  
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .fly { 
-  animation-name: flying;
-  animation-duration: 3s;
   animation-delay: 3s;
+  animation-duration: 5s;
+  animation-name: flying;
 }
