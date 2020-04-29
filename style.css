@@ -1,0 +1,88 @@
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: solid 1px red;
+  }
+}
+
+@keyframes flying {
+
+  from {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(130px, -250px) rotate(30deg);
+  }
+
+  75% {
+    transform: translate(200px, -50px) rotate(-45deg);
+  }
+
+  to {
+    transform: translate(30px, 0);
+  }
+
+}
+
+.fly {
+  animation: flying 3s ease 3s 3 alternate forwards;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.skew {
+  transition: 1s ease-in-out;
+}
+
+.skew:hover {
+  transform: skewX(30deg) translate(30px) rotate(3deg) scale(0.1, 0.3);
+}
+
+.article-animation {
+  animation: article-grow 4s;
+  animation-play-state: paused;
+  width: fit-content;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+}
+
+@keyframes article-grow {
+
+  to {
+    font-weight: 700;
+    position: relative;
+    transform: scale(1.5);
+    transform-origin: left top;
+  }
+}
+
+.step {
+  animation: footprint 7s steps(7, end) infinite;
+  transform: rotate(90deg);
+  width: 50px;
+}
+
+@keyframes footprint {
+
+  to {
+    transform: translate(300px) rotate(90deg);
+  }
+}
