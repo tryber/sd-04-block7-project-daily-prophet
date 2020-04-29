@@ -1,55 +1,59 @@
 body {
-	background-color: antiquewhite; /* color desbug */
-	margin: 0;
+  background-color: antiquewhite;
+  /* color desbug */
+  margin          : 0;
 }
 
-@media ( max-width : 760px ) {
+@media (max-width : 760px) {
 
   .container-layout {
-		background-color: yellow;
-	}
+    background-color: yellow;
+  }
 
 }
 
-@media ( min-width : 1170px ) {
+@media (min-width : 1170px) {
 
   .container-layout {
-		background-color: red;
-	}
+    background-color: red;
+  }
 
 }
 
 section {
-  background: rgb(216, 216, 191); /* color desbug */
-  float: left;
-  height: 760px;
+  background : rgb(216, 216, 191);
+  /* color desbug */
+  float      : left;
+  height     : 760px;
   margin-left: 64px;
-  margin-top: 175px;
-  padding: 8px;
-  text-align: left;
-  width: 950px;
+  margin-top : 175px;
+  padding    : 8px;
+  text-align : left;
+  width      : 950px;
 }
 
 .main-container {
-  background-color: seagreen; /* color desbug */
+  background-color: seagreen;
+  /* color desbug */
 }
 
 aside {
-  background: rgb(216, 216, 191);
-  float: right;
-  height: 400px;
+  background  : rgb(216, 216, 191);
+  float       : right;
+  height      : 400px;
   margin-right: 63px;
-  margin-top: 175px;
-  padding: 4px;
-  text-align: left;
+  margin-top  : 175px;
+  padding     : 4px;
+  text-align  : left;
 }
 
 footer {
-  background-color: yellow; /* color desbug */
-  float: left;
-  margin-bottom: 20px;
-  margin-left: 64px;
-  margin-top: 20px;
-  text-align: center;
-  width: 1200px;
+  background-color: yellow;
+  /* color desbug */
+  float           : left;
+  margin-bottom   : 20px;
+  margin-left     : 64px;
+  margin-top      : 20px;
+  text-align      : center;
+  width           : 1200px;
 }
