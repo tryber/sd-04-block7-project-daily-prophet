@@ -41,3 +41,36 @@ img {
     border: 1px solid red;
   }
 }
+
+.fly {
+  pointer-events: none;
+}
+
+.fly .fly {
+  animation: fly 50s linear 2 alternate;
+  left: -150px;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 5%;
+  z-index: 999999;
+}
+
+@keyframes fly {
+
+  0% {
+    transform: translateX(-10vw) rotateZ(0deg) skew(10deg) scale(1);
+  }
+
+  25% {
+    transform: translateX(120vw) translateY(50vh) rotateZ(360deg) scale(1);
+  }
+
+  50% {
+    transform: translateX(-10vw) translateY(90vh) rotateZ(360deg) scale(1);
+  }
+
+  100% {
+    transform: translateX(110vw) translateY(10vh) rotateZ(360deg) scale(0.5) skew(0deg);
+  }
+}
