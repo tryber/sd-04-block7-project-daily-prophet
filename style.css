@@ -47,8 +47,7 @@ img {
 }
 
 .fly > * {
-  animation-delay: 1s;
-  animation: fly 60s linear alternate;
+  animation: fly 60s 3s linear alternate;
   left: 0;
   pointer-events: none !important;
   position: fixed;
