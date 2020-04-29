@@ -3,6 +3,10 @@ body {
   background-color: seashell;  
 }
 
+header {
+  text-align: center;
+}
+
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -12,16 +16,26 @@ body {
   border: 1px solid black;
 }
 
-header {
-  text-align: center;
-}
-
 .artigo {
   max-width: 46%;
 }
 
 #lado-direito {  
   max-width: 22%;
+}
+
+#lado-esquerdo {  
+  max-width: 22%;
+}
+
+.navBar {
+  display: flex;  
+  justify-content: flex-end;
+  font-size: 1.4rem;
+}
+
+.navBar div {
+  padding: 5px 15px;
 }
 
 p {
@@ -33,12 +47,8 @@ h3 {
   font-size: 1.3rem;
 }
 
-h1 {
-  font-size: 1.5rem;
-}
-
-#lado-esquerdo {  
-  max-width: 22%;
+h2 {
+  font-size: 1.8rem;
 }
 
 #logo {
