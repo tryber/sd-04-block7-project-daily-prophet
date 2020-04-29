@@ -1,8 +1,13 @@
 body {
-  border: 1px solid black;
+  background-color: #1c1915;
+}
+
+.fundo {
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  background-color: rgb(250, 248, 227);
 }
 
 .Pag {
@@ -26,17 +31,20 @@ hr {
   justify-content: space-around;
 }
 
-.cont h1{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center
-}
-
 .cont p{
-  font-size: small;
+  font-size: large;
   border: 1px solid #c30;
   background: #ffe;
-  width: 217px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Times New Roman', Times, serif;
 }
