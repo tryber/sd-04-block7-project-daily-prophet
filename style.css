@@ -3,40 +3,40 @@ body {
 }
 
 .container-layout {
-  background-color: rgb(255, 255, 0);
+  background-color: yellow;
 }
 
 section {
-  background: rgb(216, 216, 191); /*color desbug*/
+  background: rgb(216, 216, 191); /* color desbug */
   float: left;
   height: 760px;
   margin-left: 64px;
   margin-top: 175px;
-  width: 950px;
-  text-align: left;
   padding: 8px;
+  text-align: left;
+  width: 950px;
 }
 
 .main-container {
-  background-color: seagreen; /*color desbug*/
+  background-color: seagreen; /* color desbug */
 }
 
 aside {
   background: rgb(216, 216, 191);
   float: right;
+  height: 400px;
   margin-right: 63px;
-  height: px;
   margin-top: 175px;
-  text-align: left;
   padding: 4px;
+  text-align: left;
 }
 
 footer {
-  background-color: rgb(255, 255, 0); /*color desbug*/
+  background-color: yellow; /* color desbug */
   float: left;
+  margin-bottom: 20px;
   margin-left: 64px;
   margin-top: 20px;
-  margin-bottom: 20px;
   text-align: center;
   width: 1200px;
 }
