@@ -1,4 +1,4 @@
-html , body , p, figure {
+html , body , p , figure {
   box-sizing: border-box;
   font-family: Impact, Haettenschweiler, sans-serif;
   font-size: 100%;
@@ -10,11 +10,11 @@ ol , ul {
   list-style: none;
 }
 
-.separation{
-  background-color: fff8ee;
+.separation {
+  background-color: #fff8ee;
   border-bottom: 2px solid black;
-  border-top: 1px solid black; 
-  color: white;  
+  border-top: 1px solid black;
+  color: white;
   height: 4px;
 }
 
@@ -25,39 +25,39 @@ ol , ul {
 }
 
 .hero {
+  align-content: center;
   display: flex;
   padding: 20px;
-  align-content: center;
 }
 
 .logo-text {
   height: auto;
-  width: 100%
+  width: 100%;
 }
 
 h2 {
-  text-align: center;
-  font-family: 'Kreon', serif;
+  font-family: Kreon, serif;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: -3px;
   margin: 20px 0;
   padding: 6px 10px;
+  text-align: center;
 }
 
 h3 {
   background: black;
   color: white;
-  text-align: center;
-  font-family: 'Kreon', serif;
+  font-family: Kreon, serif;
   font-weight: 700;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   padding: 6px 10px;
+  text-align: center;
 }
 
 .container {
   background-color: #fff8ee;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -71,30 +71,29 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .content-news img {
   height: auto;
   margin-top: 15px;
-  width: 100%;  
+  width: 100%;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
 }
 
-p.anfang::first-letter {
-  font-size: 40px;
-  font-size: 3.375rem;
-  margin: -0.01852em 0.14815em 0em 0em;
-  line-height: 0.72222;
-  padding: 0.16667em 0.14815em 0em 0.14815em;
+.anfang:first-letter {
   box-sizing: border-box;
-  float: left;
   color: #1c1915;
+  float: left;
+  font-size: 40px;
   font-weight: 700;
-  text-shadow: 3px 0 0px #FBB03B;
+  line-height: 0.722;
+  margin: -0.019em 0.148em 0 0;
+  padding: 0.166em 0.148em 0;
+  text-shadow: 3px 0 0 #fbb03b;
 }
 
 .breaking-news {
@@ -104,10 +103,10 @@ p.anfang::first-letter {
 }
 
 .warning {
-  background-color: #FBB03B;
+  background-color: #fbb03b;
   font-size: 30px;
-  margin: 0 0 15px 0;
-  padding: 10px 10px;
+  margin: 0 0 15px;
+  padding: 10px;
   text-align: left;
 }
 
@@ -124,19 +123,20 @@ p.anfang::first-letter {
   width: 50px;
 }
 
-.red { 
+.red {
   background-color: red;
 }
 
-.green { 
+.green {
   background-color: green;
 }
 
 .blue {
   background-color: blue;
 }
-/* Requisitos projetos */
-@media screen and (max-width: 760px){
+
+@media screen and ( max-width : 760px ) {
+
   body {
     line-height: 1.5em;
   }
@@ -150,7 +150,8 @@ p.anfang::first-letter {
   }
 }
 
-@media screen and (min-width: 1170px){
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
