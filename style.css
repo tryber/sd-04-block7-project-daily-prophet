@@ -1,0 +1,90 @@
+body {
+  font-family: Nanum Gothic, sans-serif;
+  margin: 17px 18px 17px 25px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1 , h2 , h3 {
+  display: block;
+}
+
+p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.container-layout {
+  border: 1px solid black;
+}
+
+.grid{
+  display: grid;
+}
+
+.fly {
+  animation: flying 4s 3s steps(5, jump-none) 3 alternate forwards;
+  transition-duration: 4s;
+  transition-property: flying;
+  width: 10%;
+}
+
+.main-lead {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-lead-h2 {
+  font-size: 2em;
+}
+
+.main-lead-img {
+  display: block;
+  margin: 1em 0;
+  width: 4em;
+}
+
+.sub-lead {
+  display: flex;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: scale(1, 1) translate(0, 0) skew(0deg, 0deg);
+  }
+
+  50% {
+    margin-left: 50%;
+    transform: scale(2, 2) translate(0, -100px) skew(20deg, 10deg);
+  }
+
+  100% {
+    margin-left: 90%;
+    transform: scale(1, 1) translate(0, 0) skew(20deg, 10deg);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+/* O que mais eu posso colocar aqui dentro par deixar a página mais agradável? */
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
