@@ -47,6 +47,30 @@ body {
 
 }
 
+@keyframes skewing {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(35deg);
+  }
+
+}
+
+.eternal-skewing {
+  animation: skewing 5s linear infinite;
+  font-size: 45px;
+  width    : fit-content;
+}
+
+.container-layout {
+  animation: skewing 2s linear infinite;
+  font-size: 65px;
+  width    : fit-content;
+}
+
 .initial-scale {
   animation       : scaling 4s linear infinite alternate;
   background-color: rgb(216, 216, 191);
@@ -55,6 +79,30 @@ body {
   margin-left     : 50%;
   margin-top      : 5%;
   width           : 75px;
+}
+
+.flying_object {
+  animation-name           : flying;
+  animation-duration       : 5s;
+  animation-timing-function: linear;
+  animation-delay          : 2s;
+  animation-iteration-count: infinite;
+  animation-direction      : initial;
+  position                 : absolute;
+  transform                : rotateY(180deg);
+  width                    : 20vw;
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: -20%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+  
 }
 
 section {
