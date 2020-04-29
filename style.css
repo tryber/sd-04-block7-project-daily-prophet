@@ -83,11 +83,39 @@ footer {
   width: 100%;
 }
 
+.voldemort1 {
+  border: 5px solid black;
+  border-radius: 10%;
+  float: left;
+  margin-right: 1em;
+  overflow: hidden;
+  width: 10em;
+}
+
 .voldemort {
   border: 5px solid black;
   border-radius: 10%;
   float: right;
+  margin-left: 1em;
   overflow: hidden;
+}
+
+.fawkes {
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  position: absolute;
+  transform: translateX(-300%);
+  width: 15%;
+}
+
+@keyframes flying {
+
+  from {
+    transform: translateY(0) translateX(-300%) rotate(30deg);
+  }
+
+  to {
+    transform: translateY(100%) translateX(700%) rotate(30deg);
+  }
 }
 
 @media screen and ( max-width : 760px ) {
