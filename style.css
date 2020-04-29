@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header div:nth-child( 1 ) {
+  height: 65px;
+}
+
+header div:nth-child( 1 ) img {
+  height: 100%;
+  width: auto;
+}
+
+header div:nth-child( 2 ) {
+  height: 50px;
+}
+
+header div:nth-child( 2 ) img {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.container-layout {
+  background-color: yellow;
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
