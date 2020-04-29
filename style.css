@@ -33,11 +33,17 @@ header {
 h1:hover {
   cursor: pointer;
   transform: skew(10deg, -3deg) scale(1.5);
+  transition-duration: 5s;
 }
 
-.subtitle {
+.subtitle , section {
   display: flex;
   justify-content: center;
+}
+
+section {
+  align-items: center;
+  flex-direction: column;
 }
 
 img {
@@ -48,6 +54,7 @@ img {
 
 img:hover {
   transform: translateX(600px);
+  transition-duration: 5s;
 }
 
 .fly {
@@ -71,10 +78,6 @@ img:hover {
   }
 }
 
-/* 6 - Você deve utilizar a transformação skew.
-  7 - Você deve utilizar a transformação scale.
-  8 - Você deve utilizar a transformação translate */
-
 p {
   margin: 0;
 }
@@ -95,6 +98,25 @@ a {
   opacity: 0.9;
   text-align: center;
   text-decoration: none;
+}
+
+.article:hover {
+  animation-duration: 4s;
+  animation-name: grow;
+}
+
+@keyframes grow {
+
+  from {
+    font-weight: 400;
+    width: 100%;
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
+    width: 50%;
+  }
 }
 
 a:hover {
