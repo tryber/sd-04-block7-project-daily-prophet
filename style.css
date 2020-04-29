@@ -140,19 +140,19 @@ h4 {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
+  animation: article-grow 4s linear alternate 2 paused;
 }
 
 @keyframes article-grow {
 
   from {
     font-weight: 400;
+    transform: scale(1);
   }
 
   to {
-    font-weight: 900;
+    font-weight: 800;
+    padding: 20px;
     transform: scale(1.5);
   }
-
 }
