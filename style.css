@@ -82,12 +82,12 @@ body {
 }
 
 .flying_object {
-  animation-name           : flying;
-  animation-duration       : 5s;
-  animation-timing-function: linear;
   animation-delay          : 2s;
-  animation-iteration-count: infinite;
   animation-direction      : initial;
+  animation-duration       : 5s;
+  animation-iteration-count: infinite;
+  animation-name           : flying;
+  animation-timing-function: linear;
   position                 : absolute;
   transform                : rotateY(180deg);
   width                    : 20vw;
