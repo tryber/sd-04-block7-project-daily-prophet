@@ -1,23 +1,23 @@
 @media ( max-width : 760px ) {
 
-    .container-layout {
-      background-color: white;
-    }
+  .container-layout {
+    background-color: white;
   }
-  
-  @media ( min-width : 1170px ) {
-  
-    .container-layout {
-      background-color: whitesmoke;
-    }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: whitesmoke;
   }
-  
-  @media screen and ( orientation : landscape ) {
-  
-    .container-orientation {
-      border: 1px solid black;
-    }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid black;
   }
+}
 
 .container1 {
   background-color: white;
