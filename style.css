@@ -46,7 +46,7 @@ header {
 @media screen and ( orientation : landscape ) {
 
   .container-orientation {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 0, 0);
   }
 }
 
@@ -67,7 +67,7 @@ header {
   }
 }
 
-@keyframes article-bigger {
+@keyframes article-grow {
 
   from {
     background-color: white;
