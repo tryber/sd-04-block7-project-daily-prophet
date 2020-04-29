@@ -1,26 +1,26 @@
 @media ( max-width : 760px ) {
-  
+
   .container-layout {
     background-color: yellow;
   }
 }
 
 @media ( min-width : 1170px ) {
-  
+
   .container-layout {
     background-color: red;
   }
 }
 
 @media ( orientation : landscape ) {
-  
+
   .container-layout {
     border: solid 1px red;
   }
 }
 
 @keyframes flying {
-  
+
   from {
     transform: translate(0, 0);
   }
@@ -60,12 +60,12 @@
 }
 
 @keyframes article-grow {
-  
+
   to {
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
-    transform-origin: left top;
     transform: scale(1.5);
+    transform-origin: left top;
   }
 }
 
@@ -76,7 +76,7 @@
 }
 
 @keyframes footprint {
-  
+
   to {
     transform: translate(300px) rotate(90deg);
   }
