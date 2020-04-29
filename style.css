@@ -1,13 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
   }
+
 }
 
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
+  }
+}
+
+@media landscape {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
