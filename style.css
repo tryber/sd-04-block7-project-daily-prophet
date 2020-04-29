@@ -137,11 +137,7 @@ h3 {
 }
 
 .fly {
-  animation-name: flying;
-  animation-delay: 3s;
-  animation-direction: alternate-reverse;
-  animation-duration: 5s;
-  animation-iteration-count: 3;
+  animation: flying 6s ease 3s 3 alternate forwards;
   background-image: url('coruja.gif');
   background-size: cover;
   height: 130px;
@@ -153,33 +149,72 @@ h3 {
 
 @keyframes flying {
 
-  0% { right: 0px; top: 105px; }
+  0% {
+    right: 0;
+    top: 105px;
+  }
 
-  5% { right: 50px; top: 155px; }
+  5% {
+    right: 50px;
+    top: 155px;
+  }
 
-	10% { right: 100px; top: 205px; }
+  10% {
+    right: 100px;
+    top: 205px;
+  }
 
-	15% { right: 150px; top: 255px; }
+  15% {
+    right: 150px;
+    top: 255px;
+  }
 
-	20% { right: 200px; top: 305px; }
+  20% {
+    right: 200px;
+    top: 305px;
+  }
 
-	30% { right: 250px; top: 355px; }
+  30% {
+    right: 250px;
+    top: 355px;
+  }
 
-  40% { right: 300px; top: 405px; }
-  
-	50% { right: 350px; top: 455px; }
+  40% {
+    right: 300px;
+    top: 405px;
+  }
 
-	60% { top: 355px; }
+  50% {
+    right: 350px;
+    top: 455px;
+  }
 
-	70% { top: 305px; }
+  60% {
+    top: 355px;
+  }
 
-	80% { top: 255px; }
+  70% {
+    top: 305px;
+  }
 
-	85% { right: 250px; top: 205px; }
+  80% {
+    top: 255px;
+  }
 
-	90% { right: 150px; top: 155px; }
+  85% {
+    right: 250px;
+    top: 205px;
+  }
 
-	100% { right: 0px; top: 105px; }
+  90% {
+    right: 150px;
+    top: 155px;
+  }
+
+  100% {
+    right: 0;
+    top: 105px;
+  }
 }
 
 @media screen and ( max-width : 760px ) {
@@ -201,5 +236,12 @@ h3 {
 
   .container-layout {
     background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
