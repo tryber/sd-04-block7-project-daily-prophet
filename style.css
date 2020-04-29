@@ -32,7 +32,6 @@ html , body {
   background-size: cover;
   border: 1px solid black;
   border-radius: 15px;
-  height: 900px;
   margin: 20px auto;
   width: 85%;
 }
@@ -128,7 +127,7 @@ nav > p:hover {
 }
 
 .fly {
-  animation: flying 5s linear 3 alternate forwards;
+  animation: flying 5s linear 3s 3 alternate forwards;
   margin-left: 200px;
 }
 
@@ -146,4 +145,40 @@ nav > p:hover {
 footer {
   color: rgba(212, 197, 197, 0.445);
   font-size: 15px;
+}
+
+main {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section {
+  max-width: 60%;
+}
+
+aside {
+  max-width: 20%;
+}
+
+.article-animation {
+  animation: article-grow 1s linear 3s;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 500;
+    transform: scale();
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
+  }
+
 }
