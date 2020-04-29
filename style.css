@@ -40,6 +40,6 @@ h1 {
 @media only screen and ( orientation : landscape ) {
 
   .container-orientation {
-    border: red 1px;
+    border: 1px red solid;
   }
 }
