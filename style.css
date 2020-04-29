@@ -15,11 +15,28 @@ body {
   justify-content: space-between;
 }
 
-p {
-  margin: 2px 50px;
-}
 
 hr {
   background-color: black;
-  margin: 1px;
+  margin: 0px 1px;
+}
+
+.first-part {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cont h1{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+}
+
+.cont p{
+  font-size: small;
+  border: 1px solid #c30;
+  background: #ffe;
+  width: 217px;
+  margin-left: auto;
+  margin-right: auto;
 }
