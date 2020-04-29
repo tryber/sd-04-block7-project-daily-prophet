@@ -169,3 +169,20 @@ footer {
 .footer:hover {
   transform: skew(-15deg);
 }
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
+}
