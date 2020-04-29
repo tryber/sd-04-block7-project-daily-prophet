@@ -21,7 +21,7 @@ body {
 
 .logo-header {
   grid-column: 1;
-  grid-column-end: 7;
+  grid-column-end: 5;
   padding-top: 0.5em;
 }
 
@@ -56,5 +56,12 @@ hr {
 
   .container-layout {
     background: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
