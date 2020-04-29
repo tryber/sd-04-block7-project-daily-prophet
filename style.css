@@ -10,7 +10,7 @@ img {
   display: block;
   float: left;
   height: auto;
-  margin-top: 2.188em;
+  margin-top: 0.5em;
   max-width: none;
   width: 6.25em;
 }
@@ -18,7 +18,7 @@ img {
 .newspaper-topheader-imglogo {
   display: block;
   padding: 0 0.5em;
-  width: 100%;
+  width: 50%;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -31,7 +31,7 @@ img {
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
-    background-color: red;
+    background-color: #fff8ee;
   }
 }
 
@@ -47,7 +47,7 @@ img {
 }
 
 .fly .fly {
-  animation: fly 50s linear 2 alternate;
+  animation: flying 50s linear 2 alternate;
   left: -150px;
   pointer-events: none;
   position: fixed;
@@ -56,7 +56,7 @@ img {
   z-index: 999999;
 }
 
-@keyframes fly {
+@keyframes flying {
 
   0% {
     transform: translateX(-10vw) rotateZ(0deg) skew(10deg) scale(1);
