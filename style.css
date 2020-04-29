@@ -20,3 +20,14 @@
     border: 1px solid red;
   }
 }
+
+@keyframes flying {
+
+  
+}
+
+.fly { 
+  animation-name: flying;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
