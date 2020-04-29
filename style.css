@@ -67,3 +67,15 @@
     position: relative;
   }
 }
+
+.step {
+  animation: footprint 7s steps(7, end) infinite;
+  transform: rotate(90deg);
+  width: 50px;
+}
+ 
+@keyframes footprint {
+  to {
+    transform: translate(300px) rotate(90deg);
+  }
+}
