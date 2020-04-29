@@ -52,6 +52,7 @@
 
 .article-animation{
   animation: article-grow 4s;
+  width: fit-content;
 }
 
 @keyframes article-grow {
@@ -60,7 +61,9 @@
   }
 
   to{
+    transform-origin: left top;
     transform: scale(1.5);
     font-weight: bold;
+    position: relative;
   }
 }
