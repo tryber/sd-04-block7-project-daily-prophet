@@ -99,7 +99,7 @@ nav > p {
 
 nav > p:hover {
   cursor: pointer;
-  transform: translateY(3px) skew(15deg);
+  transform: translateY(3.5px) skew(15deg);
   transition: all 1s;
 }
 
