@@ -21,6 +21,7 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px auto;
+  max-width: 900px;
   padding: 10px;
 }
 
@@ -46,7 +47,7 @@ header hr {
   justify-content: space-around;
 }
 
-.col.s3 {
+.col-s3 {
   margin: 5px 0;
 }
 
@@ -63,7 +64,7 @@ section {
 
 article {
   border: 1px solid rgb(28, 25, 21);
-  padding: 5px;
+  padding: 5px 12px;
 }
 
 .title {
@@ -81,12 +82,12 @@ article {
 }
 
 .highlight {
-  display: flex;
-  justify-content: center;
   background-color: rgb(28, 25, 21);
   color: rgb(255, 248, 238);
-  width: 100%;
+  display: flex;
   height: 30%;
+  justify-content: center;
+  width: 100%;
 }
 
 p {
@@ -94,9 +95,9 @@ p {
   margin: 0;
 }
 
-@media screen and (min-width: 760px){
+@media screen and ( min-width : 760px ) {
 
-  .Dnone-760{
+  .Dnone-760 {
     display: initial;
   }
 
@@ -104,35 +105,37 @@ p {
     margin-bottom: -1.3em;
   }
 
-  header img:nth-child(1) {
+  header img:nth-child( 1 ) {
     width: 15%;
   }
 
-  header img:nth-child(2) {
+  header img:nth-child( 2 ) {
     width: 75%;
   }
-  
+
   .left-vertical {
-    writing-mode: vertical-rl;
     transform: rotate(180deg);
+    writing-mode: vertical-rl;
   }
 
   .highlight {
-    width: 70%;
     align-self: flex-end;
+    width: 70%;
   }
 
   .subtitle {
     font-size: 2.5em;
   }
 
-  .col {
-    display: flex;
+  .col-s2,
+  .col-s3,
+  .col-s11 {
     align-items: center;
+    display: flex;
     flex-direction: column;
   }
 
-  .col.s2 {
+  .col-s2 {
     width: 45%;
   }
 
@@ -140,16 +143,12 @@ p {
     font-size: 1.4em;
   }
 
-  .col.s3 {
+  .col-s3 {
     width: 30%;
   }
 
-  .col.s11 {
+  .col-s11 {
     width: 91%;
-  }
-
-  article {
-    padding: 5px 12px;
   }
 
   section {
