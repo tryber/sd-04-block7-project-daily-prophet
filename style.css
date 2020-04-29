@@ -24,7 +24,7 @@ body {
   }
 }
 
-@media landscape {
+@media screen and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
