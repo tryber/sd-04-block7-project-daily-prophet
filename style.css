@@ -3,20 +3,20 @@
   display: flex;
   flex-wrap: wrap;
 }
-  
+
 header {
   margin-bottom: 10px;
   width: 80%;
 }
-  
+
 .container-layout {
-  align-items: left;
+  align-items: flex-start;
   border: 1px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
-  
+
 .container-layout section {
   display: flex;
   justify-content: space-between;
@@ -25,98 +25,98 @@ header {
   min-width: 300px;
   width: 50vw;
 }
-  
+
 article {
   border: 1px solid black;
   margin: 0 auto 40px;
   width: 60%;
 }
-  
+
 aside {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   width: 80%;
 }
-  
+
 .fly {
   animation: flying 3s ease 3s 3 alternate forwards;
   width: 30%;
   z-index: 100;
 }
-  
+
 .article-animation {
   animation: article-grow 4s steps(200, end) forwards paused;
   z-index: 20;
 }
-  
+
 @keyframes flying {
 
   from {
     opacity: 0;
     width: 300%;
   }
-  
+
   25% {
     transform: translateY(200%) skew(10deg);
   }
-  
+
   to {
     opacity: 1;
     transform: translate(0, 1) skew(0deg);
-    }
   }
-  
+}
+
 @keyframes article-grow {
 
   from {
     background-color: white;
-    font-weight: 70;
+    font-weight: normal;
     transform: scale(1);
   }
-  
+
   to {
     background-color: white;
-    font-weight: 500px;
+    font-weight: bold;
     padding: 40px;
     transform: scale(1.5);
     transition: steps(200);
-    }
   }
-  
+}
+
 footer {
   border: 1px;
   width: 100%;
 }
-  
+
 footer nav {
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
-  
+
 @media only screen and ( max-width : 760px ) {
-    
+
   article {
     background-color: white;
     margin: 45px auto;
     width: 66%;
   }
 }
-  
+
 @media only screen and ( min-width : 1170px ) {
-  
+
   .container-layout {
     background-color: white;
   }
-  
+
   article {
     width: 60%;
   }
 }
-  
+
 @media only screen and ( orientation : landscape ) {
-  
+
   .container-orientation {
     border: 1px solid black;
   }
