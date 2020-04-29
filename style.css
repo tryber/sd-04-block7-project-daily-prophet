@@ -1,10 +1,10 @@
 body {
   background-color: antiquewhite;
-  /* color desbug */
+/* color desbug */
   margin          : 0;
 }
 
-@media (max-width : 760px) {
+@media ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -12,7 +12,7 @@ body {
 
 }
 
-@media (min-width : 1170px) {
+@media ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
@@ -22,7 +22,7 @@ body {
 
 section {
   background : rgb(216, 216, 191);
-  /* color desbug */
+/* color desbug */
   float      : left;
   height     : 760px;
   margin-left: 64px;
@@ -34,7 +34,7 @@ section {
 
 .main-container {
   background-color: seagreen;
-  /* color desbug */
+/* color desbug */
 }
 
 aside {
@@ -49,7 +49,7 @@ aside {
 
 footer {
   background-color: yellow;
-  /* color desbug */
+/* color desbug */
   float           : left;
   margin-bottom   : 20px;
   margin-left     : 64px;
