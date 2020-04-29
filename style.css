@@ -55,7 +55,6 @@
 }
 
 .article-animation {
-  animation: article-grow 4s;
   width: fit-content;
 }
 
