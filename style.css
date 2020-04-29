@@ -1,0 +1,12 @@
+.corpo {
+  text-align: center;
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.01px;
+}
+
+.header-image {
+  margin-left: 10%;
+  margin-right: 10%;
+}
