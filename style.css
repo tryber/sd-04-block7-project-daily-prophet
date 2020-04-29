@@ -71,13 +71,11 @@ aside {
 
   from {
     background-color: white;
-    font-weight: 50;
     transform: scale(1);
   }
 
   to {
-    background-color: white;
-    font-weight: 150;
+    background-color: lightgoldenrodyellow;
     padding: 40px;
     transform: scale(1.5);
     transition: steps(200);
