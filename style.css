@@ -26,10 +26,22 @@ body {
 }
 
 .title {
+  animation: skewing 5s;
   display: flex;
   font-family: Girassol, cursive;
   font-size: 1.8em;
   width: 65%;
+}
+
+@keyframes skewing {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(180deg);
+  }
 }
 
 .fly {
