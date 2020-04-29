@@ -127,9 +127,7 @@ p {
     font-size: 2.5em;
   }
 
-  .col-s2,
-  .col-s3,
-  .col-s11 {
+  .col-s2 , .col-s3 , .col-s11 {
     align-items: center;
     display: flex;
     flex-direction: column;
