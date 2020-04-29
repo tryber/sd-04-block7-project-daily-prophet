@@ -1,0 +1,18 @@
+body {
+  height: 768px;
+  width: 1366;
+}
+
+@media ( max-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( max-width : 760px ) {
+  
+  .container-layout {
+    background-color: yellow;
+  }
+}
