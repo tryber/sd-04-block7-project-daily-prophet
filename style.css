@@ -123,14 +123,6 @@ h3 {
   background-color: red;
 }
 
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
 .fly {
   animation: flying 6s ease 3s 3 alternate forwards;
   background-image: url('coruja.gif');
@@ -215,9 +207,7 @@ h3 {
 @keyframes animations {
 
   0% {
-    transform: translate(80px, -80px);
-    transform: scale(0.9);
-    tranform: skew(60deg, 55deg); 
+    transform: translate(80px, -80px) scale(0.9) skew(60deg, 55deg);
   }
 }
 
