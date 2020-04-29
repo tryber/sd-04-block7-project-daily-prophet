@@ -1,0 +1,19 @@
+.container-layout {
+  background-color: rgb(255, 0, 0);
+}
+
+.harry-image {
+  transform: skew(5deg) scale(0.3, 0.3) translate(10px);
+}
+
+@media screen and (max-width:760px) {
+  .container-layout {
+    background-color: rgb(255, 255, 0);
+  }
+}
+
+@media screen and (min-width:1170px) {
+  .container-layout {
+    background-color: rgb(255, 0, 0);
+  }
+}
