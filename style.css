@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.content-general {
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+}
+
+.content {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+}
