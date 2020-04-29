@@ -1,0 +1,25 @@
+/* * {
+  border: 1px solid red
+} */
+
+.container-layout {
+  border: 1px solid black;
+}
+
+/* Layout for smaller screen */
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+/* Layout for larger screen */
+
+@media screen and ( min-width : 1170px ) {
+  
+  .container-layout {
+    background-color: red;
+  }
+}
