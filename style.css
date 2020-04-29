@@ -10,7 +10,7 @@
 }
 
 .fly {
-  animation: flying 1s ease 0s 3 alternate forwards;
+  animation: flying 1s ease 3s 3 alternate forwards;
   width: 5em;
 }
 
