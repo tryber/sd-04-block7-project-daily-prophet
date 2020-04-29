@@ -46,8 +46,8 @@ aside {
 }
 
 .article-animation {
-  animation: flex-grow 4s steps(200, end) forwards paused;
-  z-index: 20;
+    animation: article-grow 4s steps(200, end) forwards paused;
+    z-index: 10;
 }
 
 @keyframes flying {
