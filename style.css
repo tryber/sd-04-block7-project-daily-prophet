@@ -149,11 +149,11 @@ body {
 
 @media ( orientation : landscape ) {
 
-    .container-orientation {
-        border: 1px solid red;
-    }
-
-    .exclusive {
-        width: 95%;
-    }
+  .container-orientation {
+    border: 1px solid red;
   }
+
+  .exclusive {
+    width: 95%;
+  }
+}
