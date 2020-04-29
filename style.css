@@ -3,11 +3,11 @@ body {
 }
 
 .fundo {
+  background-color: rgb(250, 248, 227);
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  background-color: rgb(250, 248, 227);
 }
 
 .Pag {
@@ -23,7 +23,7 @@ body {
 
 hr {
   background-color: black;
-  margin: 0px 1px;
+  margin: 0.1px 1px;
 }
 
 .first-part {
@@ -33,11 +33,9 @@ hr {
 
 .cont p{
   font-size: large;
-  border: 1px solid #c30;
-  background: #ffe;
-  width: 400px;
   margin-left: auto;
   margin-right: auto;
+  width: 400px;
 }
 
 h1 {
@@ -46,5 +44,4 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 3em;
-  font-family: 'Times New Roman', Times, serif;
 }
