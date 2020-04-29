@@ -108,7 +108,8 @@ body {
   margin-left: 16px;
 }
 
-@media screen and (max-width:720px) {
+@media screen and ( max-width: 720px ) {
+
   .title {
     display: none;
   }
@@ -131,8 +132,9 @@ body {
   }
 }
 
-@media screen and (min-width:1170px) {
-    .shield {
-        display: none;
-    }
+@media screen and ( min-width: 1170px ) {
+    
+  .shield {
+    display: none;
+  }
 }
