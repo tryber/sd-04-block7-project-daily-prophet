@@ -37,14 +37,14 @@ body {
 
 @media screen and ( max-width : 760px ) {
 
-.container-layout {
+  .container-layout {
     background-color: yellow;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
 
-.container-layout {
+  .container-layout {
     background-color: red;
   }
 }
