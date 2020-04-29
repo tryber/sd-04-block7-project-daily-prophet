@@ -1,0 +1,42 @@
+body {
+  background-color: antiquewhite; /*color desbug*/
+}
+
+.container-layout {
+  background-color: rgb(255, 255, 0);
+}
+
+section {
+  background: rgb(216, 216, 191); /*color desbug*/
+  float: left;
+  height: 760px;
+  margin-left: 64px;
+  margin-top: 175px;
+  width: 950px;
+  text-align: left;
+  padding: 8px;
+}
+
+.main-container {
+  background-color: seagreen; /*color desbug*/
+}
+
+aside {
+  background: rgb(216, 216, 191);
+  float: right;
+  margin-right: 63px;
+  height: px;
+  margin-top: 175px;
+  text-align: left;
+  padding: 4px;
+}
+
+footer {
+  background-color: rgb(255, 255, 0); /*color desbug*/
+  float: left;
+  margin-left: 64px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 1200px;
+}
