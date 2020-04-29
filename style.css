@@ -68,3 +68,10 @@ h2 {
     background-color: red;
   }
 }
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
