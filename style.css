@@ -3,16 +3,16 @@ body {
   width: 1366;
 }
 
-@media screen and ( max-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
-    background: red;
+    background-color: red;
   }
 }
 
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
-    background: yellow;
+    background-color: yellow;
   }
 }
