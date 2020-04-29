@@ -31,7 +31,7 @@ img {
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
-    background-color: #fff8ee;
+    background-color: red;
   }
 }
 
@@ -46,7 +46,7 @@ img {
   pointer-events: none;
 }
 
-.fly .fly {
+.fly .fly-img {
   animation: flying 50s linear 2 alternate;
   left: -150px;
   pointer-events: none;
