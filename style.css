@@ -114,7 +114,7 @@ footer {
   }
 
   to {
-    transform: translateY(100%) translateX(700%) rotate(30deg);
+    transform: translateY(100%) translateX(480%) rotate(30deg);
   }
 }
 
@@ -160,4 +160,12 @@ footer {
   .insignia {
     width: 15%;
   }
+}
+
+.footer {
+  transition: transform 1s;
+}
+
+.footer:hover {
+  transform: skew(-15deg);
 }
