@@ -1,6 +1,6 @@
 body {
+  background-color: seashell;
   padding: 10px 70px;
-  background-color: seashell;  
 }
 
 header {
@@ -20,18 +20,18 @@ header {
   max-width: 46%;
 }
 
-#lado-direito {  
+.lado-direito {
   max-width: 22%;
 }
 
-#lado-esquerdo {  
+.lado-esquerdo {
   max-width: 22%;
 }
 
 .navBar {
-  display: flex;  
-  justify-content: flex-end;
+  display: flex;
   font-size: 1.4rem;
+  justify-content: flex-end;
 }
 
 .navBar div {
@@ -51,8 +51,6 @@ h2 {
   font-size: 1.8rem;
 }
 
-#logo {
-  /* width: 1500px;
-  height: 130px; */
-  object-fit: contain;  
+.logo {
+  object-fit: contain;
 }
