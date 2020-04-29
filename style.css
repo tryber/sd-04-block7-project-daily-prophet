@@ -1,0 +1,113 @@
+html , body {
+  background: rgb(37, 37, 37);
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  border: 1px solid black;
+  font-size: 4em;
+}
+
+h2 , h3 , p {
+  padding: 10px;
+}
+
+.paper {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  display: grid;
+  height: 90%;
+  margin: 2% auto;
+  width: 90%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  align-self: center;
+  margin-left: -30%;
+  width: 10%;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  position: absolute;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: -30%;
+  }
+
+  to {
+    margin-left: 30%;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.nav {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  align-self: center;
+  color: black;
+  flex: 1 1 20%;
+  opacity: 0.9;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(248, 224, 192);
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
