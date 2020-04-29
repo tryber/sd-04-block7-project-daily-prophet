@@ -4,8 +4,8 @@ html {
 
 body {
   background-color: black;
-  font-family: 'Vollkorn', serif;
   font-size: 1rem;
+  margin: 2em;
 }
 
 .container-layout {
@@ -14,7 +14,6 @@ body {
   box-sizing: border-box;
   column-gap: 1em;
   display: grid;
-  /*grid-template-columns: repeat(6, 1fr);*/
   margin: 1em auto;
   max-width: 64em;
   padding: 1em;
@@ -22,20 +21,13 @@ body {
 }
 
 .logo-header {
-  grid-column-end: 7;
   grid-column: 1;
+  grid-column-end: 7;
   padding-top: 0.5em;
-
-/*
-  background-repeat: no-repeat;
-  width: 100%;
-  display: block;
-  background-position-x: 50%; */
 }
 
 figure {
   display: block;
-  font-family: 'Kreon', serif;
   letter-spacing: 0.313em;
   margin: 0.375em 0.5em 0.5em;
   position: relative;
@@ -45,18 +37,6 @@ figure {
 
 .logo {
   margin: 0;
-}
-
-.asterisco-antes {
-  font-size: 24px;
-  margin-left: -0.625em;
-  position: absolute;
-}
-
-.asterisco-depois {
-  font-size: 24px;
-  margin-left: 0.188em;
-  position: absolute;
 }
 
 hr {
