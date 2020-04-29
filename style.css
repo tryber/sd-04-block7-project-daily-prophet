@@ -1,4 +1,25 @@
-.titulo {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .container-layout {
+    width: 768px;
+  }
+
+  #titulo-inicial {
+    width: 450px;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container-layout {
+    width: 1170px;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
 }
