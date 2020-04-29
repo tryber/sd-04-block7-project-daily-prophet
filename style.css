@@ -17,6 +17,6 @@
 @media screen and ( orientation : landscape ) {
 
   .container-layout {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid red;
   }
 }
