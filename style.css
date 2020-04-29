@@ -6,11 +6,37 @@ body {
 .container-layout {
   font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
   margin: 20px auto;
+  max-width: 980px;
   padding: 20px;
 }
 
 .top-bar {
-  width: 100%;
+  margin: 0 auto;
+}
+
+.image-header {
+  width: 80%;
+}
+
+.image-animation {
+  animation-delay: 3s;
+  animation-duration: 4s;
+  animation-name: animationimage;
+}
+
+@keyframes animationimage {
+
+  0% {
+    transform: translate(50px, 60px);
+  }
+
+  50% {
+    transform: skew(15deg, 20deg);
+  }
+
+  100% {
+    transform: scale(0.5, 0.5);
+  }
 }
 
 @media screen and ( max-width : 760px ) {
