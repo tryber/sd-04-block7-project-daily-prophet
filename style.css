@@ -1,3 +1,46 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.total-page {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1%;
+  width: 90%;
+}
+
+.nav-bar {
+  border-bottom: 6px double black;
+  display: flex;
+  font-family: Girassol, cursive;
+  font-size: 1.5em;
+  justify-content: space-around;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  to {
+    margin-left: 70%;
+    margin-top: 20%;
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
