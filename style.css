@@ -1,0 +1,48 @@
+body {
+  padding: 10px 70px;
+  background-color: seashell;  
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content div {
+  border: 1px solid black;
+}
+
+header {
+  text-align: center;
+}
+
+.artigo {
+  max-width: 46%;
+}
+
+#lado-direito {  
+  max-width: 22%;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#lado-esquerdo {  
+  max-width: 22%;
+}
+
+#logo {
+  /* width: 1500px;
+  height: 130px; */
+  object-fit: contain;  
+}
