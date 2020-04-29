@@ -1,12 +1,12 @@
-* {
+body {
   border: 1px solid red;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.conytainer-layout{
-  background-color: rgb(255, 255, 0);
+.conytainer-layout {
+  background-color: yellow;
   width: 760px;
 }
 
@@ -14,4 +14,3 @@
   display: flex;
   justify-content: space-between;
 }
-
