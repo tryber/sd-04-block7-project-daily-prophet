@@ -14,7 +14,7 @@
 
 @media ( orientation : landscape ) {
 
-  .container-layout {
+  .container-orientation {
     border: solid 1px red;
   }
 }
