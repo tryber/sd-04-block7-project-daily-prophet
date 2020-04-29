@@ -1,7 +1,8 @@
-@media screen and ( max-width : 768px ) {
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
-    width: 768px;
+    width: 760px;
+    background-color: rgb(255, 255, 0);
   }
 
   .titulo-inicial {
@@ -18,6 +19,7 @@
 
   .container-layout {
     width: 1170px;
+    background-color: rgb(255, 0, 0);
   }
 
   .titulo {
