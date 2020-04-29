@@ -6,7 +6,6 @@ html , body {
 }
 
 h1 {
-  border: 1px solid black;
   font-size: 4em;
 }
 
@@ -31,6 +30,11 @@ header {
   text-align: center;
 }
 
+h1:hover {
+  cursor: pointer;
+  transform: skew(10deg, -3deg) scale(1.5);
+}
+
 .subtitle {
   display: flex;
   justify-content: center;
@@ -40,6 +44,10 @@ img {
   align-self: center;
   margin-left: -30%;
   width: 10%;
+}
+
+img:hover {
+  transform: translateX(600px);
 }
 
 .fly {
@@ -62,6 +70,10 @@ img {
     margin-left: 30%;
   }
 }
+
+/* 6 - Você deve utilizar a transformação skew.
+  7 - Você deve utilizar a transformação scale.
+  8 - Você deve utilizar a transformação translate */
 
 p {
   margin: 0;
