@@ -5,7 +5,8 @@ body {
 
 header {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: absolute;
 }
 
 h1 , h2 , h3 {
@@ -18,10 +19,13 @@ p {
 }
 
 .container-layout {
+  align-content: flex-start;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-.grid{
+.grid {
   display: grid;
 }
 
@@ -59,7 +63,7 @@ p {
 
   50% {
     margin-left: 50%;
-    transform: scale(2, 2) translate(0, -100px) skew(20deg, 10deg);
+    transform: scale(2, 2) translate(0, 300px) skew(20deg, 10deg);
   }
 
   100% {
@@ -83,7 +87,7 @@ p {
 }
 
 @media screen and ( max-width : 760px ) and ( orientation : landscape ) {
-/* O que mais eu posso colocar aqui dentro par deixar a página mais agradável? */
+
   .container-orientation {
     border: 1px solid red;
   }
