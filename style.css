@@ -46,7 +46,7 @@ aside {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(200, end) forwards paused;
+  animation: flex-grow 4s steps(200, end) forwards paused;
   z-index: 20;
 }
 
