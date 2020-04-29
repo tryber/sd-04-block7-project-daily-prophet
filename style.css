@@ -121,7 +121,7 @@ a {
   text-decoration: none;
 }
 
-.article-animation:active {
+.article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
 }
