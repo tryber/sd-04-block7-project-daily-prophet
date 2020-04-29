@@ -33,6 +33,7 @@ html , body {
 
 .article-animation {
   animation-duration: 4s;
+  animation-iteration-count: infinite;
   animation-name: article-grow;
   animation-play-state: paused;
   transition: font-size 4s;
@@ -40,8 +41,10 @@ html , body {
 
 .article-animation:active {
   animation-duration: 4s;
+  animation-iteration-count: infinite;
   animation-name: article-grow;
   animation-play-state: running;
+  animation-timing-function: linear steps(1, start);
 }
 
 img {
