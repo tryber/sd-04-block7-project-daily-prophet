@@ -1,0 +1,102 @@
+html , body {
+  background-image: url('/img/bgbody.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.in-navigation {
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.all {
+  background-color: rgb(255, 248, 238);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 900px;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 15px auto;
+  width: 90%;
+}
+
+header > img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.line1 {
+  border-bottom: 5px double black;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.line2 {
+  border-top: 5px double black;
+  width: 100%;
+}
+
+.nav {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+nav > p:hover {
+  cursor: pointer;
+  transform: translateY(3px) skew(15deg);
+  transition: all 1s;
+}
+
+.navn {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: rgb(255, 248, 238);
+  font-size: 25px;
+  padding: 4px;
+}
+
+.fly {
+  animation: flying 30s linear 3s alternate forwards;
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: 1px;
+  }
+
+  33% {
+    margin-left: 96%;
+  }
+
+  66% {
+    margin-left: 1px;
+  }
+
+  100% {
+    margin-left: 96%;
+  }
+
+}
+
+footer {
+  color: rgba(212, 197, 197, 0.445);
+  font-size: 15px;
+}
