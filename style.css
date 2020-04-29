@@ -48,6 +48,8 @@ header {
 }
 
 article {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
   border: 1px solid black;
   margin: 0 auto 40px;
   width: 60%;
@@ -56,8 +58,9 @@ article {
 aside {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 120%;
 }
 
 .fly {
@@ -67,8 +70,8 @@ aside {
 }
 
 .article-animation {
-  animation: article-bigger 4s forwards paused;
-  transition: animation steps(200, end);
+  animation: article-grow 4s steps(4, end);
+  animation-play-state: paused;
 }
 
 @keyframes flying {
