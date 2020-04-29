@@ -1,1 +1,17 @@
 @charset "UTF-8" ;
+
+@media screen and (max-width: 760px) {
+  .container-layout {
+    background-color: rgb(255, 255, 0);
+  }
+  
+}
+ 
+
+@media screen and (min-width: 1170px) {
+  .container-layout {
+    background-color: rgb(255, 0, 0);
+  }
+
+}
+
