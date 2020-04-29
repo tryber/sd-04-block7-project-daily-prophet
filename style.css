@@ -7,6 +7,8 @@ html , body {
 
 h1 {
   font-size: 4em;
+  transform: skew(10deg, -3deg) scale(1.5);
+  transition-duration: 5s;
 }
 
 h2 , h3 , p {
@@ -32,8 +34,7 @@ header {
 
 h1:hover {
   cursor: pointer;
-  transform: skew(10deg, -3deg) scale(1.5);
-  transition-duration: 5s;
+
 }
 
 .subtitle , section {
@@ -49,12 +50,9 @@ section {
 img {
   align-self: center;
   margin-left: -30%;
-  width: 10%;
-}
-
-img:hover {
   transform: translateX(600px);
   transition-duration: 5s;
+  width: 10%;
 }
 
 .fly {
