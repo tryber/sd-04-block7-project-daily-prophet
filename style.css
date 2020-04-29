@@ -1,0 +1,33 @@
+@media (max-width: 760px) {
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media (orientation: landscape) {
+  .container-layout {
+    border: solid 1px red;
+  }
+}
+
+@keyframes flying{
+  from{
+
+  }
+
+  to{
+    transform: translateX(30px);
+    transform: translateY(200px);
+  }
+
+}
+
+.fly{
+  animation: flying 3s ease 3s 3 alternate forwards;
+}
