@@ -11,7 +11,7 @@ body {
 
 @media screen and ( min-width : 1170px ) {
 
-  .container-orientation {
+  .container-layout {
     background-color: red;
   }
 }
