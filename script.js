@@ -1,6 +1,7 @@
-// let article = document.querySelectorAll('.article');
+const element = document.getElementsByClassName('article');
 
-
-// article.addEventListener('click', function (e) {
-//   e.classList.add('bigger')
-// });
+for (let i = 0; i < element.length; i += 1) {
+  element[i].addEventListener('click', function (e) {
+    e.target.classList.add('growClass');
+  });
+}
