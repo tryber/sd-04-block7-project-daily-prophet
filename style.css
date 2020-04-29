@@ -6,13 +6,13 @@ body {
 @media ( max-width : 1170px ) {
 
   .container-layout {
-    background-color: red;
+    background-color:rgb(255, 0, 0);
   }
 }
 
 @media ( max-width : 760px ) {
 
   .container-layout {
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
   }
 }
