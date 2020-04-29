@@ -3,6 +3,7 @@ body {
 }
 
 .container-layout {
+  border-radius: .5em;
   display: flex;
   justify-content: center;
 }
@@ -13,14 +14,14 @@ h1 {
 
 @media screen and ( max-width : 760px ) {
 
-  body {
-    background-color: blue;
+  .container-layout {
+    background: yellow;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
 
-  body {
-    background-color: blueviolet;
+  .container-layout {
+    background: red;
   }
 }
