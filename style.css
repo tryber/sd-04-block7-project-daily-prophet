@@ -1,6 +1,5 @@
 .container-layout {
   background-color: rgb(150, 150, 150);
-  display: flex;
 }
 
 .header {
@@ -58,7 +57,7 @@
   animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
   position: absolute;
   width: 100px;
 }
@@ -78,6 +77,12 @@
   }
 }
 
+.aside {
+  background-color: grey;
+  display: flex;
+  float: right;
+  width: 40%;
+}
 
 @media screen and ( max-width : 760px ) {
 
