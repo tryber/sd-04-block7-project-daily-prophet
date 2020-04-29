@@ -18,6 +18,7 @@ html , body {
 }
 
 @keyframes flying {
+
   0% {
     display: block;
     opacity: 0.4;
