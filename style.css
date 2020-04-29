@@ -56,6 +56,12 @@
 
 .article-animation {
   width: fit-content;
+  animation: article-grow 4s;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
 }
 
 @keyframes article-grow {
