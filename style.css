@@ -55,9 +55,9 @@
 }
 
 .article-animation {
-  width: fit-content;
   animation: article-grow 4s;
   animation-play-state: paused;
+  width: fit-content;
 }
 
 .article-animation:active {
