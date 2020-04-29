@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and ( orientation : landscape ) {
+@media screen and and ( max-width : 760px ) and ( orientation : landscape ) {
 
   .container-layout {
     border: 1px solid red;
