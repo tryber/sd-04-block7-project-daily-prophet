@@ -1,12 +1,30 @@
-.corpo {
-  text-align: center;
+body {
   background-image: url('back.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0.01px;
+  text-align: center;
+}
+
+.corpo {
+  background-color: white;
+}
+
+nav {
+  border: 1px solid black;
+  display: inline;
+}
+
+.nav-text {
+  font-family: 'Vollkorn SC';
 }
 
 .header-image {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.pointer {
+  height: 70px;
+  width: 160px;
 }
