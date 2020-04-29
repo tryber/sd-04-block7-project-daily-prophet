@@ -19,8 +19,29 @@ html , body {
   width: 100%;
 }
 
+.artigo {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.main-article {
+  background-color: rgb(71, 68, 68);
+  color: white;
+  padding: 10px;
+}
+
+.article-animation {
+  transition: font-size 4s;
+}
+
+.article-animation:active {
+  animation: article-grow 4s;
+}
+
 img {
   transition: border 1s;
+  width: 200px;
 }
 
 img:hover {
@@ -71,6 +92,14 @@ img:hover {
     margin-left: 90%;
     opacity: 1;
     transform: translateY(-7px);
+  }
+}
+
+@keyframes article-grow {
+
+  100% {
+    font-size: 18pt;
+    transform: scale(1.5);
   }
 }
 
