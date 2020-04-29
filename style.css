@@ -11,15 +11,15 @@ body {
 }
 
 .up-line {
-  border-bottom: 1px solid #1c1915;
-  border-top: 0.1875em solid #1c1915;
+  border-bottom: 1px solid black;
+  border-top: 2px solid black;
   height: 0.125em;
   margin: 0.5em auto;
 }
 
 .down-line {
-  border-bottom: 0.1875em solid #1c1915;
-  border-top: 1px solid #1c1915;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
   height: 0.125em;
   margin: 0.5em auto;
 }
@@ -74,6 +74,6 @@ body {
 }
 
 .link-to-page {
-  padding: 2px;
   color: white;
+  padding: 2px;
 }
