@@ -2,6 +2,14 @@ body {
   background-color: rgb(209, 205, 200);
 }
 
+.container-layout {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
 @media screen and ( max-width : 760px ) {
 
   body {
