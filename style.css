@@ -19,6 +19,19 @@ body {
   justify-content: space-around;
 }
 
+.container-orientation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  font-family: Girassol, cursive;
+  font-size: 1.8em;
+  width: 65%;
+}
+
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -36,12 +49,18 @@ body {
   }
 
   50% {
-    margin-left: 30%;
-    margin-top: 20%;
+    margin-left: -300%;
+    margin-top: 40%;
   }
 
+  75% {
+    margin-left: -450%;
+    margin-top: 40%;
+  }
+
+
   to {
-    margin-left: 83%;
+    margin-left: 0;
     margin-top: 0;
   }
 }
