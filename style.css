@@ -1,13 +1,27 @@
 .container-layout {
   background-color: white;
   height: 100%;
+  transition: all 2s;
 }
 
 .container-orientation {
-  border: 1 solid black;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 2s;
 }
 
-@media screen and  ( max-width : 760px ) {
+.fly {
+  animation: flying 1s ease 0s 3 alternate forwards;
+  width: 5em;
+}
+
+@keyframes flying {
+
+  to {
+    transform: translate(100px, -100px) scale(0.9) skew(45deg, 45deg);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -18,13 +32,6 @@
 
   .container-layout {
     background-color: red;
-  }
-}
-
-@media screen and ( orientation : portrait ) {
-
-  .container-orientation {
-    border: 1px solid blue;
   }
 }
 
