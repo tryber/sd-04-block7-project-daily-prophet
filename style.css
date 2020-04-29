@@ -75,3 +75,34 @@ h2 {
     border: 1px solid red;
   }
 }
+
+.harry {
+  height: 80px;
+  width: 80px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-name: flying;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 10px;
+  }
+
+  33% {
+    margin-left: 100%;
+  }
+
+  66% {
+    margin-left: 10px;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
