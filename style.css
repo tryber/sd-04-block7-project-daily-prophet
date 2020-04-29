@@ -21,7 +21,7 @@ body {
 
 .fly {
   animation-delay: 3s;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
@@ -31,13 +31,13 @@ body {
 @keyframes flying {
 
   from {
-    margin-left: 0;
-    margin-top: 0;
+    margin-left: 70%;
+    margin-top: 20%;
   }
 
   to {
-    margin-left: 70%;
-    margin-top: 20%;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 
