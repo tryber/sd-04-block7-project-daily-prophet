@@ -102,7 +102,7 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-block7-project-daily-prophet.git`.
+  * `git clone https://github.com/tryber/sd-04-block7-project-daily-prophet.git`.
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -115,7 +115,7 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 
 3. Crie na raiz do projeto os arquivos que você precisará desenvolver:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-0x-block7-project-daily-prophet**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-04-block7-project-daily-prophet**_
   * Crie os arquivos `index.html`, `style.css` e `script.js`
     * Exemplo:
       * `touch index.html style.css script.js`
@@ -136,13 +136,13 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
   * Usando o exemplo anterior: `git push -u origin joaozinho-daily-prophet-project`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-block7-project-daily-prophet/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-04-block7-project-daily-prophet/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-block7-project-daily-prophet/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-04-block7-project-daily-prophet/pulls) e confira que o seu _Pull Request_ está criado
 
   ---
 
