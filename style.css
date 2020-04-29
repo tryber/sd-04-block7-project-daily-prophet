@@ -21,9 +21,9 @@ body {
 
 .fly {
   animation-delay: 3s;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   animation-duration: 1s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
 }
