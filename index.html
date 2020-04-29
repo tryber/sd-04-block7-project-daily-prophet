@@ -3,23 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Kreon:700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Project Daily Prophet</title>
 </head>
 <body>
   <header>
-    <h1></h1>
-    <nav></nav>
+    <div class="hero">
+      <figure>
+        <img src="logo.png" alt="Logo do Daily Prophet" id="logo" class="logo">
+      </figure>
+      <h1>Daily Prophet</h1>
+      <hr>
+    </div>
+    <nav class="topnav">
+      <a href="#" class="active">Daily Prophet</a>
+      <div id="menu">
+        <a href="#">World</a>
+        <a href="#">Magic</a>
+        <a href="#">Adventures</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
   </header>
-  <section>
-    <article>
-      <a><img src="" alt=""></a>
-    </article>
-  </section>
-  <aside>
+  <div class="container-layout">
+    <section class="all-news">
+      <article class="news">
+        <h3>Title Lorem Ipsum</h3>
+        <section class="content-news">
+          <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+          <a><img src="https://picsum.photos/300/200" alt="Imagem ilustrativa"></a>
+        </section>
+      </article>
+      <!-- Segunda Noticia -->
+      <article class="news">
+        <h3>Title Lorem Ipsum</h3>
+        <section class="content-news">
+          <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+          <a><img src="https://picsum.photos/300/200" alt="Imagem ilustrativa"></a>
+        </section>
+      </article>
+    </section>
+    <aside class="sidebar">
 
-  </aside>
+    </aside>
+  </div>
   <footer>
-    
   </footer>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>
