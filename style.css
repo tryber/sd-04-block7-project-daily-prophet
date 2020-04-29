@@ -18,16 +18,26 @@
 
 @keyframes flying{
   from{
+    transform: translate(0px, 0px);
+  }
 
+  50%{
+    transform: translate(130px, -250px) rotate(30deg)
+  }
+
+  75%{
+    transform: translate(200px, -50px) rotate(-45deg);
   }
 
   to{
-    transform: translateX(30px);
-    transform: translateY(200px);
+    transform: translate(30px, 0px);
   }
 
 }
 
 .fly{
   animation: flying 3s ease 3s 3 alternate forwards;
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
