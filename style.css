@@ -124,6 +124,7 @@ a {
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
 }
 
 @keyframes article-grow {
