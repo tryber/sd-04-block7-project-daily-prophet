@@ -1,0 +1,106 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+a {
+  color: black;
+  padding: 0;
+  text-decoration: none;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.nav-links {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: calc(100vh - 65px);
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.nav-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-button {
+  cursor: pointer;
+  padding: 20px 10px;
+  position: absolute;
+  right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-line {
+  background: black;
+  border-radius: 5px;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+  width: 30px;
+}
+
+.menu-line:before , .menu-line:after {
+  background: inherit;
+  border-radius: inherit;
+  content: '';
+  display: block;
+  height: inherit;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: inherit;
+}
+
+.menu-line:before {
+  transform: translateY(-10px);
+}
+
+.menu-line:after {
+  transform: translateY(10px);
+}
+
+.menu-line-active {
+  background: transparent;
+}
+
+.menu-line-active:before {
+  background: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.menu-line-active:after {
+  background: black;
+  position: absolute;
+  transform: rotate(-45deg);
+}
