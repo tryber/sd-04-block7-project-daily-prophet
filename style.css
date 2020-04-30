@@ -126,6 +126,9 @@
 }
 
 @media ( orientation : landscape ) {
-
+  
+  .container-layout {
+    color: gray;
+  }
 
 }
