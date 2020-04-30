@@ -50,7 +50,6 @@ body {
   color: white;
   font-size: 32px;
   padding: 8px;
-  width: 20%;
   animation-name: scaling;
   animation-iteration-count: infinite;
   animation-duration: 3s;
@@ -123,7 +122,7 @@ body {
   margin-left: 16px;
 }
 
-@media screen and ( max-width : 760px ) {
+@media screen and (max-width : 760px) {
 
   .title {
     display: none;
@@ -135,6 +134,7 @@ body {
 
   .exclusive {
     width: 50%;
+    animation-name: none;
   }
 
   .section-2 {
@@ -187,15 +187,15 @@ body {
 
 @keyframes scaling {
 
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.5);
-    }
+  50% {
+    transform: scale(1.5);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
