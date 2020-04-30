@@ -6,8 +6,10 @@ body {
   text-align: center;
 }
 
-.article-animation:active {
+.article-animation {
   animation: article-grow 4s linear;
+  font-weight: 400;
+  transition: font-weight 4s linear;
 }
 
 .container-layout {
