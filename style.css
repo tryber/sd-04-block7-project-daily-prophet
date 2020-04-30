@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  transition: 1s ease;
+}
+
+header img {
+  border-bottom: 20px solid black;
+  height: 100%;
+  max-width: 100%;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+.fly img {
+  width: 100px;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  transition: font-size 4s;
+}
+
+.article-animation:active {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: running;
+  animation-timing-function: linear steps(1, start);
+}
+
+@keyframes article-grow {
+
+  100% {
+    font-size: 18pt;
+    transform: scale(1.5);
+  }
+}
+
+
+@keyframes flying {
+
+  0% {
+    margin-left: 0;
+    transform: scale(0, 0), skew(0deg), translate(20px, 5px);
+  }
+
+  25% {
+    margin-left: 92%;
+    transform: scale(1.5, 0.5), skew(180deg), translate(-20px, -5px);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
