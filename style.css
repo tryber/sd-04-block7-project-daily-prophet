@@ -75,6 +75,10 @@ body {
   margin-top: 80px;
 }
 
+.fly {
+  animation: flying 3s ease 3s 3 alternate none;
+}
+
 @keyframes hide {
 
   1% {
@@ -106,6 +110,13 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes flying {
+  
+  1% {
+    transform: scaleX(0.1);
   }
 }
 
