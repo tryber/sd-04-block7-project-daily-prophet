@@ -29,13 +29,13 @@ body {
 }
 
 .fly {
-  animation-name: flying;
   animation-delay: 3s;
-  animation-duration: 5s;
   animation-direction: alternate;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
-  width: 150px;
+  animation-name: flying;
   position: absolute;
+  width: 150px;
 }
 
 .section-1 {
