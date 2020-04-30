@@ -1,5 +1,23 @@
+aside {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.aside-div {
+  align-items: center;
+  background-color: #1c1915;
+  color: #fff8ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.15;
+  margin: 0;
+  width: 100%;
+}
+
 body {
-  color: #1c1915;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +29,15 @@ body {
   border-radius: 10px;
 }
 
+.content {
+  width: 85%;
+}
+
+.content-aside {
+  display: flex;
+  justify-content: space-between;
+}
+
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -18,8 +45,12 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  height: 200px;
-  width: 284px;
+  height: 180px;
+  width: 264px;
+}
+
+h1 {
+  margin: 0;
 }
 
 @keyframes flying {
@@ -67,4 +98,9 @@ body {
   .container-orientation {
     border: 1px solid red;
   }
+}
+
+p {
+  color: #1c1915;
+  text-indent: 1em;
 }
