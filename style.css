@@ -1,43 +1,43 @@
 body {
+  background-color: black;
   display: flex;
   justify-content: center;
-  background-color: black;
 }
 
 .container-layout {
-  border-radius: 20px;
   background-color: #fff8ee;
+  border-radius: 20px;
   padding: 0 15px;
 }
 
 .header {
-  border-top: 1px solid black;
   border-bottom: 1px solid black;
-  margin-top: 1%;
+  border-top: 1px solid black;
   margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 .sub-title {
-  text-align: center;
-  padding-left: 12%;
-  margin-top: 0;
   font-size: 20px;
+  margin-top: 0;
+  padding-left: 12%;
+  text-align: center;
 }
 
 .exclusive-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: black;
+  display: flex;
   height: 120px;
+  justify-content: center;
 }
 
 .exclusive {
   color: #fff8ee;
   font-size: 34px;
   font-weight: 900;
-  text-align: center;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .nav-container {
@@ -47,8 +47,8 @@ body {
 
 .nav-title {
   font-size: 28px;
-  text-align: center;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .nav-text {
@@ -61,8 +61,8 @@ body {
 }
 
 .nav-link .nav-link-container {
-  color: #fff8ee;
   background-color: black;
+  color: #fff8ee;
   transition: background-color 0.5s ease, color 1s ease;
 }
 
@@ -72,10 +72,10 @@ body {
 }
 
 .nav-link-container {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
   background-color: black;
+  display: flex;
+  justify-content: flex-end;
   padding-right: 10px;
   width: 100%;
 }
@@ -91,18 +91,18 @@ body {
 
 .main-title {
   font-size: 72px;
-  line-height: 0.75em;
   font-weight: 900;
+  line-height: 0.75em;
   margin: 1% 0 3%;
   text-transform: uppercase;
 }
 
 .vertical-text {
-  line-height: 25px;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
   font-size: 16px;
+  line-height: 25px;
+  text-orientation: mixed;
   transform: scale(-1, -1);
+  writing-mode: vertical-lr;
 }
 
 .main-subtitle {
@@ -141,12 +141,12 @@ article hr {
 }
 
 .fly {
-  animation-name: flying;
   animation-delay: 3s;
-  animation-duration: 1.66s;
-  animation-iteration-count: 3;
   animation-direction: alternate;
+  animation-duration: 1.66s;
   animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
   animation-play-state: running;
   animation-timing-function: steps(100, end);
 }
@@ -170,9 +170,9 @@ article hr {
 }
 
 .article-animation {
-  animation-name: article-grow;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  animation-name: article-grow;
   animation-play-state: paused;
   animation-timing-function: linear;
 }
@@ -183,22 +183,22 @@ article hr {
 
 @keyframes article-grow {
   from {
-    width: 100%;
     font-weight: normal;
+    width: 100%;
   }
   50% {
     color: black;
-    z-index: 1;
     position: absolute;
+    z-index: 1;
   }
   to {
-    width: 120%;
-    font-weight: bold;
-    z-index: 1;
-    position: absolute;
     background-color: #333;
     color: white;
+    font-weight: bold;
     padding: 0 15px;
+    position: absolute;
+    width: 120%;
+    z-index: 1;
   }
 }
 
