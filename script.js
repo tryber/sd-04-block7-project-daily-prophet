@@ -1,4 +1,4 @@
-const articleAnimation = document.querySelector('.article1');
+const articleAnimation = document.querySelector('article');
 
 function enlargeArticle() {
   articleAnimation.classList.add('article-animation');

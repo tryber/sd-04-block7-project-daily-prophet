@@ -100,12 +100,17 @@ p {
   width: 100%;
 }
 
-.article1 {
+article {
   border: 1px solid blue;
+  box-sizing: border-box;
   display: flex;
-  height: 50%;
   margin: 10px;
-  width: 50%;
+  height: 250px;
+  width: 400px;
+}
+
+.article1 {
+  display: flex;
 }
 
 .article-animation {
@@ -117,14 +122,14 @@ p {
 @keyframes article-grow {
 
   0% {
-    height: 50%;
-    width: 50%;
+    height: 250px;
+    width: 400px;
   }
 
   100% {
     font-weight: 900;
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 800px;
   }
 }
 
