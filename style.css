@@ -83,7 +83,8 @@ h2 {
 
 .fly {
   animation-delay: 3s;
-  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-duration: 10s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
@@ -95,15 +96,22 @@ h2 {
     margin-left: 10px;
   }
 
-  33% {
-    margin-left: 100%;
-  }
-
-  66% {
-    margin-left: 10px;
-  }
-
   to {
     margin-left: 100%;
   }
+}
+
+.fotoC {
+  display: none;
+  height: 40px;
+  width: 40px;
+}
+
+.nav1 {
+  transition: display 2s, object-fit 2s;
+}
+
+.nav1:hover .fotoC {
+  display: unset;
+  object-fit: cover;
 }
