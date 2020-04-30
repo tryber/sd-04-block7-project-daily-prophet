@@ -52,6 +52,7 @@ header div:nth-child( 2 ) img {
 .container-layout img:nth-child( 1 ) {
   animation-duration: 4s;
   animation-name: skew;
+  animation-timing-function: steps(5, end);
 }
 
 @keyframes skew {
@@ -104,29 +105,30 @@ header div:nth-child( 2 ) img {
 }
 
 .article-animation {
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
+  background-color: red;
   animation-play-state: paused;
   font-size: 1rem;
   font-weight: 100;
 }
 
-/* .article-animation:hover {
-  animation-play-state: running;
+/* p:not(.article-animation):hover {
+  animation-play-state: paused;
 } */
 
 @keyframes article-grow {
 
-  0% { font-size: 0;
+  0% { font-size: 1rem;
     font-weight: 100;
   }
 
-  50% { font-size: 0;
+  50% { font-size: 1.2rem;
     font-weight: 200;
   }
 
-  75% { font-size: 0;
+  75% { font-size: 1.4rem;
     font-weight: 400;
   }
 
