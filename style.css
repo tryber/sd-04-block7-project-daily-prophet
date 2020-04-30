@@ -24,14 +24,15 @@ body {
 }
 
 @keyframes flying {
+  
   0% {
-    transform: translateX(0px);
     opacity: 1;
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(1240px);
     opacity: 0;
+    transform: translateX(1240px);
   }
 }
 
