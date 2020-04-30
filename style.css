@@ -80,6 +80,7 @@ footer {
     border: 1px solid red;
   }
 }
+
 .imgfly {
   width: 30%;
 }
@@ -90,6 +91,7 @@ footer {
 }
 
 @keyframes flying {
+  
   from {
     transform: translateY(0) translateX(-300%) rotate(30deg);
   }
