@@ -54,6 +54,7 @@ body {
   color: white;
   font-size: 32px;
   padding: 8px;
+  transition-timing-function: ease-in-out;
 }
 
 .article-1 {
@@ -120,6 +121,22 @@ body {
 
 .footer a {
   margin-left: 16px;
+}
+
+.skew {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: skewing;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+.translate {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: translating;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -197,5 +214,23 @@ body {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes skewing {
+
+  100% {
+    transform: skew(180deg);
+  }
+}
+
+@keyframes translating {
+
+  50% {
+    transform: translate(350px);
+  }
+
+  100% {
+    transform: translate(initial);
   }
 }
