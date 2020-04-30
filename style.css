@@ -77,8 +77,15 @@
 .aside {
   background-color: grey;
   display: flex;
+  flex-direction: column;
   float: right;
-  width: 40%;
+  width: 25%;
+}
+
+.aside small {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
 }
 
 .aside img {
@@ -86,6 +93,7 @@
   animation: sirius 200ms linear;
   animation-direction: alternate;
   animation-iteration-count: 30;
+  border: 10px groove gray;
   justify-content: flex-end;
   width: 100%;
 }
@@ -98,6 +106,30 @@
 
   100% {
     transform: scale(1, 1);
+  }
+}
+
+.articles-initial {
+  background-color: ghostwhite;
+}
+
+.articles-initial h1 {
+  font-weight: 800;
+}
+
+.article-animation {
+  animation: article-grow 4s;
+  transform: scale(1, 1);
+}
+
+@keyframes article-grow {
+
+  0% {
+
+  }
+
+  100% {
+
   }
 }
 
