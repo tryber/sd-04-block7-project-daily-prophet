@@ -60,6 +60,15 @@ body {
   padding: 0;
 }
 
+.nav-link-container {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  width: 100%;
+}
+
 .nav-link .nav-link-container {
   background-color: black;
   color: #fff8ee;
@@ -67,7 +76,7 @@ body {
 }
 
 .nav-link:hover .nav-link-container {
-  background-color: #FBB03B;
+  background-color: #fbb03b;
   color: black;
 }
 
@@ -100,13 +109,11 @@ body {
 .vertical-text {
   font-size: 16px;
   line-height: 25px;
-  text-orientation: mixed;
   transform: scale(-1, -1);
-  writing-mode: vertical-lr;
 }
 
 .main-subtitle {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 p {
@@ -152,18 +159,23 @@ article hr {
 }
 
 @keyframes flying {
+
   0% {
     transform: translate(0, -120%);
   }
+
   20% {
     transform: translate(40%, -100%) rotate(-45deg) scale(1.25) skew(10deg);
   }
+
   50% {
     transform: translate(-40%, -80%) rotate(33deg) scale(1) skew(15deg);
   }
+
   80% {
     transform: translate(20%, -40%) rotate(-17deg) scale(0.75) skew(0);
   }
+
   100% {
     transform: translate(0, 0) rotate(0) scale(1) skew(0);
   }
@@ -182,19 +194,22 @@ article hr {
 }
 
 @keyframes article-grow {
+
   from {
-    font-weight: normal;
+    font-weight: 400;
     width: 100%;
   }
+
   50% {
     color: black;
     position: absolute;
     z-index: 1;
   }
+
   to {
     background-color: #333;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     padding: 0 15px;
     position: absolute;
     width: 120%;
@@ -202,20 +217,23 @@ article hr {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width: 760px) {
+
   .container-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width: 1170px) {
+
   .container-layout {
-    background-color: rgb(255, 0, 0);
+    background-color: red;
   }
 }
 
-@media (orientation: landscape) {
+@media ( orientation: landscape) {
+
   .container-orientation {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid red;
   }
 }
