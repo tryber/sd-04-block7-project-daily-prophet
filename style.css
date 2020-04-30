@@ -6,6 +6,13 @@ body {
   text-align: center;
 }
 
+.container-layout {
+  border: 1px dashed black;
+  height: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .corpo {
   background-color: #fff8ee;
   margin-left: 10%;
@@ -17,14 +24,25 @@ nav {
 }
 
 .nav-text {
-  width: 80%;
+  text-align: center;
 }
 
 .header-image {
-  margin-left: 10%;
-  margin-right: 10%;
+  display: block;
 }
 
 .pointer {
   width: 10%;
+}
+
+@media (max-width: 760px) {
+  .container-layout {
+    background-color: rgb(255, 255, 0);
+  }
+}
+
+@media (min-width: 1170px) {
+  .container-layout {
+    background-color: rgb(255, 0, 0);
+  }
 }
