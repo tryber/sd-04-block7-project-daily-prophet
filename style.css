@@ -27,6 +27,22 @@ nav a {
   width: 100px;
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
+@keyframes article-grow {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
 @keyframes flying {
 
   0% {
