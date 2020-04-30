@@ -106,9 +106,7 @@
   color: white;
 }
 
-@keyframes animations {
-
-  0% {
-    transform: translate(90px, -90px) scale(0.9) skew(60deg, 55deg);
-  }
-}
+h1:hover {
+  cursor: pointer;
+  transform: skew(10deg, -3deg) scale(1.5);
+  transition-duration: 5s;
