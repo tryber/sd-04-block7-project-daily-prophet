@@ -55,8 +55,7 @@ body {
 @keyframes plim {
 
   0% {
-    transform: scale(1, 2);  
-    /* transform: skewX(0); */
+    transform: scale(1, 2);
   }
 
   50% {
