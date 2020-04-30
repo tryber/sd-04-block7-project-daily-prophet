@@ -1,8 +1,7 @@
 const articleAnimation = document.querySelector('.article1');
 
 function enlargeArticle(e) {
-  event.target.classList.add('article-animation');
-  console.log(this.classList)
+  e.target.classList.add('article-animation');
 }
 
 articleAnimation.addEventListener('click', enlargeArticle);
