@@ -33,8 +33,8 @@ body {
   animation-direction: alternate;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-name: flying;
   animation-iteration-count: 3;
+  animation-name: flying;
   position: absolute;
   width: 150px;
 }
