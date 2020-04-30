@@ -1,9 +1,5 @@
 .article-animation:focus {
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-name: article-grow;
-  animation-timing-function: ease-in;
-  outline: 0 solid;
+  animation: article-grow 4s ease-in;
 }
 
 @keyframes article-grow {
@@ -79,6 +75,11 @@ body {
 
 h1 {
   margin: 0;
+}
+
+.img1:hover, .img2:hover {
+  transform: skew(20deg, 10deg);
+  transition: 1s;
 }
 
 @keyframes flying {
