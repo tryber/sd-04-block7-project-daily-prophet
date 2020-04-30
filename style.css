@@ -48,9 +48,18 @@ header div:nth-child( 2 ) img {
   margin-top: 15px;
 }
 
-.container-layout img:nth-child( 1 ):hover {
-  transform: skewX(20deg);
+.container-layout img:nth-child( 1 ) {
+  animation-duration: 4s;
+  animation-name: skew;
 }
+
+@keyframes skew {
+
+  0% { transform: skewX(0);}
+
+  100% { transform: skewX(20deg);}
+}
+
 
 .container-layout img:nth-child( 2 ):hover {
   transform: translateX(20px);
@@ -91,6 +100,34 @@ header div:nth-child( 2 ) img {
   0% { margin-left: 0;}
 
   100% { margin-left: 90%;}
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+@keyframes article-grow {
+
+  0% { font-size: 0;
+    font-weight: 100;
+  }
+
+  50% { font-size: 0;
+    font-weight: 200;
+  }
+
+  75% { font-size: 0;
+    font-weight: 400;
+  }
+
+  100% {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
