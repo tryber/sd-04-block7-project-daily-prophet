@@ -21,33 +21,33 @@ body {
   justify-content: space-around;
 }
 
-.principal{
+.principal {
   border: 1px solid blue;
   display: flex;
+  height: 800px;
   justify-content: flex-end;
   order: 1;
-  height: 800px;
   width: 98%
 }
 
-.secao-principal{
-    border: 1px solid red;
-height: auto;
-width: 100%;
+.secao-principal {
+  border: 1px solid red;
+  height: auto;
+  width: 100%;
 }
-.principal-secao{
+.principal-secao {
   border: 1px solid black;
   height: 400px;
   width: 48%
 }
 
-.primeira-secao{
-    border: 1px solid black;
-    height: 200px;
-    width: 48%;
-  }
+.primeira-secao {
+  border: 1px solid black;
+  height: 200px;
+  width: 48%;
+}
 
-.segunda-secao{
+.segunda-secao {
   border: 1px solid black;
   height: 200px;
   width: 600px;
@@ -59,24 +59,24 @@ h1{
   width: 600px;
 }
 
-.lateral-principal{
+.lateral-principal {
   border: 1px solid black;
   height: 680px;
   width:300px;
 }
 
-.terceira-secao{
+.terceira-secao {
   border: 1px solid black;
-  width: 98%;
   height: 250px;
+  width: 98%;
 }
 
-.artigo-principal{
+.artigo-principal {
   display: flex;
   width: 98%;
 }
 
-.artigo1{
+.artigo1 {
   border:  1px solid black;
   height:200px;
   width: 96%;
@@ -88,38 +88,36 @@ h1{
   width: 96%;
 }
 
-.rodape{
+.rodape {
   width: 100%;
 }
 
-.rodape nav{
+.rodape nav {
   border: 1px solid black;
   width: 98%;
 }
 
-li{
+li {
   list-style: none;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: space-around;
 }
 
-ul a{
+ul a {
   text-decoration: none;
 }
 
 }
 
-@media(max-width:760px){
+@media (max-width:760px){
 
 .container-layout {
   background-color: red;
   border-radius: 10px;
   width: 1170px;
 }
-h1{
-  color:rgb(0, 255, 255);
-}
+
 }
