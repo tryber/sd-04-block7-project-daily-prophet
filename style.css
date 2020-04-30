@@ -16,6 +16,7 @@ nav a {
 .fly {
   animation: flying 4s linear 3s;
   animation-fill-mode: forwards;
+  animation-iteration-count: 3;
 }
 
 .fly img {
@@ -31,15 +32,6 @@ nav a {
   25% {
     margin-left: 92%;
   }
-
-  75% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: 92%;
-  }
-
 }
 
 @media screen and ( max-width : 760px ) {
