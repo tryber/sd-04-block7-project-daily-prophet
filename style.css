@@ -48,19 +48,22 @@ nav {
 }
 
 @media screen and ( max-width : 760px ) {
-.container-layout {
-  background-color: yellow;
-}
+  .container-layout {
+    
+    background-color: yellow;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
-.container-layout {
-  background-color: red;
-}
+  .container-layout {
+
+    background-color: red;
+  }
 }
 
 @media screen and ( orientation : landscape ) {
-.container-orientation {
-  border: 1px solid red;
-}
+  .container-orientation {
+
+    border: 1px solid red;
+  }
 }
