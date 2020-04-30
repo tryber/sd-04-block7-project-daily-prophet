@@ -1,17 +1,19 @@
-.article-animation {
+.article-animation:active {
   animation-duration: 4s;
+  animation-fill-mode: forwards;
   animation-name: article-grow;
+  animation-timing-function: ease-in;
 }
 
 @keyframes article-grow {
 
   from {
-    font-weight: 100;
+    font-size: 20px;
     transform: scale(1);
   }
 
   to {
-    font-weight: 700;
+    font-size: 30px;
     transform: scale(1.5);
   }
 }
