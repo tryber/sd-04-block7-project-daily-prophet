@@ -77,7 +77,7 @@ h1 {
   margin: 0;
 }
 
-.img1:hover, .img2:hover {
+.img1:hover , .img2:hover {
   transform: skew(20deg, 10deg);
   transition: 1s;
 }
