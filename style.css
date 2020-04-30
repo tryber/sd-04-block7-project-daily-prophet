@@ -5,121 +5,121 @@
 
 @media (min-width:1170px) {
 
-body {
-  background-image: url(/img/fundo-madeira.jpg);
-  background-size: cover;
-  box-sizing: border-box;
-  margin-top: 15px;
-}
+  body {
+    background-image: url('/img/fundo-madeira.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: 15px;
+  }
 
-.container-layout {
-  background-color: yellow;
-  border-radius: 10px;
-  width: 1170px;
-}
+  .container-layout {
+    background-color: yellow;
+    border-radius: 10px;
+    width: 1170px;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .principal {
+    border: 1px solid blue;
+    display: flex;
+    height: 800px;
+    justify-content: flex-end;
+    order: 1;
+    width: 98%;
+  }
+  
+  .secao-principal {
+    border: 1px solid red;
+    height: auto;
+    width: 100%;
+  }
+  .principal-secao {
+    border: 1px solid black;
+    height: 400px;
+    width: 48%;
+  }
+  
+  .primeira-secao {
+    border: 1px solid black;
+    height: 200px;
+    width: 48%;
+  }
+  
+  .segunda-secao {
+    border: 1px solid black;
+    height: 200px;
+    width: 600px;
+  }
+  
+  h1 {
+    border: 1px solid black;
+    height: 20%;
+    width: 600px;
+  }
+  
+  .lateral-principal {
+    border: 1px solid black;
+    height: 680px;
+    width: 300px;
+  }
+  
+  .terceira-secao {
+    border: 1px solid black;
+    height: 250px;
+    width: 98%;
+  }
+  
+  .artigo-principal {
+    display: flex;
+    width: 98%;
+  }
+  
+  .artigo1 {
+    border: 1px solid black;
+    height:200px;
+    width: 96%;
+  }
 
-.cabecalho {
-  display: flex;
-  justify-content: space-around;
-}
+  .artigo2 {
+    border: 1px solid black;
+    height:200px;
+    width: 96%;
+  }
+  
+  .rodape {
+    width: 100%;
+  }
+  
+  .rodape nav {
+    border: 1px solid black;
+    width: 98%;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.principal {
-  border: 1px solid blue;
-  display: flex;
-  height: 800px;
-  justify-content: flex-end;
-  order: 1;
-  width: 98%;
-}
-
-.secao-principal {
-  border: 1px solid red;
-  height: auto;
-  width: 100%;
-}
-.principal-secao {
-  border: 1px solid black;
-  height: 400px;
-  width: 48%;
-}
-
-.primeira-secao {
-  border: 1px solid black;
-  height: 200px;
-  width: 48%;
-}
-
-.segunda-secao {
-  border: 1px solid black;
-  height: 200px;
-  width: 600px;
-}
-
-h1 {
-  border: 1px solid black;
-  height: 20%;
-  width: 600px;
-}
-
-.lateral-principal {
-  border: 1px solid black;
-  height: 680px;
-  width: 300px;
-}
-
-.terceira-secao {
-  border: 1px solid black;
-  height: 250px;
-  width: 98%;
-}
-
-.artigo-principal {
-  display: flex;
-  width: 98%;
-}
-
-.artigo1 {
-  border: 1px solid black;
-  height:200px;
-  width: 96%;
-}
-
-.artigo2 {
-  border: 1px solid black;
-  height:200px;
-  width: 96%;
-}
-
-.rodape {
-  width: 100%;
-}
-
-.rodape nav {
-  border: 1px solid black;
-  width: 98%;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-ul a {
-  text-decoration: none;
-}
-
+  ul a {
+    text-decoration: none;
+  }
+  
 }
 
 @media (max-width:760px) {
 
-.container-layout {
-  background-color: red;
-  border-radius: 10px;
-  width: 1170px;
-}
+ .container-layout {
+   background-color: red;
+   border-radius: 10px;
+   width: 1170px;
+ }
 
 }
