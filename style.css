@@ -131,4 +131,8 @@
     color: rgb(214, 200, 200);
   }
 
+  .container-orientation {
+    border: 1ps solid red;
+  }
+
 }
