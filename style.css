@@ -46,14 +46,14 @@ body {
 }
 
 .exclusive {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: scaling;
   background-color: black;
   color: white;
   font-size: 32px;
   padding: 8px;
-  animation-name: scaling;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
 }
 
 .article-1 {
@@ -122,7 +122,7 @@ body {
   margin-left: 16px;
 }
 
-@media screen and (max-width : 760px) {
+@media screen and ( max-width : 760px ) {
 
   .title {
     display: none;
@@ -133,8 +133,8 @@ body {
   }
 
   .exclusive {
-    width: 50%;
     animation-name: none;
+    width: 50%;
   }
 
   .section-2 {
