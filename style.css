@@ -1,4 +1,4 @@
-.article-animation {
+.article-animation:active {
   animation-duration: 4s;
   animation-name: article-grow;
 }
