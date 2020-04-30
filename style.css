@@ -128,12 +128,12 @@ body {
   
   0% {
     font-weight: 200;
-    transform  : scale(1, 1);
+    transform: scale(1, 1);
   }
-
+  
   100% {
-    max-width  : 800px;
-    transform  : scale(2, 2);
+    max-width : 800px;
+    transform : scale(2, 2);
   }
 
 }
