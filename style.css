@@ -20,8 +20,7 @@ body {
 }
 
 .logo-header {
-  grid-column: 1;
-  grid-column-end: 4;
+  grid-column: 1/4;
   padding-top: 0.5em;
 }
 
@@ -46,8 +45,7 @@ hr {
 }
 
 footer {
-  border-radius: 1em;
-  border: 3px solid black;
+  color: #745428;
   grid-column: 1/4;
   margin-top: 5%;
   padding: 1em;
