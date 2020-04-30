@@ -42,6 +42,7 @@ header div:nth-child( 2 ) img {
 }
 
 .container-layout {
+  background-color: yellow;
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -106,9 +107,14 @@ header div:nth-child( 2 ) img {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
+  animation-play-state: paused;
   font-size: 1rem;
   font-weight: 100;
 }
+
+/* .article-animation:hover {
+  animation-play-state: running;
+} */
 
 @keyframes article-grow {
 
