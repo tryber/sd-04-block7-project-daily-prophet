@@ -22,7 +22,6 @@ body {
 .fly {
   animation: flying 6s ease-in-out 3s 3 alternate backwards;
   height: 180px;
-  scale: 0.3;
   width: 180px;
 }
 
@@ -55,18 +54,22 @@ nav {
 }
 
 @keyframes flying {
+
   from {
-    right: 10px;
     bottom: 30px;
+    right: 10px;
   }
+
   33% {
     left: 10px;
     top: 350px;
   }
+
   66% {
     right: 10px;
     top: 150px;
   }
+
   to {
     left: 10px;
     top: 10px;
