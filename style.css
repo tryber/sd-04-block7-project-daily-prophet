@@ -137,8 +137,9 @@ body {
 }
 
 footer {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .exclusive {
@@ -203,6 +204,26 @@ footer {
 
   .container-orientation {
     border: 1px solid red;
+  }
+
+}
+
+.second {
+  animation: rotation 60s steps(60) infinite;
+  background-color: black;
+  height: 2px;
+  transform-origin: 100% 50%;
+  width: 5%;
+}
+
+@keyframes rotation {
+
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(450deg);
   }
 
 }
