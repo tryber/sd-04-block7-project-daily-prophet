@@ -108,8 +108,8 @@ header div:nth-child( 2 ) img {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
-  background-color: red;
   animation-play-state: paused;
+  background-color: red;
   font-size: 1rem;
   font-weight: 100;
 }
