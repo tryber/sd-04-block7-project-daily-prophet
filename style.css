@@ -43,7 +43,7 @@ body {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 5s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
 }
@@ -63,7 +63,7 @@ body {
   }
 
   100% {
-    transform: skew(40deg, 40deg);
+    transform: skew(40deg, -40deg);
   }
 }
 
