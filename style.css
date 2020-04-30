@@ -42,6 +42,7 @@ nav {
 }
 
 .nav-text {
+  animation: andar 3s linear infinite alternate;
   text-align: center;
 }
 
@@ -51,6 +52,17 @@ nav {
 
 .pointer {
   width: 10%;
+}
+
+@keyframes andar {
+
+  from {
+    transform: translate(20px, 5px);
+  }
+
+  to {
+    transform: translate(-20px, -5px);
+  }
 }
 
 @keyframes flying {
@@ -63,11 +75,13 @@ nav {
   33% {
     left: 10px;
     top: 350px;
+    transform: skew(30deg);
   }
 
   66% {
     right: 10px;
     top: 150px;
+    transform: skew(-30deg);
   }
 
   to {
