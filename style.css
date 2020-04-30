@@ -125,22 +125,16 @@ body {
 }
 
 @keyframes article-grow {
-
+  
   0% {
-    font-weight: 200;
+  font-weight: 200;
     transform  : scale(1, 1);
   }
 
-   50% {
-   font-weight: 400;
-   transform  : scale(1.5, 1.5);
- }
-
   100% {
     max-width  : 800px;
-    transform  : scale(2, 2.15);
+    transform  : scale(2, 2);
   }
-
 }
 
 .article-animation {
