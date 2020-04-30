@@ -29,13 +29,13 @@ body {
 }
 
 .fly {
-    animation-name: flying;
-    animation-delay: 3s;
-   animation-duration: 5s;
-   animation-direction: alternate;
-   animation-fill-mode: forwards;
-    width: 150px;
-    position: absolute;
+  animation-name: flying;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  width: 150px;
+  position: absolute;
 }
 
 .section-1 {
@@ -173,11 +173,13 @@ body {
 }
 
 @keyframes flying {
-    0% {
-        margin-left: 0;
-    }
-    100% {
-        margin-left: 90%;
-        transform: rotateY(180deg);
-    }
+
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 90%;
+    transform: rotateY(180deg);
+  }
 }
