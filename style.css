@@ -116,6 +116,7 @@ article {
 .article-animation {
   animation: article-grow 4s;
   animation-fill-mode: forwards;
+  animation-play-state: paused;
   font-weight: 100;
 }
 
