@@ -28,7 +28,7 @@ body {
 .head .title {
   color: white;
   font-family: Permanent Marker, cursive;
-  font-size: 250%;
+  font-size: 2.5rem;
   margin-bottom: 1px;
   margin-top: 5px;
   padding: 1px;
@@ -85,6 +85,7 @@ body {
 
 .first-section {
   border: 1px solid black;
+  margin-bottom: 8px;
   padding: 5px;
   text-align: center;
 }
@@ -99,21 +100,57 @@ body {
 }
 
 .first-section .subtitle {
+  font-size: 1.2rem;
   margin-bottom: 1px;
   margin-top: 5px;
+  max-width: 700px;
   text-align: left;
 }
 
-.first-section .img-first-section {
+.container-first-section .img-first-section {
   margin: 5px auto;
   text-align: center;
   width: 90%;
+}
+
+@media screen and ( min-width: 500px ) {
+    
+  .head .title {
+    font-size: 3.3rem;
+  }   
 }
 
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
+  }
+
+}
+
+@media screen and ( min-width : 760px ) {
+
+  .head .title {
+    font-size: 4rem;
+  }
+
+  .first-section .subtitle {
+    font-size: 1.4rem;
+  }
+    
+  .container-first-section {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .img-first-section {
+    padding-right: 20px;
+  }
+
+  .container-first-section .subtitle {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding-right: 20px;
   }
 }
 
