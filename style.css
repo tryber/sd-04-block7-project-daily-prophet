@@ -14,14 +14,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 5em;
-}
-
-h4 {
-  font-size: 1.6em;
-}
-
 .container-nav {
   align-items: center;
   display: flex;
@@ -55,19 +47,25 @@ h4 {
   display: grid;
   grid-template-areas: 'titulo titulo' 'subt subt' 'imagem p2' 'imagem p3' 'p1 p4';
   grid-template-columns: 50% 50%;
+  padding-left: 3%;
 }
 
 .titulo {
+  font-size: 5em;
+  font-weight: 700;
   grid-area: titulo;
   width: 100%;
 }
 
 .sub-titulo {
+  font-size: 1.6em;
+  font-weight: 700;
   grid-area: subt;
 }
 
 .imagem-principal {
   grid-area: imagem;
+  width: 100%;
 }
 
 .p1 {
@@ -76,14 +74,17 @@ h4 {
 
 .p2 {
   grid-area: p2;
+  padding-left: 5%;
 }
 
 .p3 {
   grid-area: p3;
+  padding-left: 5%;
 }
 
 .p4 {
   grid-area: p4;
+  padding-left: 5%;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -155,4 +156,5 @@ h4 {
     padding: 20px;
     transform: scale(1.5);
   }
+
 }
