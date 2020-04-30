@@ -18,8 +18,8 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 284px;
 }
 
 @keyframes flying {
