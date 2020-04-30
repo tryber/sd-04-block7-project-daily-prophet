@@ -76,6 +76,7 @@ body {
 }
 
 .fly {
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: forwards;
