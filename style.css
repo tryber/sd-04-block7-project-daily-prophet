@@ -8,9 +8,11 @@ body {
 }
 
 h2 {
+  animation: disappear 5s infinite;
   font-family: Special Elite, cursive;
   font-size: 2em;
   text-align: center;
+  transition: transform 2s;
 }
 
 ol {
@@ -89,7 +91,16 @@ footer {
   float: left;
   margin-right: 1em;
   overflow: hidden;
+  transition: transform 2s;
   width: 10em;
+}
+
+.lupin {
+  border: 5px solid black;
+  border-radius: 10%;
+  float: right;
+  margin-left: 1em;
+  overflow: hidden;
 }
 
 .voldemort {
@@ -98,6 +109,27 @@ footer {
   float: right;
   margin-left: 1em;
   overflow: hidden;
+}
+
+.images {
+  animation: moving 8s infinite;
+  animation-delay: 5s;
+  transition: ease;
+}
+
+@keyframes moving {
+
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
 }
 
 .fly {
@@ -110,11 +142,11 @@ footer {
 @keyframes flying {
 
   from {
-    transform: translateY(0) translateX(-300%) rotate(30deg);
+    transform: translateY(0) translateX(-300%);
   }
 
   to {
-    transform: translateY(100%) translateX(480%) rotate(30deg);
+    transform: translateY(100%) translateX(600%);
   }
 }
 
@@ -163,6 +195,7 @@ footer {
 }
 
 .footer {
+  animation: disappear 12s infinite;
   transition: transform 1s;
 }
 
@@ -184,5 +217,24 @@ footer {
   to {
     font-weight: 800;
     transform: scale(1.5);
+  }
+}
+
+@keyframes disappear {
+
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0;
   }
 }
