@@ -16,16 +16,15 @@ body {
 
   0% {
     margin-left: -20%;
-    width: 20%;
   }
 
   25% {
-    transform: rotateZ(50deg);
+    transform: rotateZ(50deg) scale(2);
+    transition: ease-in-out;
   }
 
   50% {
-    transform: rotate(30deg);
-    width: 80%;
+    transform: rotate(30deg) scale(4);
   }
 
   75% {
