@@ -112,7 +112,7 @@ footer {
 }
 
 .article-animation {
-  animation: article-grow 4s linear 2 alternate;
+  animation: article-grow 4s linear 3 alternate paused;
 }
 
 @keyframes article-grow {
@@ -124,6 +124,6 @@ footer {
 
   to {
     font-weight: 500;
-    transform: scale(1.08);
+    transform: scale(1.5);
   }
 }
