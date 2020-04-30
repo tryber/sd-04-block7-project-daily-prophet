@@ -34,6 +34,7 @@ body {
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: flying;
+  animation-iteration-count: 3;
   position: absolute;
   width: 150px;
 }
