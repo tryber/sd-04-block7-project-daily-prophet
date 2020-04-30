@@ -7,24 +7,24 @@
   }
 
   100% {
-    left: 280px;
+    left: 80%;
     opacity: 1;
     transform: scale(0.9);
   }
 }
 
 .fly {
-  animation-delay: 1s;
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
   left: 10px;
-  opacity: 0.5;
+  opacity: 1;
   position: absolute;
   width: 70px;
-  z-index: -1;
+  z-index: 0;
 }
 
 body {
