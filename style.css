@@ -110,11 +110,18 @@ a {
 
 .container-layout {
   background-color: yellow;
-  transition: all 2s;
+  transition: background-color 2s steps(30);
 }
 
 .container-orientation {
-  transition: all 2s;
+  transition: background-color 2s steps(30);
+}
+
+.fly {
+  animation: flying 5s ease 0s 3 alternate forwards;
+  left: -10%;
+  position: absolute;
+  width: 10%;
 }
 
 @media screen and ( min-width : 760px ) {
@@ -187,5 +194,20 @@ a {
 
   .container-orientation {
     border: 1px solid red;
+  }
+}
+
+@keyframes flying {
+
+  20% {
+    transform: translate(50vw, 30vh);
+  }
+
+  60% {
+    transform: scale(2, 2) translate(40vw, 60vh);
+  }
+
+  100% {
+    transform: skew(10deg, 10deg);
   }
 }
