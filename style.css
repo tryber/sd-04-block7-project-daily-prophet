@@ -125,6 +125,7 @@ body {
 }
 
 @keyframes article-grow {
+  
   0% {
     font-weight: 200;
     transform  : scale(1, 1);
