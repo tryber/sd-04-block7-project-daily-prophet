@@ -1,7 +1,46 @@
-@media screen and ( max-width : 760px ) {
+*{
+  border: solid 1px greenyellow;
+}
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fly {
+  margin-left: -280px;
+  width: 350px;
+}
+
+@keyframes flying {
+  0%{
+    margin-left: -20%;
+    width: 20%;
+  }
+
+  25%{
+    transform: rotateZ(50deg);
+  }
+
+  50%{
+    transform: rotate(30deg);
+    width: 80%;
+  }
+
+  75%{
+    transform: rotate(-10deg);
+  }
+
+  100%{
+    transform: rotate(-30deg);
+    margin-left: 100%;
+  }
+}
+
+@media screen and ( max-width : 760px ) {
   .container-layout {
     background-color: yellow;
+    justify-content: center;
     width: 760px;
   }
 
@@ -11,15 +50,25 @@
 
   .titulo {
     display: flex;
-    justify-content: center;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
-
   .container-layout {
     background-color: red;
     width: 1170px;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and ( orientation:landscape ) {
+  .container-orientation {
+    display: flex;
+    border: 1px solid;
   }
 
   .titulo {
