@@ -1,64 +1,51 @@
-	body {
-		
+
+body {
 	background-color: rgb(237, 232, 220);
 	height: 768px;
 	width: 1366px;
-	}
+}
 
 
-	.container-layout {
-
+.container-layout {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	}
+}
 
-
-	.title {
-
+.title {
 	align-items: center;
 	display: flex;
 	font-size: 10px;
-	}
+}
 
-
-	.nav-bar {
-
+.nav-bar {
 	align-items: center;
 	display: flex;
 	height: 80px;
 	justify-content: space-around;
-	}
+}
 
-
-	article {
-
-	display: flex;
+article {
+  display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	}
+}
 
-
-	.col-1 {
-
+.col-1 {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	}
+}
 
-
-	.image-1 {
-
+.image-1 {
 	align-items: center;
 	display: flex;
 	width: 30%;
-	}
+}
 
-	
-	.fly {
-
+.fly {
 	animation-delay: 3s;
 	animation-direction: alternate;
 	animation-duration: 3s;
@@ -67,65 +54,66 @@
 	animation-name: flying;
 	transition-property: flying;
 	transition-timing-function: ease-in-out;
-	}
+}
 
-	@keyframes flying {
-
+@keyframes flying {
 	0% {
-	transform: translate(-10px, 10px);
+		transform: translate(-10px, 10px);
 	}
 
 	25% {
-	transform: translate(-100px, -100px);
+		transform: translate(-100px, -100px);
 	}
 
 	50% {
-	transform: translate(-150px, -150px);
+		transform: translate(-150px, -150px);
 	}
 
 	60% {
-	transform: translate(-200px, -300px);
+		transform: translate(-200px, -300px);
 	}
 
 	70% {
-	transform: translate(-400px, -400px);
+		transform: translate(-400px, -400px);
 	}
 
 	80% {
-	transform: translate(-500px, 600px);
+		transform: translate(-500px, 600px);
 	}
 
 	90% {
-	transform: translate(-700px, 700px);
+		transform: translate(-700px, 700px);
 	}
 
 	100% {
-	transform: translate(0, 0);
+		transform: translate(0, 0);
 	}
+}
 
+@media (max-width : 760px ) {
+
+  .container-layout {
+		background-color: yellow;
 	}
+}
 
+@media (min-width : 1170px ) {
 
-	@media (max-width : 760px) {
- 			.container-layout {
-					background-color: yellow;
-			}
+	.container-layout {
+		background-color: red;
 	}
+}
 
-	@media (min-width : 1170px) {
-			.container-layout {
-					background-color: red;
-			}
+@media all and (orientation : landscape ) {
+
+	.container-orientation {
+		border: 2px solid red;
 	}
+}
 
-	@media all and (orientation : landscape) {
-			.container-orientation {
-					border: 2px solid red;
-			}
+@media (min-width : 1200px ) {
+
+	.container-layout {
+		background-color: rgb(237, 232, 220);
 	}
-
-	@media (min-width : 1200px) {
-			.container-layout {
-					background-color: rgb(237, 232, 220);
-			}
 }
