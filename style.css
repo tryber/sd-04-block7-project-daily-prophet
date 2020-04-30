@@ -128,7 +128,7 @@
 @media ( orientation : landscape ) {
   
   .container-layout {
-    color: gray;
+    color: rgb(214, 200, 200);
   }
 
 }
