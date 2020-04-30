@@ -29,19 +29,28 @@ nav a {
 
 .article-animation {
   animation-duration: 4s;
+  animation-iteration-count: infinite;
   animation-name: article-grow;
+  animation-play-state: paused;
+  transition: font-size 4s;
+}
+
+.article-animation:active {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: running;
+  animation-timing-function: linear steps(1, start);
 }
 
 @keyframes article-grow {
 
-  0% {
-    width: 0;
-  }
-
   100% {
-    width: 50%;
+    font-size: 18pt;
+    transform: scale(1.5);
   }
 }
+
 
 @keyframes flying {
 
