@@ -105,3 +105,10 @@
   background-color: black;
   color: white;
 }
+
+@keyframes animations {
+
+  0% {
+    transform: translate(80px, -80px) scale(0.9) skew(60deg, 55deg);
+  }
+}
