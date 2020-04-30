@@ -79,6 +79,7 @@ body {
   animation-direction: alternate;
   animation-duration: 3s;
   animation-iteration-count: 3;
+  animation-fill-mode: forwards;
   animation-name: flying;
 }
 
