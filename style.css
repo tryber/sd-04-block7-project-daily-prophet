@@ -5,6 +5,7 @@ body {
 
 header img {
   border-bottom: 20px solid black;
+  height: 100%;
   max-width: 100%;
 }
 
@@ -14,10 +15,11 @@ nav a {
 }
 
 .fly {
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
-  animation: flying 4s linear 3s;
+  animation-name: flying;
 }
 
 .fly img {
