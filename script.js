@@ -1,5 +1,5 @@
 window.onload = () => {
   document.getElementById('image-fly').classList.add('fly');
   document.getElementsByClassName('title')[0].style.transform = 'scale(1.3)';
-  document.getElementById('link').style.transform = 'skewX(-15deg)';
+  document.getElementById('link').style.transform = 'skew(-15deg, 0deg)';
 };
