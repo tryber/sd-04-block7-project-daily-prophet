@@ -17,7 +17,7 @@ h2 {
 
 ol {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -76,6 +76,13 @@ footer {
 
 .dayliLogo {
   width: 100%;
+}
+
+.lineV {
+  border-left: 2px solid black;
+  border-right: 5px solid black;
+  height: 25em;
+  width: 1px;
 }
 
 .line {
