@@ -21,7 +21,7 @@ body {
 
 .logo-header {
   grid-column: 1;
-  grid-column-end: 5;
+  grid-column-end: 4;
   padding-top: 0.5em;
 }
 
@@ -43,6 +43,24 @@ hr {
   border-top: 0.188em solid #1c1915;
   height: 0.125em;
   margin: 0.5em auto;
+}
+
+footer {
+  border-radius: 1em;
+  border: 3px solid black;
+  grid-column: 1;
+  grid-column-end: 4;
+  margin-top: 5%;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer {
+  transition: transform 1s;
+}
+
+.footer:hover {
+  transform: skew(-15deg);
 }
 
 @media screen and ( max-width : 760px ) {
