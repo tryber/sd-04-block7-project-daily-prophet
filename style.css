@@ -62,15 +62,15 @@ body {
 .eternal-skewing {
   animation: skewing 5s linear infinite;
   font-size: 45px;
+  margin-left: 5%;
   width    : fit-content;
-    margin-left: 5%;
 }
 
 .container-layout {
   animation: skewing 2s linear infinite;
   font-size: 65px;
-  width    : fit-content;
   margin-left: 35%;
+  width    : fit-content;
 }
 
 .initial-scale {
@@ -120,8 +120,8 @@ body {
 }
 
 .translation {
-  background-color: #E0E0E0;
   animation: translating 1s linear infinite alternate;
+  background-color: seashell;
 }
 
 section {
