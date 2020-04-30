@@ -52,15 +52,6 @@ footer {
   text-align: center;
 }
 
-.rita {
-  text-align: center;
-  transition: transform 1s;
-}
-
-.rita:hover {
-  transform: skew(-25deg);
-}
-
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -94,10 +85,19 @@ footer {
 @keyframes flying {
 
   from {
-    transform: translateY(0) translateX(-300%) rotate(30deg);
+    transform: translateY(0) translateX(-200%) rotate(30deg);
   }
 
   to {
-    transform: translateY(100%) translateX(700%) rotate(1800deg);
+    transform: translateY(500%) translateX(500%) rotate(30deg);
   }
+}
+
+.rita {
+  text-align: center;
+  transition: transform 1s;
+}
+
+.rita:hover {
+  transform: skew(-25deg);
 }
