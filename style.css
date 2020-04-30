@@ -1,0 +1,268 @@
+body {
+  background-color: rgb(28, 25, 21);
+  color: rgb(28, 25, 21);
+  display: flex;
+  font-family: Kreon, serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 90%;
+}
+
+.Dnone-760 {
+  display: none;
+}
+
+.main {
+  background-color: rgb(255, 248, 238);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 10px;
+}
+
+header hr {
+  border-left: none;
+  height: 0.2em;
+}
+
+.top-hr {
+  border-bottom: 1px solid rgb(28, 25, 21);
+  border-top: 2px solid rgb(28, 25, 21);
+  margin-bottom: -3%;
+}
+
+.bot-hr {
+  border-bottom: 2px solid rgb(28, 25, 21);
+  border-top: 1px solid rgb(28, 25, 21);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-s3 {
+  margin: 5px 0;
+}
+
+.caption {
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.313em;
+  text-align: center;
+}
+
+section {
+  margin: 5px 0;
+}
+
+article {
+  border: 1px solid rgb(28, 25, 21);
+  padding: 5px 12px;
+}
+
+.title {
+  font-size: 2.9em;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.highlight {
+  background-color: rgb(28, 25, 21);
+  color: rgb(255, 248, 238);
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  width: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(28, 25, 21);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(255, 248, 238);
+  font-size: 1.3em;
+  margin: 10px 0 0;
+}
+
+a {
+  color: rgb(255, 248, 238);
+}
+
+.container-layout {
+  background-color: yellow;
+  transition: background-color 2s steps(30);
+}
+
+.container-orientation {
+  transition: background-color 2s steps(30);
+}
+
+.fly {
+  animation: flying 5s ease 3s 3 alternate forwards;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform-origin: 50% 50%;
+  width: 10%;
+  z-index: 10;
+}
+
+.article-animation {
+  animation: article-grow 4s linear backwards paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+}
+
+@media screen and ( min-width : 760px ) {
+
+  .Dnone-760 {
+    display: initial;
+  }
+
+  .top-hr {
+    margin-bottom: -1.3em;
+  }
+
+  header img:nth-child( 1 ) {
+    width: 15%;
+  }
+
+  header img:nth-child( 2 ) {
+    width: 75%;
+  }
+
+  .left-vertical {
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+  }
+
+  .highlight {
+    align-self: flex-end;
+    width: 70%;
+  }
+
+  .subtitle {
+    font-size: 2.5em;
+  }
+
+  .col-s2 , .col-s3 , .col-s11 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-s2 {
+    width: 45%;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  .col-s3 {
+    width: 30%;
+  }
+
+  .col-s11 {
+    width: 91%;
+  }
+
+  section {
+    margin: 10px 0;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(-373px, -55px) scaleX(1) scaleY(1) skewX(0deg);
+  }
+
+  9% {
+    transform: translate(-257px, -91px) scaleX(1.2) scaleY(1.2) skewX(1deg);
+  }
+
+  20% {
+    transform: translate(-192px, -49px) scaleX(1.43) scaleY(1.43) skewX(3deg);
+  }
+
+  21% {
+    transform: translate(-184px, -52px) scaleX(1.46) scaleY(1.46) skewX(3deg);
+  }
+
+  32% {
+    transform: translate(-99px, -90px) scaleX(1.7) scaleY(1.7) skewX(4deg);
+  }
+
+  46% {
+    transform: translate(133px, -3px) scaleX(2) scaleY(2) skewX(6deg);
+  }
+
+  48% {
+    transform: translate(123px, -6px) scaleX(2.04) scaleY(2.04);
+  }
+
+  57% {
+    transform: translate(77px, -18px) scaleX(2.2) scaleY(2.2);
+  }
+
+  69% {
+    transform: translate(15px, -34px);
+  }
+
+  70% {
+    transform: translate(10px, -35px);
+  }
+
+  83% {
+    transform: translate(-21px, -14px);
+  }
+
+  100% {
+    transform: translate(-1423px, -138px) scaleX(2.2) scaleY(2.2) skewX(6deg);
+  }
+}
+
+@keyframes article-grow {
+
+  100% {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
+  }
+}
