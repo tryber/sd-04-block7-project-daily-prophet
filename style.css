@@ -19,6 +19,13 @@ body {
   margin-right: 10%;
 }
 
+.fly {
+  animation: flying 6s ease-in-out 3s 3 alternate backwards;
+  height: 180px;
+  scale: 0.3;
+  width: 180px;
+}
+
 .lado-direito {
   width: 70%;
 }
@@ -40,11 +47,30 @@ nav {
 }
 
 .header-image {
-  display: block;
+  object-fit: contain;
 }
 
 .pointer {
   width: 10%;
+}
+
+@keyframes flying {
+  from {
+    right: 10px;
+    bottom: 30px;
+  }
+  33% {
+    left: 10px;
+    top: 350px;
+  }
+  66% {
+    right: 10px;
+    top: 150px;
+  }
+  to {
+    left: 10px;
+    top: 10px;
+  }
 }
 
 @media screen and ( max-width : 760px ) {
