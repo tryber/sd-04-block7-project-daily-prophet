@@ -109,6 +109,6 @@
 @keyframes animations {
 
   0% {
-    transform: translate(80px, -80px) scale(0.9) skew(60deg, 55deg);
+    transform: translate(90px, -90px) scale(0.9) skew(60deg, 55deg);
   }
 }
