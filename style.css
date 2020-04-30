@@ -6,6 +6,10 @@
     transform: scale(1.5);
   }
 
+  50% {
+    transform: scale(1);
+  }
+
   100% {
     left: 80%;
     opacity: 1;
