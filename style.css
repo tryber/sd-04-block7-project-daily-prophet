@@ -21,13 +21,6 @@ body {
   width: 100%;
 }
 
-.exclusive {
-  background-color: black;
-  color: bisque;
-  margin-left: 10px;
-  margin-right: 30px;
-  padding: 20px 10px;
-}
 
 .nav-articles {
   align-items: center;
@@ -87,29 +80,6 @@ body {
   padding-left: 5%;
 }
 
-@media screen and ( max-width : 760px ) {
-
-  .container-layout {
-    background-color: yellow;
-  }
-
-}
-
-@media screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color: red;
-  }
-
-}
-
-@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
-
-  .container-orientation {
-    border: 1px solid red;
-  }
-
-}
 
 .fly {
   animation: flying 5s 3s linear 3 alternate forwards;
@@ -140,9 +110,31 @@ body {
 
 }
 
+.exclusive {
+  animation: moving 6s linear 1 alternate forwards;
+  background-color: black;
+  color: bisque;
+  margin-left: 10px;
+  margin-right: 30px;
+  padding: 20px 10px;
+}
+
+@keyframes moving {
+
+  from {
+    transform: skew(0);
+  }
+
+  to {
+    transform: skew(-40deg);
+  }
+
+}
+
 .article-animation {
   animation: article-grow 4s linear alternate 2 paused;
 }
+
 
 @keyframes article-grow {
 
@@ -155,6 +147,30 @@ body {
     font-weight: 800;
     padding: 20px;
     transform: scale(1.5);
+  }
+
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 
 }
