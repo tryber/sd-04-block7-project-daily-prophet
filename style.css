@@ -132,5 +132,5 @@ h1:hover {
   animation-iteration-count: 2;
   animation-name: article-grow;
   animation-play-state: paused;
-  animation-timing-function:linear;
+  animation-timing-function: linear;
 }
