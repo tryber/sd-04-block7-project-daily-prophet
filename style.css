@@ -83,7 +83,7 @@ img {
   animation-direction: alternate;
   animation-duration: 50s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
   animation-name: flying;
   position: absolute;
 }
@@ -147,9 +147,7 @@ a {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
-  animation-play-state: paused;
+  animation: article-grow 4s steps(4, jump-none) paused;
 }
 
 @keyframes article-grow {
