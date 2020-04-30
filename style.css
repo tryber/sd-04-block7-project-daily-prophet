@@ -52,12 +52,13 @@ footer {
   text-align: center;
 }
 
-.footer {
+.rita {
+  text-align: center;
   transition: transform 1s;
 }
 
-.footer:hover {
-  transform: skew(-15deg);
+.rita:hover {
+  transform: skew(-25deg);
 }
 
 @media screen and ( max-width : 760px ) {
