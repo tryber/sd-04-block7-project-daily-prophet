@@ -4,6 +4,21 @@ body {
   padding: 0;
 }
 
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+p {
+  font-size: x-large;
+}
+
 .content-general {
   background-color: blanchedalmond;
   border: 1px solid black;
@@ -77,12 +92,6 @@ body {
   width: 100%;
 }
 
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .content {
   border: 1px solid black;
   box-sizing: border-box;
@@ -118,15 +127,6 @@ a {
   border-top: 10px solid black;
   box-sizing: border-box;
   padding: 10px;
-}
-
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-}
-
-p {
-  font-size: x-large;
 }
 
 .section2 h1 {
