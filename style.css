@@ -21,13 +21,47 @@ header div:nth-child( 2 ) img {
   width: auto;
 }
 
-h1 {
+.caption-title {
   font-size: 0.6rem;
   text-align: center;
 }
 
 .container-layout {
   background-color: yellow;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-container aside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.picture-sun-container {
+  margin: 15px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  background-color: red;
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes flying {
+
+  0% { margin-left: 0;}
+
+  100% { margin-left: 90%;}
 }
 
 @media screen and ( min-width : 1170px ) {
