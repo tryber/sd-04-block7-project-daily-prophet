@@ -104,37 +104,14 @@ header div:nth-child( 2 ) img {
   100% { margin-left: 90%;}
 }
 
-/* .article-animation:not(:active) {
-  transition: background-color 1000ms step-end;
-} */
-
-.article-animation:active {
+.article-animation {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
-  font-size: 1rem;
-  font-weight: 100;
-
-}
-
-
-/* .article-animation {
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-name: article-grow;
-  background-color: red;
+  animation-play-state: paused;
   font-size: 1rem;
   font-weight: 100;
 }
-
-.article-animation:hover {
-  background-color: red;
-  animation-play-state: paused;
-} */
-
-/* p:not(.article-animation):hover {
-  animation-play-state: paused;
-} */
 
 @keyframes article-grow {
 
