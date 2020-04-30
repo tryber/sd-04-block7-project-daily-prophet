@@ -80,15 +80,6 @@ body {
   color: black;
 }
 
-.nav-link-container {
-  align-items: center;
-  background-color: black;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
-  width: 100%;
-}
-
 .nav-link-text {
   margin-bottom: 0;
 }
@@ -148,14 +139,8 @@ article hr {
 }
 
 .fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 1.66s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
+  animation: flying 1.66s steps(100, end) 3s 3 alternate forwards;
   animation-play-state: running;
-  animation-timing-function: steps(100, end);
 }
 
 @keyframes flying {
@@ -217,21 +202,21 @@ article hr {
   }
 }
 
-@media screen and ( max-width: 760px) {
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and ( min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
   }
 }
 
-@media ( orientation: landscape) {
+@media ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
