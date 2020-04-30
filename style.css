@@ -127,10 +127,10 @@ h1:hover {
 }
 
 .article-animation {
-  animation-timing-function:linear;
-  animation-iteration-count: 2;
   animation-direction: alternate;
-  animation-play-state: paused;
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function:linear;
 }
