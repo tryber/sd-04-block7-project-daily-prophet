@@ -1,4 +1,4 @@
-.article-animation:active {
+.article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
 }
@@ -123,6 +123,11 @@ h1 {
   .container-orientation {
     border: 1px solid red;
   }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 p {
