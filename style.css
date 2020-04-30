@@ -52,7 +52,24 @@ h2 {
 }
 
 .logo {
+  animation-duration: 4s;
+  animation-name: torcendo;
   object-fit: contain;
+}
+
+@keyframes torcendo {
+
+  from {
+    transform: skew(0deg);
+  }
+
+  50% {
+    transform: skew(180deg);
+  }
+
+  to {
+    transform: skew(360deg);
+  }
 }
 
 @media screen and ( max-width : 760px ) {
@@ -101,6 +118,60 @@ h2 {
   }
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 600;
+    transform: scale(1.1);
+  }
+
+  33% {
+    font-weight: 700;
+    transform: scale(1.2);
+  }
+
+  66% {
+    font-weight: 800;
+    transform: scale(1.4);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
+  }
+}
+
+.fotoProcurado {
+  animation-duration: 4s;
+  animation-name: crescendo;
+  height: 450px;
+  width: 400px;
+}
+
+@keyframes crescendo {
+
+  from {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(0.5);
+  }
+
+  66% {
+    transform: scale(2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 .fotoC {
   display: none;
   height: 40px;
@@ -114,4 +185,19 @@ h2 {
 .nav1:hover .fotoC {
   display: unset;
   object-fit: cover;
+}
+
+.titulo {
+  animation: movendo 2s linear infinite alternate;
+}
+
+@keyframes movendo {
+
+  from {
+    transform: translate(10px, 5px);
+  }
+
+  to {
+    transform: translate(-10px, -5px);
+  }
 }

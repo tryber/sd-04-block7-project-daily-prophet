@@ -29,12 +29,12 @@
           <div>
             <h2>Curiosidades</h2>
           </div>
-          <div>
+          <div class='article-animation'>
             <h3 id='curiosidade1'>Não é índio!</h3>
             <p>Apesar do nome remeter a um nativo americano Caciquinho nao é índio e não
               tem nenhuma descendencia indigena.</p>
           </div>
-          <div>
+          <div class='article-animation'>
             <h3 id='curiosidade2'>Vai Rolar!!!</h3>
             <p>Nesses tempos a incerteza é grande, e uma duvida assola os integrantes da
               <strong>turma 04</strong>! o tão esperado <em>HAPPY HOUR</em> vai rolar?
@@ -46,7 +46,12 @@
       </div>
       <div class='artigo'>
         <article>
-          <h2>PROCURADO!!</h2>
+          <div class='titulo'>
+            <h2>PROCURADO!!</h2>
+          </div>
+          <div>
+            <img class='fotoProcurado' src='/sd-04-block7-project-daily-prophet/img/pirata.png' alt="foto do procurado">
+          </div>
         </article>
       </div>
       <div class='lado-esquerdo'>
@@ -54,13 +59,13 @@
           <div>
             <h2>Questionamentos</h2>
           </div>
-          <div>
+          <div class='article-animation'>
             <h3 id='duvida1'>Bola do pelé!</h3>
             <p>Muita duvida surge quando tocamos nesse assunto, Cyrillo achou a bola do
               pelé? e se achou, ele escolheu o carrinho ou o armario de roupinhas de
               boneca?</p>
           </div>
-          <div>
+          <div class='article-animation1'>
             <h3 id='duvida2'>Será o Faraó um trouxa?</h3>
             <p>Na comunidade bruxa muitas pessoas estão desconfiadas da procedencia do
               ilustrissimo senhor Faraó.</p>
@@ -70,5 +75,11 @@
     </div>
   </section>
   <footer class='container-orientation'></footer>
+  <script>
+    let botao = document.querySelector('.article-animation1');
+    botao.addEventListener('click', function () {
+      botao.className = 'article-animation'
+    })
+  </script>
 </body>
 </html>
