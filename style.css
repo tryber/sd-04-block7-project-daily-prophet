@@ -34,10 +34,8 @@ p {
 }
 
 figure {
-  display: block;
   letter-spacing: 0.313em;
   margin: 0.375em 0.5em 0.5em;
-  position: relative;
   text-align: center;
   text-transform: uppercase;
 }
