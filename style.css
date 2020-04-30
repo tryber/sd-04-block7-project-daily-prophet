@@ -90,7 +90,8 @@ body {
   background-color: black;
   padding-bottom: 2px;
   padding-top: 10px;
-  transition: all 3s ease;
+  transform: skew(-5deg, 0deg);
+  transition: all 5s ease;
 }
 
 .link a {
@@ -98,6 +99,10 @@ body {
   font-family: Luckiest Guy, cursive;
   font-size: 1.4rem;
   text-decoration: none;
+}
+
+.link a:hover .link {
+  transform: translate(10px);
 }
 
 .headline {
