@@ -110,3 +110,4 @@ h1:hover {
   cursor: pointer;
   transform: skew(10deg, -3deg) scale(1.5);
   transition-duration: 5s;
+}
