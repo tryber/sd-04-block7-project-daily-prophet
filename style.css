@@ -1,3 +1,115 @@
+body {
+  background-color: black;
+  font-size: 16px;
+  margin: 1px;
+  padding: 20px 5px;
+}
+
+.main {
+  background-color: rgb(255, 248, 238);
+  border-radius: 20px;
+  margin: auto;
+  min-height: 500px;
+  padding: 5px 10px;
+  width: 95%;
+}
+
+.head {
+  border-bottom: 2px solid black;
+  border-top: 2px double black;
+  margin-top: 15px;
+}
+
+.line {
+  margin: 3px auto;
+  width: 90%;
+}
+
+.head .title {
+  color: white;
+  font-family: Permanent Marker, cursive;
+  font-size: 250%;
+  margin-bottom: 1px;
+  margin-top: 5px;
+  padding: 1px;
+  text-align: center;
+  text-shadow: 2px 3px 2px rgb(49, 49, 49);
+  -webkit-text-stroke: black 3px;
+}
+
+.head .subtitle {
+  font-size: 0.7rem;
+  font-weight: 900;
+  margin: 1px;
+  padding: 1px;
+  position: relative;
+  text-align: center;
+  top: -5px;
+}
+
+.headlines {
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.link {
+  background-color: black;
+  padding-bottom: 2px;
+  padding-top: 10px;
+}
+
+.link a {
+  color: white;
+  font-family: Luckiest Guy, cursive;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.headline {
+  margin-top: 10px;
+}
+
+.headline .title {
+  font-family: Luckiest Guy, cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1px;
+  margin-top: 5px;
+}
+
+.headline .text {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 1px;
+}
+
+.first-section {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.first-section .title {
+  background-color: rgb(230, 203, 169);
+  font-family: Aclonica, sans-serif;
+  margin-bottom: 1px;
+  margin-top: 5px;
+  padding: 5px 1px;
+  text-align: left;
+}
+
+.first-section .subtitle {
+  margin-bottom: 1px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.first-section .img-first-section {
+  margin: 5px auto;
+  text-align: center;
+  width: 90%;
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
