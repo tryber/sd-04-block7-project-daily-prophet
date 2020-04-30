@@ -1,3 +1,32 @@
+@keyframes flying {
+
+  0% {
+    left: 10px;
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+
+  100% {
+    left: 280px;
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
+
+.fly {
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  left: 10px;
+  opacity: 0.5;
+  position: absolute;
+  width: 70px;
+  z-index: -1;
+}
+
 body {
   background-color: black;
   font-size: 16px;
@@ -32,9 +61,11 @@ body {
   margin-bottom: 1px;
   margin-top: 5px;
   padding: 1px;
+  position: relative;
   text-align: center;
   text-shadow: 2px 3px 2px rgb(49, 49, 49);
   -webkit-text-stroke: black 3px;
+  z-index: 100;
 }
 
 .head .subtitle {
