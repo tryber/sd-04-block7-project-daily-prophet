@@ -86,7 +86,7 @@ footer {
 }
 
 .fly {
-  animation: flying 5s steps(200, jump-none) 3s 3 alternate forwards;
+  animation: flying 3s steps(200, jump-none) 3s 3 alternate forwards;
   transform: translateX(-300%);
 }
 
