@@ -210,7 +210,7 @@ a {
   }
 
   9% {
-    transform: translate(-257px, -91px) scaleX(1.20) scaleY(1.20) skewX(1deg);
+    transform: translate(-257px, -91px) scaleX(1.2) scaleY(1.2) skewX(1deg);
   }
 
   20% {
@@ -248,7 +248,7 @@ a {
   83% {
     transform: translate(-21px, -14px);
   }
-  
+
   100% {
     transform: translate(-1423px, -138px) scaleX(2.2) scaleY(2.2) skewX(6deg);
   }
