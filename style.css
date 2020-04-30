@@ -92,7 +92,7 @@ body {
   animation-timing-function: linear;
   position                 : absolute;
   transform                : rotateY(180deg);
-  width                    : 20vw;
+  width                    : 10vw;
 }
 
 @keyframes flying {
@@ -122,6 +122,29 @@ body {
 .translation {
   animation: translating 1s linear infinite alternate;
   background-color: seashell;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 200;
+    transform  : scale(1, 1);
+  }
+
+   50% {
+   font-weight: 400;
+   transform  : scale(1.5, 1.5);
+ }
+
+  100% {
+    max-width  : 800px;
+    transform  : scale(2, 2.15);
+  }
+
+}
+
+.article-animation {
+  animation: article-grow 4s forwards steps(50, end) paused;
 }
 
 section {
