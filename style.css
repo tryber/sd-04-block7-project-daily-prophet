@@ -41,6 +41,15 @@
   animation-name: flying;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 300%;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
 @keyframes skewing {
 
   0% {
@@ -75,6 +84,24 @@
 .title-scaling {
   animation-duration: 10s;
   animation-name: skewing;
+  background-color: black;
+  color: white;
+}
+
+@keyframes translating {
+
+  0% {
+    transform: translate(20px, 5px);
+  }
+
+  100% {
+    transform: translate(-20px, -5px);
+  }
+}
+
+.title-translation {
+  animation-duration: 10s;
+  animation-name: translating;
   background-color: black;
   color: white;
 }
