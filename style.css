@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+.article-animation:active {
+  animation: article-grow 4s linear;
+}
+
 .container-layout {
   border: 1px dashed black;
   height: 10px;
@@ -62,6 +66,34 @@ nav {
 
   to {
     transform: translate(-20px, -5px);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(0.8);
+  }
+
+  25% {
+    font-weight: 480;
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: 580;
+    transform: scale(1.15);
+  }
+
+  75% {
+    font-weight: 650;
+    transform: scale(1.35);
+  }
+
+  to {
+    font-weight: 700;
+    transform: scale(1.5);
   }
 }
 
