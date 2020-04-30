@@ -77,17 +77,14 @@ nav {
   }
 
   25% {
-    font-weight: 480;
     transform: scale(1);
   }
 
   50% {
-    font-weight: 580;
     transform: scale(1.15);
   }
 
   75% {
-    font-weight: 650;
     transform: scale(1.35);
   }
 
