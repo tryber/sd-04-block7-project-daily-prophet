@@ -127,7 +127,11 @@ a {
 }
 
 .article-animation {
-  animation: article-grow 4s backwards;
+  animation: article-grow 4s linear backwards paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
 }
 
 @media screen and ( min-width : 760px ) {
