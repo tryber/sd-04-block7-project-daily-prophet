@@ -9,7 +9,7 @@ body {
 .article-animation {
   animation: article-grow 4s linear;
   font-weight: 400;
-  transition: font-weight 4s linear;
+  transition: font-weight 4s;
 }
 
 .container-layout {
