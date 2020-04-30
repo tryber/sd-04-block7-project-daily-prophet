@@ -13,6 +13,35 @@ nav a {
   text-decoration: none;
 }
 
+.fly {
+  animation: flying 4s linear 3s;
+  animation-fill-mode: forwards;
+}
+
+.fly img {
+  width: 100px;
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: 92%;
+  }
+
+  75% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 92%;
+  }
+
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
