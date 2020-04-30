@@ -20,7 +20,7 @@ body {
 }
 
 .fly {
-  animation: flying 6s ease-in-out 3s 3 alternate backwards;
+  animation: flying 6s ease-in-out 3s 3 alternate forwards;
   height: 180px;
   width: 180px;
 }
