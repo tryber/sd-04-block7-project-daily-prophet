@@ -1,3 +1,21 @@
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 100;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
+}
+
 aside {
   align-items: center;
   display: flex;
@@ -30,12 +48,19 @@ body {
 }
 
 .content {
+  display: flex;
+  justify-content: center;
   width: 85%;
 }
 
 .content-aside {
   display: flex;
   justify-content: space-between;
+}
+
+.credits {
+  color: #3a3a3a;
+  text-align: center;
 }
 
 .fly {
@@ -56,11 +81,11 @@ h1 {
 @keyframes flying {
 
   0% {
-    margin-left: 0;
+    transform: translate(0);
   }
 
   100% {
-    margin-left: 85%;
+    transform: translate(1100px);
   }
 }
 
