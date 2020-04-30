@@ -60,17 +60,17 @@ body {
 }
 
 .eternal-skewing {
-  animation: skewing 5s linear infinite;
-  font-size: 45px;
+  animation  : skewing 5s linear infinite;
+  font-size  : 45px;
   margin-left: 5%;
-  width    : fit-content;
+  width      : fit-content;
 }
 
 .container-layout {
-  animation: skewing 2s linear infinite;
-  font-size: 65px;
+  animation  : skewing 2s linear infinite;
+  font-size  : 65px;
   margin-left: 35%;
-  width    : fit-content;
+  width      : fit-content;
 }
 
 .initial-scale {
@@ -120,20 +120,20 @@ body {
 }
 
 .translation {
-  animation: translating 1s linear infinite alternate;
+  animation       : translating 1s linear infinite alternate;
   background-color: seashell;
 }
 
 @keyframes article-grow {
-  
+
   0% {
     font-weight: 200;
-    transform: scale(1, 1);
+    transform  : scale(1, 1);
   }
-  
+
   100% {
-    max-width : 800px;
-    transform : scale(2, 2);
+    max-width: 800px;
+    transform: scale(2, 2);
   }
 
 }
