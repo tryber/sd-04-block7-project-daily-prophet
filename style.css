@@ -213,6 +213,11 @@ body {
   padding-bottom: 10px;
 }
 
+.dotted-line {
+  opacity: 0;
+  position: absolute;
+}
+
 .container-first-section .img-first-section {
   margin: 5px auto;
   max-width: 300px;
@@ -316,6 +321,10 @@ body {
     margin-left: 10px;
   }
 
+  .first-section-top {
+    display: flex;
+  }
+
   .container-first-section .subtitle {
     font-size: 1.3rem;
     margin-top: 10px;
@@ -340,6 +349,12 @@ body {
 
   .container-layout {
     background-color: red;
+  }
+
+  .dotted-line {
+    margin-top: 5px;
+    opacity: 1;
+    position: relative;
   }
 
   .img-fly {
