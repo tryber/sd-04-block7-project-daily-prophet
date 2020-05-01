@@ -13,10 +13,11 @@ a {
   color: black;
 }
 
-nav {
+.nav {
+  display: flex;
+  justify-content: space-around;
   margin: 10px 0;
-  font-size: 20px;
-  text-align: center;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -118,5 +119,8 @@ nav {
   }
   .title {
     font-size: 70px;
+  }
+  .nav {
+    font-size: 20px;
   }
 }
