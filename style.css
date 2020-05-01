@@ -19,7 +19,7 @@ body {
   }
 
   25% {
-    transform: rotateZ(20deg) scale(2) translateY(80px);
+    transform: rotateZ(20deg) scale(2);
     transition: ease-in-out;
   }
 
@@ -29,6 +29,10 @@ body {
 
   50% {
     transform: rotate(50deg) scale(4) skewY(-180deg);
+  }
+
+  60% {
+    transform: scale(3) translate(50px, 10%);
   }
 
   75% {
@@ -63,6 +67,7 @@ body {
 
   .container-layout {
     background-color: red;
+    border-radius: 20px;
     width: 1170px;
   }
 
@@ -94,17 +99,54 @@ body {
   }
 }
 
+body {
+  background-color : rgb(233, 229, 229);
+}
+
+.box-legend {
+  width: 400px;
+}
+
+.caixa-do-top {
+  height: 68px;
+  width: 700px;
+}
+
+.caixa1-do-top {
+  display: flex;
+  font-family: Londrina Solid, cursive;
+  font-size: 18px;
+  height: 50px;
+  width: 1100px;
+}
+
 .direita {
-  background-color: aquamarine;
-  border-style: solid;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  font-weight: 600;
   height: 414px;
+  line-height: 25px;
+  padding: 15px;
+  padding-top: 25px;
   width: 455px;
 }
 
+.direita img {
+  width: 400px;
+}
+
 .esquerda {
-  background-color: aquamarine;
-  border-style: solid;
+  background-color: white;
+  border-color: grey;
+  border-radius: 15px;
+  border-style: double;
   height: 414px;
+  line-height: 25px;
+  padding: 15px;
+  padding-top: 25px;
   width: 455px;
 }
 
@@ -145,11 +187,13 @@ body {
 }
 
 .top-bar {
-  border-style: solid;
-  border-width: 1px;
+  align-items: flex-start;
+  border-style: double;
+  border-width: 5px;
   display: flex;
-  height: 50px;
-  justify-content: flex-end;
-  margin-top: 20px;
-  padding-top: 50px;
+  flex-direction: column;
+  height: 135px;
+  margin-top: 5px;
+  padding-left: 10px;
+  position: relative;
 }
