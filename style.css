@@ -25,7 +25,7 @@
 }
 
 .fly {
-  animation: flying 3s linear 3s 3 alternate backwards;
+  animation: flying 3s linear 3s 3 alternate forwards;
   position: absolute;
   transform: scale(0.6);
 }
@@ -69,34 +69,19 @@
 
 .article-animation {
   animation: article-grow 4s steps(2, end) backwards;
+  cursor: pointer;
   height: 500px;
   width: 60%;
 }
-
-/* transition-duration: 1s;
-  transition-property: transform;
-outline: 0;
-
-.crossRotate:focus {
-transform: scale(1.5);
-} */
 
 @keyframes article-grow {
 
   from {
     transform: scale(1);
-
-    /* font-weight: 400;
-    height: 100%;
-    width: 100%; */
   }
 
   to {
     transform: scale(1.5);
-
-    /* font-weight: 700;
-    height: 150%;
-    width: 150%; */
   }
 }
 
