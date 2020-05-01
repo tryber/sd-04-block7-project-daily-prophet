@@ -101,10 +101,6 @@ h2 {
   }
 }
 
-/* .harry {
-  animation-name: voltando;
-} */
-
 .fly {
   animation: flying 7s linear 3s 3 alternate forwards;
   height: 80px;
@@ -116,14 +112,10 @@ h2 {
 
   from {
     margin-left: 10%;
-
-    /* transform: rotateY(360deg); */
   }
 
   to {
     margin-left: 80%;
-
-    /* transform: rotateY(180deg); */
   }
 }
 
