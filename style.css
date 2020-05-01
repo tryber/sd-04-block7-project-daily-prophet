@@ -18,8 +18,8 @@ body {
   animation-direction: alternate;
   animation-duration: 6s;
   animation-iteration-count: 3;
-  position: absolute;
   margin-left: -280px;
+  position: absolute;
   width: 500px;
 }
 
@@ -47,7 +47,7 @@ body {
   height: auto;
   width: 100%;
 }
-.primeiro-artigo{
+.primeiro-artigo {
   color: white;
   display: flex;
   font-size: 1.2rem;
@@ -77,10 +77,11 @@ h1 {
   width: 100%;
 }
 
-h2{
+h2 {
   color: black;
   text-align: center;
 }
+
 .lateral-principal {
   border: 1px solid black;
   color: white;
@@ -181,7 +182,8 @@ ul a {
     margin-left: 45%;
     transform: rotate(60deg);
   }
-} 
+
+}
 
 @media screen and ( max-width : 760px ) {
 
