@@ -70,38 +70,49 @@ footer {
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
+  transition: all 6s;
 }
 
 @keyframes flying {
 
   0% {
-    transform: translate(800px, -900px);
+    transform: scale(1, 1);
   }
 
   25% {
-    transform: skew(20deg, -20deg);
+    transform: translateY(-1400px);
   }
 
   50% {
-    transform: translate(500px, -600px);
+    transform: skew(10deg, -10deg);
+  }
+
+  75% {
+    transform: translateY(-600px);
   }
 
   100% {
-    transform: skew(40deg, -40deg);
+    transform: scale(1, 1);
   }
 }
 
-.article-animation:active {
+.article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
   cursor: pointer;
   font-size: 16px;
   font-weight: 200;
-  transition: width 4s, height 4s, font-size 4s, font-weight 4s;
+  transition: width 4s, height 4s, font-size 4s, font-weight 4s, transform 4s;
+}
+
+.article-animation:active {
+  font-size: 24px;
+  font-weight: 700;
+  transform: scale(1.5);
 }
 
 @keyframes article-grow {
