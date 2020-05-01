@@ -1,0 +1,195 @@
+body {
+  background-color: seashell;
+  padding: 10px 70px;
+  width: 80%;
+}
+
+header {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content div {
+  border: 1px solid black;
+}
+
+.artigo {
+  max-width: 46%;
+  text-align: center;
+}
+
+.lado-direito , .lado-esquerdo {
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 22%;
+  text-align: center;
+  z-index: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: flex-end;
+  max-width: 80%;
+}
+
+.navBar div {
+  padding: 5px 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.logo {
+  animation-duration: 4s;
+  animation-name: torcendo;
+  object-fit: contain;
+}
+
+@keyframes torcendo {
+
+  from {
+    transform: skew(0deg);
+  }
+
+  50% {
+    transform: skew(180deg);
+  }
+
+  to {
+    transform: skew(360deg);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.fly {
+  animation: flying 7s linear 3s 3 alternate forwards;
+  height: 80px;
+  margin-left: 10%;
+  width: 80px;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 10%;
+  }
+
+  to {
+    margin-left: 80%;
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s steps(4, end) infinite paused;
+}
+
+.article-animation:hover {
+  animation-play-state: running;
+}
+
+@keyframes article-grow {
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
+  }
+}
+
+.fotoProcurado {
+  animation-duration: 4s;
+  animation-name: crescendo;
+  height: 450px;
+  width: 400px;
+  z-index: 999;
+}
+
+@keyframes crescendo {
+
+  from {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(0.5);
+  }
+
+  66% {
+    transform: scale(1.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.fotoC {
+  display: none;
+  height: 40px;
+  width: 40px;
+}
+
+.nav1 {
+  transition: display 2s, object-fit 2s;
+}
+
+.nav1:hover .fotoC {
+  display: unset;
+  object-fit: cover;
+}
+
+.titulo {
+  animation: movendo 2s linear infinite alternate;
+  color: red;
+  font-size: 3rem;
+}
+
+@keyframes movendo {
+
+  from {
+    transform: translate(10px, 5px);
+  }
+
+  to {
+    transform: translate(-10px, -5px);
+  }
+}
