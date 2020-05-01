@@ -63,7 +63,7 @@
 }
 
 .article-animation {
-  animation: article-grow shake 4s;
+  animation: article-grow 4s;
   cursor: pointer;
   height: 500px;
   transition: 4s;
@@ -81,7 +81,7 @@
   }
 
   to {
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
 
