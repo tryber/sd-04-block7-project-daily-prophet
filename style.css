@@ -19,7 +19,7 @@ body {
   }
 
   25% {
-    transform: rotateZ(20deg) scale(2);
+    transform: rotateZ(20deg) scale(2) translateY(80px);
     transition: ease-in-out;
   }
 
@@ -28,17 +28,18 @@ body {
   }
 
   50% {
-    transform: rotate(50deg) scale(4) skewX(30px);
+    transform: rotate(50deg) scale(4) skewY(-180deg);
   }
 
   75% {
-    transform: rotate(-50deg) scale(2);
+    transform: rotate(-50deg) scale(2) translateY(-100px);
   }
 
   100% {
     margin-left: 100%;
     transform: rotate(-20deg);
   }
+
 }
 
 @media screen and ( max-width : 760px ) {
@@ -113,6 +114,7 @@ body {
 }
 
 .menu {
+  border-bottom: 5px double black;
   display: flex;
   font-family: Rubik Mono One, sans-serif;
   justify-content: space-around;
@@ -122,4 +124,32 @@ body {
 .menu li:hover {
   color: brown;
   cursor: pointer;
+}
+
+.pag-guide {
+  align-self: flex-end;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-weight: 600;
+  height: 17px;
+  justify-content: flex-end;
+  width: 439px;
+}
+
+.title-div {
+  border-top: 10px double black;
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+}
+
+.top-bar {
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 50px;
 }
