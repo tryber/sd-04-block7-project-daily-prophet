@@ -6,5 +6,5 @@ coruja.style.animationDirection = 'alternate';
 
 const artigo = document.querySelector('.article-animation');
 artigo.addEventListener('click', () => {
-  artigo.style.animation = 'article-grow 4000ms ease-in';
+  artigo.style.animation = 'article-grow 4000ms linear';
 });

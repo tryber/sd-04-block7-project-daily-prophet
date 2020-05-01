@@ -18,8 +18,17 @@ body {
 
 @keyframes article-grow {
 
+  from {
+    font-weight: 400;
+    width: 100%;
+  }
+
+  50% {
+    color: black;
+  }
+
   to {
-    font-weight: 900;
+    font-weight: 700;
     max-height: 500px;
     transform: scale(1.5);
   }
