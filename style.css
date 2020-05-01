@@ -1,9 +1,8 @@
 @keyframes flying {
 
   0% {
-    left: 10px;
+    left: 30px;
     opacity: 0.5;
-    transform: scale(1.5);
   }
 
   50% {
@@ -13,7 +12,6 @@
   100% {
     left: 80%;
     opacity: 1;
-    transform: scale(0.9);
   }
 }
 
@@ -66,7 +64,7 @@ body {
 .head .title {
   color: white;
   font-family: Permanent Marker, cursive;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: 1px;
   margin-top: 5px;
   padding: 1px;
@@ -74,7 +72,7 @@ body {
   text-align: center;
   text-shadow: 2px 3px 2px rgb(49, 49, 49);
   -webkit-text-stroke: black 3px;
-  transition: all 2s ease;
+  transition: all 3s ease;
   z-index: 100;
 }
 
@@ -157,8 +155,8 @@ body {
 
 .container-first-section .img-first-section {
   margin: 5px auto;
+  max-width: 300px;
   text-align: center;
-  width: 90%;
 }
 
 .box {
@@ -194,21 +192,20 @@ body {
 
   .first-section .subtitle {
     font-size: 1.4rem;
+    min-width: 100px;
   }
 
   .container-first-section {
     display: flex;
+    justify-content: space-between;
     margin-left: 10px;
-  }
-
-  .img-first-section {
-    padding-right: 20px;
   }
 
   .container-first-section .subtitle {
     font-size: 1.2rem;
     margin-top: 10px;
-    padding-right: 20px;
+    max-width: 400px;
+    padding-left: 30px;
   }
 
   .main-box {
@@ -217,12 +214,22 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .img-fly {
+    top: 50px;
+    transform: scale(1.5);
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
+  }
+
+  .img-fly {
+    top: 70px;
+    transform: scale(2);
   }
 }
 
