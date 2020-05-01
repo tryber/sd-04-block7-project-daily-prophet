@@ -25,7 +25,7 @@
 .fly {
   animation: flying 3s linear 3s 3 alternate backwards;
   position: absolute;
-  transform: skew(5deg) scale(0.1) translate(-160px);
+  transform: skew(-5deg) scale(0.6) translate(-110px);
 }
 
 @keyframes flying {
@@ -35,12 +35,14 @@
   }
 
   to {
-    margin-left: 50%;
+    margin-left: 80%;
   }
 }
 
 .daily-container {
+  background-image: url('img/newspaper.jpg');
   display: flex;
+  font-size: 1.5em;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -59,9 +61,35 @@
   }
 }
 
-.lorem-section {
+.article-animation {
+  animation: article-grow 2s steps(2, end) backwards;
   height: 500px;
   width: 60%;
+}
+
+/* transition-duration: 1s;
+  transition-property: transform;
+outline: 0;
+
+.crossRotate:focus {
+transform: scale(1.5);
+} */
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  to {
+    font-weight: 700;
+    height: 150%;
+    width: 150%;
+
+  }
 }
 
 .lorem-aside {
