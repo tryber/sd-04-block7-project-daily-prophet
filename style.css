@@ -7,9 +7,22 @@ body {
   padding: 0px;
 } */
 
+.article-animation p {
+  cursor: pointer;
+}
+
 .fly {
   margin-left: -280px;
   width: 350px;
+}
+
+@keyframes zoom {
+
+  to {
+    font-size: 40px;
+    font-weight: 900;
+    max-height: 500px;
+  }
 }
 
 @keyframes flying {
@@ -101,6 +114,8 @@ body {
 
 body {
   background-color : rgb(233, 229, 229);
+  border: dashed 12px black;
+  border-radius: 25px;
 }
 
 .box-legend {
@@ -164,7 +179,7 @@ body {
 }
 
 .menu li:hover {
-  color: brown;
+  color: gold;
   cursor: pointer;
 }
 
