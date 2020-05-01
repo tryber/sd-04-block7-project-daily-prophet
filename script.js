@@ -1,10 +1,7 @@
 const article = document.getElementById('lorem-article');
 
 function animaElem() {
-  article.className = 'article-animation';
+  article.style.animation = 'article-grow 4s';
 }
 
 article.addEventListener('click', animaElem);
-
-// const article = document.getElementById('lorem-article');
-// article.addEventListener('click', () => article.className = 'article-animation');
