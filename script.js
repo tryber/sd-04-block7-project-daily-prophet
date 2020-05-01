@@ -1,6 +1,6 @@
-const lua = document.querySelector('.fly');
+const lua = document.querySelector('.fly'); // Manipula div com imagem da lua.
 
-function animaLua() {
+function animaLua() { // Adiciona propriedades de animação na lua.
   lua.style.animationName = 'flying';
   lua.style.animationDuration = '15s';
   lua.style.animationDelay = '3s';

@@ -1,6 +1,8 @@
 @charset 'utf-8' ;
 
 html , body {
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
   margin: 0;
 }
 
@@ -23,9 +25,13 @@ html , body {
   background: linear-gradient(rgba(100, 100, 100, 0.95), rgba(50, 50, 50, 1));
   border-bottom: 8px double black;
   border-top: 5px solid black;
-  color: beige;
+  color: floralwhite;
   padding-top: 10px;
   text-align: center;
+  width: 100%;
+}
+
+.cabecalho figure {
   width: 100%;
 }
 
@@ -33,12 +39,24 @@ html , body {
   width: 60%;
 }
 
+.cabecalho figure figcaption {
+  font-size: 16pt;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
 .artigo {
-  background: rgba(15, 15, 15, 0.92);
+  align-items: center;
+  background: rgba(12, 10, 10, 0.92);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 60px;
+}
+
+.aticle-title {
+  color: aliceblue;
+  font-size: 28pt;
 }
 
 main {
@@ -49,9 +67,12 @@ main {
 }
 
 .main-article {
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(50, 50, 190, 0.6));
   box-shadow: 2px 2px 5px black;
   color: white;
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   width: 25%;
 }
@@ -59,6 +80,7 @@ main {
 .main-article:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(80, 80, 250, 0.9));
   box-shadow: 5px 5px 8px white;
+  transition: background-image 0.5s, box-shadow 0.5s;
 }
 
 .main-article h1 {
@@ -81,8 +103,10 @@ main {
 }
 
 .lateral {
+  border-bottom: 1px solid white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 .article-animation {
@@ -101,13 +125,21 @@ main {
   animation-timing-function: linear steps(1, start);
 }
 
-img {
-  transition: border 1s;
-  width: 200px;
+.interest-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(50, 130, 50, 0.6));
+  box-shadow: 2px 2px 5px black;
+  width: 45%;
 }
 
-img:hover {
-  border: 1px solid white;
+.interest-sec:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(80, 250, 80, 0.9));
+  box-shadow: 5px 5px 8px white;
+  transition: background-image 1.5s, box-shadow 0.5s;
+}
+
+img {
+  transition: border 1s;
+  width: 50%;
 }
 
 .fly {
@@ -121,6 +153,17 @@ img:hover {
   position: absolute;
   top: 10px;
   width: 80px;
+}
+
+.witch-flying {
+  animation: witch-fly 1.5s linear infinite alternate;
+  position: absolute;
+}
+
+@keyframes witch-fly {
+  100% {
+    margin-top: 150px;
+  }
 }
 
 @keyframes flying {
@@ -169,7 +212,6 @@ img:hover {
 
   .container-layout {
     background-color: yellow;
-    max-width: 760px;
   }
 }
 
