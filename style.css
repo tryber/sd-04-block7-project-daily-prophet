@@ -181,8 +181,7 @@ ul a {
 
   100% {
     margin-left: 45%;
-    transform: skew(20deg,30deg);
-    transform: rotate(60deg);
+    transform: skew(20deg, 30deg) rotate(60deg);
   }
 
 }
