@@ -17,9 +17,10 @@
   .fly {
     animation: flying;
     animation-delay: 3s;
-    animation-duration: 6s;
+    animation-duration: 2s;
     animation-iteration-count: 3;
     position: absolute;
+    margin-left: -280px;
     width: 500px;
   }
 
@@ -126,7 +127,7 @@
 
 }
 
-@keyframes flying {
+/* @keyframes flying {
 
   0% {
     margin-left: -30%;
@@ -139,7 +140,32 @@
   100% {
     margin-left: 0;
   }
-}
+} */
+
+@keyframes flying {
+
+  0% {
+    margin-left: -20%;
+  }
+
+  25% {
+    transform: rotateZ(50deg) scale(2);
+    transition: ease-in-out;
+  }
+
+  50% {
+    transform: rotate(30deg) scale(4);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    margin-left: 100%;
+    transform: rotate(-30deg);
+  }
+} 
 
 @media ( max-width : 760px ) {
 
