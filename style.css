@@ -13,7 +13,7 @@ body {
   display: flex;
   height: 4rem;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .logo {
@@ -137,8 +137,15 @@ h1 {
   font-weight: 700;
 }
 
-h2 , h3 {
+h2 {
   font-family: Kaushan Script, cursive;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: Kaushan Script, cursive;
+  font-weight: 700;
 }
 
 .article-title {
@@ -175,4 +182,44 @@ hr {
   height: 4rem;
   justify-content: center;
   margin-top: 3rem;
+}
+
+@media ( orientation : landscape ) {
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .nav-links {
+    background-color: initial;
+    bottom: initial;
+    display: flex;
+    flex-direction: initial;
+    font-size: 1rem;
+    font-weight: 700;
+    height: initial;
+    margin: initial;
+    padding: initial;
+    position: initial;
+    width: initial;
+  }
+
+  .nav-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.2rem;
+    padding: initial;
+    position: initial;
+    transition: 0.3s;
+    width: initial;
+  }
+
+  .nav-item a {
+    padding: 0.5rem;
+  }
 }
