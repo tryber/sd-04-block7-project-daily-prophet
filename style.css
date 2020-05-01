@@ -1,7 +1,7 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0 auto;
-}
+} */
 
 body {
   background-image: url('/img/fundo-madeira.jpg');
@@ -47,6 +47,7 @@ body {
   height: auto;
   width: 100%;
 }
+
 .primeiro-artigo {
   color: white;
   display: flex;
