@@ -15,6 +15,18 @@
   }
 }
 
+@keyframes article-grow {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    font-weight: 900;
+    transform: scale(1.5);
+  }
+}
+
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -167,6 +179,10 @@ body {
   border: 15px solid white;
   box-shadow: 1px 1px 3px black;
   max-width: 400px;
+}
+
+.article-animation {
+  animation: article-grow 4s ease 0s 2 alternate forwards;
 }
 
 @media screen and ( min-width : 500px ) {
