@@ -142,7 +142,7 @@ body {
 
 .headline .title {
   font-family: Luckiest Guy, cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1px;
   margin-top: 5px;
 }
@@ -267,6 +267,15 @@ body {
   .headline {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .headline .title {
+    background-color: black;
+    color: white;
+    height: 80px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
   }
 }
 
