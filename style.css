@@ -77,10 +77,53 @@ body {
   }
 }
 
+.container-subtitle {
+  animation-delay: 7s;
+  animation-duration: 3s;
+  animation-name: scaling;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes scaling {
+
+  from {
+    transform: scale(0.5, 2);
+  }
+
+  50% {
+    transform: scale(1.5, 0.5);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.container-all {
+  border: 1px solid black;
+}
+
+.container-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 150%;
+  padding: 1%;
+  text-align: justify;
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
+  }
+
+  .title {
+    font-size: 1.2em;
   }
 }
 
