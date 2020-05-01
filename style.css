@@ -21,7 +21,6 @@ body {
   animation-iteration-count: 3;
   margin-left: -280px;
   position: absolute;
-  transform: translate(-400px);
   width: 500px;
 }
 
@@ -147,20 +146,6 @@ ul a {
 
 }
 
-/* @keyframes flying {
-
-  0% {
-    margin-left: -30%;
-  }
-
-  50% {
-    margin-right: 100%;
-  }
-
-  100% {
-    margin-left: 0;
-  }
-} */
 
 @keyframes flying {
 
@@ -169,8 +154,9 @@ ul a {
   }
 
   25% {
-    transform: rotateZ(50deg) scale(2);
+    transform: rotateZ(50deg) scale(2) translate(-400px);
     transition: ease-in-out;
+
   }
 
   50% {
