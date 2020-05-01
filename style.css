@@ -8,27 +8,81 @@ html , body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 10px auto;
-  width: 80%;
+}
+
+.pseudo-container {
+  align-items: center;
+  background: url('https://cdn.pixabay.com/photo/2014/09/04/07/59/document-435349_960_720.jpg') repeat-y;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .cabecalho {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  background: linear-gradient(rgba(100, 100, 100, 0.95), rgba(50, 50, 50, 1));
+  border-bottom: 8px double black;
+  border-top: 5px solid black;
+  color: beige;
+  padding-top: 10px;
   text-align: center;
   width: 100%;
 }
 
+.cabecalho .titulo {
+  width: 60%;
+}
+
 .artigo {
+  background: rgba(15, 15, 15, 0.92);
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
+  padding: 60px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .main-article {
-  background-color: rgb(71, 68, 68);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(50, 50, 190, 0.6));
+  box-shadow: 2px 2px 5px black;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  width: 25%;
+}
+
+.main-article:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(80, 80, 250, 0.9));
+  box-shadow: 5px 5px 8px white;
+}
+
+.main-article h1 {
+  font-size: 14pt;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.main-article p {
+  font-size: 12pt;
+  line-height: 22px;
+  padding-top: 13px;
+  text-align: justify;
+  text-indent: 25px;
+  word-spacing: 6px;
+}
+
+.video-sec iframe {
+  width: 90%;
+}
+
+.lateral {
+  display: flex;
+  justify-content: space-around;
 }
 
 .article-animation {
@@ -115,6 +169,7 @@ img:hover {
 
   .container-layout {
     background-color: yellow;
+    max-width: 760px;
   }
 }
 
