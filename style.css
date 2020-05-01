@@ -98,9 +98,18 @@ body {
   top: -5px;
 }
 
+.podcast {
+  border: 5px solid white;
+  box-shadow: 1px 1px 3px black;
+  margin: 5px auto;
+  opacity: 1;
+  width: 200px;
+}
+
 .headlines {
   margin-top: 5px;
   padding: 5px;
+  position: relative;
   width: 100%;
 }
 
@@ -124,7 +133,11 @@ body {
 }
 
 .headline {
-  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .headline .title {
@@ -138,6 +151,8 @@ body {
   font-size: 1.2rem;
   font-style: italic;
   margin: 1px;
+  max-width: 1000px;
+  padding: 5px;
 }
 
 .section {
@@ -201,7 +216,7 @@ body {
 
 }
 
-@media screen and ( min-width : 760px ) {
+@media screen and ( min-width : 870px ) {
 
   .head .title {
     font-size: 4rem;
@@ -247,6 +262,11 @@ body {
   .img-fly {
     top: 70px;
     transform: scale(2);
+  }
+
+  .headline {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
