@@ -136,6 +136,21 @@ body {
   text-align: justify;
 }
 
+.img-jornalista {
+  transition: width 2s;
+  width: 150px;
+}
+
+.img-jornalista:hover {
+  width: 250px;
+}
+
+.container-text {
+  line-height: 150%;
+  padding: 1%;
+  text-align: justify;
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
