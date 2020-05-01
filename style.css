@@ -77,6 +77,26 @@ body {
   }
 }
 
+.container-layout {
+  animation: translating 1s infinite alternate 10s;
+  border-radius: 15px;
+  font-style: italic;
+  line-height: 150%;
+  padding: 1%;
+  text-align: justify;
+}
+
+@keyframes translating {
+
+  from {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
+}
+
 .container-subtitle {
   animation-delay: 7s;
   animation-duration: 3s;
@@ -120,6 +140,7 @@ body {
 
   .container-layout {
     background-color: yellow;
+    color: black;
   }
 
   .title {
@@ -131,6 +152,7 @@ body {
 
   .container-layout {
     background-color: red;
+    color: white;
   }
 }
 
