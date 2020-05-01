@@ -1,9 +1,3 @@
-/* * {
-  border: 1px solid black;
-  margin: 0;
-  padding: 0;
-} */
-
 .container-layout {
   display: flex;
   justify-content: space-around;
@@ -69,11 +63,15 @@
 }
 
 .article-animation {
-  animation: shake 0.82s;
+  animation: article-grow shake 4s;
   cursor: pointer;
   height: 500px;
   transition: 4s;
   width: 60%;
+}
+
+.article-animation p {
+  animation: shake 0.82s;
 }
 
 @keyframes article-grow {
