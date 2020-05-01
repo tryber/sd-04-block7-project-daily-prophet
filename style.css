@@ -280,8 +280,8 @@ body {
 .rights {
   color: grey;
   margin-bottom: 2px;
-  text-align: center;
   padding-bottom: 2px;
+  text-align: center;
 }
 
 @media screen and ( min-width : 500px ) {
