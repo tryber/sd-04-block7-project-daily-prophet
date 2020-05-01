@@ -16,11 +16,11 @@ body {
   width: 350px;
 }
 
-@keyframes zoom {
+@keyframes article-grow {
 
   to {
-    font-size: 40px;
-    font-weight: 900;
+    transform: scale(1.50);
+    font-weight: 1000;
     max-height: 500px;
   }
 }
