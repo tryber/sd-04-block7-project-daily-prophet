@@ -72,7 +72,7 @@ body {
   background-color: black;
   font-size: 16px;
   margin: 1px;
-  padding: 10px 5px;
+  padding: 5px;
 }
 
 .main {
@@ -249,9 +249,39 @@ body {
   max-width: 400px;
 }
 
+.second-section .img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .article-animation {
   animation: article-grow 4s ease 0s 2 alternate forwards;
   animation-play-state: paused;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 60%;
+}
+
+.footer .img-footer {
+  height: 48px;
+  opacity: 0.5;
+  width: 50px;
+}
+
+.footer .img-footer:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.rights {
+  color: grey;
+  margin-bottom: 2px;
+  text-align: center;
+  padding-bottom: 2px;
 }
 
 @media screen and ( min-width : 500px ) {
@@ -329,6 +359,10 @@ body {
     line-height: 30px;
     padding-left: 10px;
     padding-top: 20px;
+  }
+
+  .footer {
+    width: 50%;
   }
 }
 
