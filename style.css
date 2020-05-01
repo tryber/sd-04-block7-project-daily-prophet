@@ -119,9 +119,7 @@ h2 {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
-  animation-play-state: paused;
+  animation: article-grow 4s steps(4, end) infinite paused;
 }
 
 .article-animation:hover {
@@ -129,21 +127,6 @@ h2 {
 }
 
 @keyframes article-grow {
-
-  from {
-    font-weight: 100;
-    transform: scale(1);
-  }
-
-  33% {
-    font-weight: 300;
-    transform: scale(1.2);
-  }
-
-  66% {
-    font-weight: 600;
-    transform: scale(1.4);
-  }
 
   to {
     font-weight: 900;
