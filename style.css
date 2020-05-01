@@ -223,5 +223,6 @@ body {
 
   .container-orientation {
     border: 1px solid red;
+    transform: scale(0.8);
   }
 }
