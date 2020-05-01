@@ -19,9 +19,9 @@ body {
 @keyframes article-grow {
 
   to {
-    transform: scale(1.50);
-    font-weight: 1000;
+    font-weight: 900;
     max-height: 500px;
+    transform: scale(1.5);
   }
 }
 
