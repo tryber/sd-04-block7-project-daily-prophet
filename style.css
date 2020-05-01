@@ -1,6 +1,7 @@
 body {
   background-color: seashell;
   padding: 10px 70px;
+  width: 80%;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main-content div {
@@ -18,20 +19,27 @@ header {
 
 .artigo {
   max-width: 46%;
+  text-align: center;
 }
 
-.lado-direito {
+.lado-direito , .lado-esquerdo {
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 22%;
+  text-align: center;
+  z-index: 0;
 }
 
-.lado-esquerdo {
-  max-width: 22%;
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 .navBar {
   display: flex;
   font-size: 1.4rem;
   justify-content: flex-end;
+  max-width: 80%;
 }
 
 .navBar div {
@@ -93,28 +101,29 @@ h2 {
   }
 }
 
-.harry {
-  height: 80px;
-  width: 80px;
-}
+/* .harry {
+  animation-name: voltando;
+} */
 
 .fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
+  animation: flying 7s linear 3s 3 alternate forwards;
+  height: 80px;
+  margin-left: 10%;
+  width: 80px;
 }
 
 @keyframes flying {
 
   from {
-    margin-left: 10px;
+    margin-left: 10%;
+
+    /* transform: rotateY(360deg); */
   }
 
   to {
-    margin-left: 100%;
+    margin-left: 80%;
+
+    /* transform: rotateY(180deg); */
   }
 }
 
@@ -139,6 +148,7 @@ h2 {
   animation-name: crescendo;
   height: 450px;
   width: 400px;
+  z-index: 999;
 }
 
 @keyframes crescendo {
@@ -177,6 +187,8 @@ h2 {
 
 .titulo {
   animation: movendo 2s linear infinite alternate;
+  color: red;
+  font-size: 3rem;
 }
 
 @keyframes movendo {

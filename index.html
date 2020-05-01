@@ -7,11 +7,11 @@
   <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-  <header><img class='logo' src='/img/33381.jpg' alt='logo profeta diario'></header>
+  <header><img class='logo' src='/sd-04-block7-project-daily-prophet/img/profeta.png' alt='logo profeta diario'></header>
   <nav>
     <div class='navBar container-layout'>
       <div>
-        <a class='nav1' href='#curiosidade1'><img class='fotoC' src='/img/ciryllo.png' alt='foto do cirylo'>
+        <a class='nav1' href='#curiosidade1'><img class='fotoC' src='/sd-04-block7-project-daily-prophet/img/ciryllo.png' alt='foto do cirylo'>
           Aqui</a>
       </div>
       <div><a href='#curiosidade2'>Aqui</a></div>
@@ -21,7 +21,7 @@
   </nav>
   <section>
     <div>
-      <img class='fly harry' src='/img/pngwing.com.png' alt="harry voando">
+      <img id='potter' class='fly harry' src='/sd-04-block7-project-daily-prophet/img/pngwing.com.png' alt="harry voando">
     </div>
     <div class='main-content'>
       <div class='lado-direito'>
@@ -50,7 +50,7 @@
             <h2>PROCURADO!!</h2>
           </div>
           <div>
-            <img class='fotoProcurado' src='/img/pirata.png' alt="foto do procurado">
+            <img class='fotoProcurado' src='/sd-04-block7-project-daily-prophet/img/pirata.png' alt="foto do procurado">
           </div>
         </article>
       </div>
@@ -75,5 +75,11 @@
     </div>
   </section>
   <footer class='container-orientation'></footer>
+  <script>
+    let animacao = document.getElementsById('potter');
+    animacao.addEventListener('animationend', function () {
+      animacao.style.transform = 'rotateY(180deg)';
+    })
+  </script>
 </body>
 </html>
