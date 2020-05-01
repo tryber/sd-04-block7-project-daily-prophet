@@ -5,5 +5,5 @@ window.onload = () => {
 };
 
 document.querySelector('.container-first-section .subtitle').addEventListener('click', (e) => {
-  e.target.classList.add('article-animation');
+  e.target.style.animationPlayState = 'running';
 });

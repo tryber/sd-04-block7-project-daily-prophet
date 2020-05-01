@@ -183,6 +183,7 @@ body {
 
 .article-animation {
   animation: article-grow 4s ease 0s 2 alternate forwards;
+  animation-play-state: paused;
 }
 
 @media screen and ( min-width : 500px ) {
