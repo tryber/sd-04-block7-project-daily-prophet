@@ -2,42 +2,54 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(237, 232, 220);
+  font-family: 'Cinzel', serif;
 }
 
 .navbar {
   align-items: center;
-  background-color: red;
+  background-color: rgb(237, 232, 220);
   display: flex;
   justify-content: center;
   padding: 0.5rem;
-}
-
-a {
-  color: black;
-  padding: 0;
-  text-decoration: none;
+  height: 4rem;
+  box-sizing: border-box;
 }
 
 .logo {
-  width: 15rem;
+  width: 12rem;
+  align-items: center;
+  display: flex;
 }
 
 .nav-links {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0;
-  display: flex;
+  backdrop-filter: blur(5px);
+  background-color: rgba(237, 232, 220, 0.5);
+  display: none;
   flex-direction: column;
   font-size: 1.5rem;
   font-weight: 700;
-  height: calc(100vh - 65px);
+  bottom: 0;
+  height: calc(100vh - 4rem);
   justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
   position: absolute;
   width: 100%;
-  z-index: -1;
+}
+
+.nav-links a {
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links-active {
+  display: flex;
 }
 
 .nav-item {
@@ -51,7 +63,11 @@ a {
 }
 
 .nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-item-active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .menu-button {
@@ -67,7 +83,7 @@ a {
   border-radius: 5px;
   height: 3px;
   transition: all 0.3s ease-in-out;
-  width: 30px;
+  width: 1.5rem;
 }
 
 .menu-line:before , .menu-line:after {
@@ -82,11 +98,11 @@ a {
 }
 
 .menu-line:before {
-  transform: translateY(-10px);
+  transform: translateY(-7px);
 }
 
 .menu-line:after {
-  transform: translateY(10px);
+  transform: translateY(7px);
 }
 
 .menu-line-active {
@@ -103,4 +119,61 @@ a {
   background: black;
   position: absolute;
   transform: rotate(-45deg);
+}
+
+header, section, footer, aside {
+  padding: 0 1.2rem;
+}
+
+.edition-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px double black;
+  border-bottom: 5px double black;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h1 , h2 , h3 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+article h1 {
+  margin-top: 0;
+}
+
+article p {
+  margin-bottom: 0;
+}
+
+article img {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+hr {
+  margin: 2rem;
+  border: 1px dashed black;
+}
+
+.aside {
+  background-color: black;
+  color: rgb(237, 232, 220);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.footer {
+  background-color: black;
+  color: rgb(237, 232, 220);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 3rem;
 }
