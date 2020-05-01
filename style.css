@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background-color: #dcccb0;
+  }
+  .journal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1170px) and (max-width: 1500px) {
+  body {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  .journal {
+    background-color: #dcccb0;
+    margin-top: 40px;
+    width: 900px;
+    height: 1000px;
+    border-radius: 50px;
+  }
+}
