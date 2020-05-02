@@ -155,7 +155,7 @@ h2 {
 }
 
 .article-animation:active {
-  animation-name: article-grow linear paused 4s;
+  animation-name: article-grow linear 4s paused;
   height: auto;
 }
 
