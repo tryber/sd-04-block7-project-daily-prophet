@@ -8,6 +8,7 @@ body {
   background-size: cover;
   box-sizing: border-box;
   display: flex;
+  height: auto;
   justify-content: center;
   margin-top: 15px;
 }
@@ -66,7 +67,6 @@ body {
 }
 
 .segunda-secao {
-  border: 1px solid black;
   height: 40%;
   width: 98%;
 }
@@ -90,7 +90,6 @@ body {
 h1 {
   align-items: center;
   background-color: black;
-  border: 1px solid black;
   color: white;
   display: flex;
   font-size: 2.5rem;
@@ -112,7 +111,6 @@ h2 {
 }
 
 .lateral-principal {
-  border: 1px solid black;
   color: white;
   height: 98%;
   text-align: justify;
@@ -120,14 +118,12 @@ h2 {
 }
 
 .terceira-secao {
-  border: 1px solid black;
   height: 250px;
   width: 98%;
 }
 
 .terceiro-artigo {
   display: flex;
-  flex-direction: column;
 }
 
 .terceiro-artigo p {
@@ -154,19 +150,30 @@ h2 {
 }
 
 .artigo1 {
-  border: 1px solid black;
   height: 200px;
-  width: 96%;
+  width: 100%;
 }
 
-.article-animation {
+.article-animation:active {
+  animation: article-grow;
   animation-duration: 4s;
+  height: auto;
 }
 
+.article-animation p{
+  color: black;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 10px;
+}
 .artigo2 {
-  border: 1px solid black;
-  height: 200px;
-  width: 96%;
+  height: auto;
+  width: 100%;
+}
+
+.artigo2 p {
+  padding: 10px;
+  text-align: justify;
 }
 
 .rodape {
@@ -229,9 +236,24 @@ ul a {
 
 }
 
-/* @keyframes article-grow {
+@keyframes article-grow {
 
-} */
+  0% {
+    height: 100%;
+    width: 100%;
+  }
+
+  50% {
+    font-weight: bold;
+  }
+
+  100% {
+    font-weight: bolder;
+    height: 150%;
+    width: 150%;
+  }
+
+}
 
 @media screen and ( max-width : 760px ) {
 
