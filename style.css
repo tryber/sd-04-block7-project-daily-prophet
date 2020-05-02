@@ -8,6 +8,10 @@ html {
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -25,6 +29,7 @@ a {
   .container-layout {
     background-color: rgb(255, 255, 0);
   }
+
   .journal {
     display: flex;
     flex-direction: column;
@@ -32,14 +37,17 @@ a {
     margin: 20px 0;
     width: 100%;
   }
+
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .image-logo img {
     width: 100px;
   }
+
   .main-title {
     display: flex;
     padding: 10px;
@@ -47,14 +55,32 @@ a {
     align-items: center;
     text-transform: uppercase;
   }
+
   .the {
     font-size: 20px;
   }
+
   .title {
     font-size: 30px;
   }
+
   .fly img {
     display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .ul-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
@@ -62,17 +88,21 @@ a {
   .container-orientation {
     border: 1px solid red;
   }
+
   .journal {
     margin-top: 10px;
   }
+
   header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .image-logo img {
     width: 160px;
   }
+
   .main-title {
     width: 400px;
     display: flex;
@@ -81,14 +111,32 @@ a {
     align-items: center;
     text-transform: uppercase;
   }
+
   .the {
     font-size: 25px;
   }
+
   .title {
     font-size: 45px;
   }
+
   .fly img {
     display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .ul-footer {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -97,21 +145,46 @@ a {
     display: flex;
     justify-content: space-around;
   }
+
   .container-layout {
     background-color: rgb(255, 0, 0);
   }
+
   .journal {
-    background-color: gray;
+    background-color: rgb(184, 184, 184);
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 900px;
     height: 1000px;
     border-radius: 15px;
   }
+
+  /* ANIMAÇÃO LOGO */
+  @keyframes animalogo {
+    0% {
+      transform: rotate(0);
+    }
+    30% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .image-logo {
+    animation: animalogo 5s infinite ease-in-out alternate;
+  }
+
   header {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
   }
+
   .main-title {
     display: flex;
     padding: 10px;
@@ -120,35 +193,130 @@ a {
     width: 600px;
     text-transform: uppercase;
   }
+
   .the {
     font-size: 30px;
   }
+
   .title {
     font-size: 70px;
   }
+
   .nav {
     font-size: 20px;
   }
+
   /* Pomo de ouro */
   .fly img {
-    width: 50px;
+    margin: -1000px;
+    width: 70px;
+    position: absolute;
   }
 
   @keyframes flying {
     0% {
-      margin-left: 0%;
+      transform: translateX(-1100px) translateY(100px);
+    }
+    6% {
+      transform: translateX(300px) translateY(100px);
+    }
+    13% {
+      transform: translateX(500px) translateY(10px);
+    }
+    27% {
+      transform: translateX(800px) translateY(-100px);
+    }
+    42% {
+      transform: translateX(50px) translateY(200px);
+    }
+    65% {
+      transform: translateX(500px) translateY(500px);
+    }
+    85% {
+      transform: translateX(700px) translateY(100px);
     }
     100% {
-      margin-left: 94%;
+      transform: translateX(1150px) translateY(100px);
     }
   }
 
   .fly {
     animation-name: flying;
     animation-delay: 3s;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: 3;
     animation-direction: alternate;
     animation-fill-mode: forwards;
+  }
+
+  /* Primeira Parte */
+  .first-section {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .first-section article {
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+  }
+
+  .first-section .article {
+    padding: 5px;
+  }
+
+  .first-section .title-article {
+    font-size: 16px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  .first-section aside {
+    background-color: rgb(219, 58, 30);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* ANIMAÇÃO EXCLUSIVE */
+  @keyframes animaexclusive {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+    80% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .exclusive {
+    animation: animaexclusive 4s 1 1s ease;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .ul-footer {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
