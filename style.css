@@ -230,7 +230,9 @@ ul a {
 
 }
 
-@keyframes article-grow
+@keyframes article-grow {
+  
+}
 
 @media screen and ( max-width : 760px ) {
 
