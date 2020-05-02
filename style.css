@@ -1,0 +1,135 @@
+.container-layout {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.header-logo {
+  height: 150px;
+  margin: auto;
+  width: 90%;
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    width: 97%;
+  }
+
+}
+
+.fly {
+  animation: flying 3s linear 3s 3 alternate forwards;
+  position: absolute;
+  transform: scale(0.6);
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 78%;
+  }
+}
+
+.daily-container {
+  background-image: url('img/newspaper.jpg');
+  display: flex;
+  font-size: 1.5em;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s paused;
+  cursor: pointer;
+  height: 500px;
+  transition: 4s;
+  width: 60%;
+}
+
+.article-animation p {
+  animation: shake 0.82s;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes shake {
+
+  10% , 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20% , 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30% , 50% , 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40% , 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.lorem-aside {
+  animation: rotate-around 8s steps(16, end) infinite;
+  height: 500px;
+  width: 40%;
+}
+
+@keyframes rotate-around {
+
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.footerlines {
+  margin: auto;
+  transform: skew(-25deg);
+  width: 80%;
+}
+
+.main-title {
+  transform: translate(30px);
+  width: 70%;
+}
