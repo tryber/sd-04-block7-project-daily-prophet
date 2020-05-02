@@ -31,7 +31,6 @@ body {
 p {
   font-size: 10px;
   margin: 0;
-
 }
 
 /* Header */
@@ -304,6 +303,22 @@ aside {
 
 .column-3 img {
   width: 50px;
+}
+
+.article-animation {
+  animation: article-grow 4s;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 100;
+  }
+
+  100% {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
+  }
 }
 
 /* Credits */
