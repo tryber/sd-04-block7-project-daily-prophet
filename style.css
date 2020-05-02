@@ -290,7 +290,7 @@ img {
     width: 100%;
   }
 
-  .artigo main , .lateral{
+  .artigo main , .lateral {
     align-items: center;
     display: flex;
     flex-direction: column;
