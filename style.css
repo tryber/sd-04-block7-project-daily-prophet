@@ -160,7 +160,7 @@ h2 {
 }
 
 .article-animation {
-  animation: article-grow;
+  /* animation: article-grow; */
   animation-duration: 4s;
 }
 
