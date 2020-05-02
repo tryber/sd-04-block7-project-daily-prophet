@@ -73,6 +73,7 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
+  margin-bottom: 9px;
   padding: 15px;
   width: 25%;
 }
@@ -106,7 +107,7 @@ main {
   border-bottom: 1px solid white;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding-bottom: 25px;
 }
 
 .article-animation {
@@ -133,6 +134,7 @@ img {
 .interest-sec {
   background: linear-gradient(black, rgba(40, 30, 30, 0.88) 70%, rgba(50, 130, 50, 0.6));
   box-shadow: 2px 2px 5px black;
+  margin-bottom: 12px;
   padding: 15px;
   width: 45%;
 }
@@ -145,6 +147,10 @@ img {
 
 .interest-sec img {
   width: 65%;
+}
+
+.interest-sec img:hover {
+  animation: borda 0.7s linear;
 }
 
 .rodape {
@@ -198,6 +204,25 @@ img {
   animation: witch-fly 1.5s linear infinite alternate;
   position: absolute;
   top: 455px;
+}
+
+@keyframes borda {
+
+  0% {
+    border-left: 1px solid white;
+  }
+
+  25% {
+    border-bottom: 2px solid white;
+  }
+
+  50% {
+    border-right: 3px solid white;
+  }
+
+  100% {
+    border-top: 4px solid white;
+  }
 }
 
 @keyframes witch-fly {
@@ -262,15 +287,16 @@ img {
   .artigo {
     padding: 0;
     text-align: center;
+    width: 100%;
   }
 
-  .artigo main {
+  .artigo main , .lateral{
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .main-article {
+  .main-article , .interest-sec {
     width: 86%;
   }
 }
