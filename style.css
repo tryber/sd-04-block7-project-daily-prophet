@@ -1,0 +1,211 @@
+body {
+  background-image: linear-gradient(#727272, #a5a9b3 50%);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container-layout {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  margin: 20px auto;
+  max-width: 980px;
+  padding: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+}
+
+.top-bar {
+  display: flex;
+}
+
+.image-header {
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation > a {
+  background-color: transparent;
+  color: black;
+  font-family: Impact, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.hogwarts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hogwarts-container > p {
+  margin: 0;
+  width: 60%;
+}
+
+aside {
+  animation-delay: 2s;
+  animation-duration: 4s;
+  animation-name: hogwarts-animation;
+  transition-timing-function: steps(4, end);
+}
+
+.quadribol-container {
+  display: block;
+}
+
+.quadribol-image {
+  height: 300px;
+  width: 100%;
+}
+
+@keyframes hogwarts-animation {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-animation {
+  animation-delay: 3s;
+  animation-duration: 8s;
+  animation-name: animationimage;
+  transition-timing-function: steps(4, end);
+}
+
+@keyframes animationimage {
+
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: translateX(50px);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: skew(40deg, -40deg);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  transition-timing-function: steps(6, end);
+}
+
+@keyframes flying {
+
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: translateY(-1400px);
+  }
+
+  50% {
+    transform: skew(50deg, -50deg);
+  }
+
+  75% {
+    transform: translateY(-600px);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transition-timing-function: steps(4, end);
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 200;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5, 1);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  aside > img {
+    display: none;
+  }
+
+  .hogwarts-container > p {
+    width: 100%;
+  }
+
+  .quadribol-image {
+    display: none;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
