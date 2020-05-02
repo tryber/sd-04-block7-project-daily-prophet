@@ -294,11 +294,10 @@ hr {
 }
 
 @keyframes article-grow {
-  0% {}
 
   100% {
-    width: 150%;
-    height: 150%;
     font-weight: 700;
+    height: 150%;
+    width: 150%;
   }
 }
