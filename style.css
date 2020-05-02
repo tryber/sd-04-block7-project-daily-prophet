@@ -26,9 +26,12 @@ body {
 }
 
 .fly {
-  animation: flying 6s ease-in-out 3s 3 alternate forwards;
-  height: 180px;
-  width: 180px;
+  animation: flying 5s ease-in-out 3s 3 alternate forwards;
+  background-image: url('pokebola-hp.png');
+  background-size: 100%;
+  height: 10%;
+  position: absolute;
+  width: 10%;
 }
 
 .lado-direito {
@@ -93,31 +96,18 @@ nav {
   to {
     font-weight: 700;
     transform: scale(1.5);
+    transform: skew(30deg);
   }
 }
 
 @keyframes flying {
 
   from {
-    bottom: 30px;
-    right: 10px;
-  }
-
-  33% {
-    left: 10px;
-    top: 350px;
-    transform: skew(30deg);
-  }
-
-  66% {
-    right: 10px;
-    top: 150px;
-    transform: skew(-30deg);
+    transform: translateX(0);
   }
 
   to {
-    left: 10px;
-    top: 10px;
+    transform: translate(900%,900%);
   }
 }
 
