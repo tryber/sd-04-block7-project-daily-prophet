@@ -105,14 +105,12 @@ header div:nth-child( 2 ) img {
 }
 
 .article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-play-state: paused;
   font-size: 1rem;
   font-weight: 100;
-}
-
-.article-animation:focus {
-  animation: article-grow 4s ease-in forwards;
-  animation-play-state: paused;
-  outline: 0 solid;
 }
 
 @keyframes article-grow {
