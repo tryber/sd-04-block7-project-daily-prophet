@@ -128,7 +128,16 @@ header , section , footer , aside {
   border-top: 5px double black;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+.moon-container {
+  width: 100%;
+}
+
+.moon {
+  animation: move-moon 30s steps(30, end) infinite;
+  width: 50px;
 }
 
 h1 {
@@ -328,5 +337,12 @@ hr {
     font-weight: 400;
     height: 100%;
     width: 100%;
+  }
+}
+
+@keyframes move-moon {
+
+  100% {
+    transform: translateX(100vw) scale(1.5, 1.5) skewX(10deg);
   }
 }
