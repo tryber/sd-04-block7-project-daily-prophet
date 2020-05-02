@@ -1,6 +1,6 @@
-* {
+/* * {
   border: 1px solid white;
-}
+} */
 body,
 html {
   margin: 0;
@@ -132,11 +132,11 @@ a {
   }
 
   .ul-footer {
-    width: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 500px;
   }
 }
 
@@ -152,8 +152,8 @@ a {
 
   .journal {
     background-color: rgb(184, 184, 184);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 10px;
+    margin: 40px 0;
     width: 900px;
     height: 1000px;
     border-radius: 15px;
@@ -185,6 +185,30 @@ a {
     margin-top: 10px;
   }
 
+  /* ANIMAÇÃO TITLE */
+  @keyframes animatitle {
+    0% {
+      transform: translateX(900px) skewX(30deg);
+      opacity: 0.5;
+    }
+    30% {
+      transform: rotate(xx) translateX(0) skewX(30deg);
+      opacity: 0.5;
+    }
+    60% {
+      transform: rotate(xx) translateX(0) skewX(15deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: rotate(xx) translateX(0) skewX(0);
+      opacity: 1;
+    }
+  }
+
+  .title {
+    animation: animatitle 5s 1 0s linear;
+  }
+
   .main-title {
     display: flex;
     padding: 10px;
@@ -208,14 +232,14 @@ a {
 
   /* Pomo de ouro */
   .fly img {
-    margin: -1000px;
     width: 70px;
     position: absolute;
   }
 
+  /* ANIMAÇÃO DO POMO  */
   @keyframes flying {
     0% {
-      transform: translateX(-1100px) translateY(100px);
+      transform: translateX(-100%) translateY(100px);
     }
     6% {
       transform: translateX(300px) translateY(100px);
@@ -241,6 +265,7 @@ a {
   }
 
   .fly {
+    transform: translateX(-300%);
     animation-name: flying;
     animation-delay: 3s;
     animation-duration: 10s;
