@@ -7,7 +7,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s linear;
+  animation: article-grow 4s steps(4) linear;
   font-weight: 400;
   transition: font-weight 4s;
 }
@@ -29,20 +29,24 @@ body {
   animation: flying 5s ease-in-out 3s 3 alternate forwards;
   background-image: url('pokebola-hp.png');
   background-size: 100%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
   position: absolute;
-  width: 10%;
 }
 
 .lado-direito {
+  border: 1px solid black;
   width: 70%;
 }
 
 .lado-esquerdo {
-  width: 25%;
+  border: 1px solid black;
+  padding: 5px;
+  width: 30%;
 }
 
 .main-content {
+  display: flex;
   width: 100%;
 }
 
@@ -106,7 +110,7 @@ nav {
   }
 
   to {
-    transform: translate(900%, 900%);
+    transform: translate(300%, 300%);
   }
 }
 
