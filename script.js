@@ -1,9 +1,6 @@
-const article = document.querySelector('.article-container');
+// const activeAnimation = document.querySelectorAll('.article-animation');
 
-article.addEventListener('click', (e) => {
-  if (e.target.classList.contains('article-animation')) {
-    e.target.classList.remove('article-animation');
-  } else {
-    e.target.classList.add('article-animation');
-  }
-});
+// console.log(activeAnimation)
+// activeAnimation.addEventListener('click', (e) => {
+//   e.target.style.animation = 'article-grow 4s';
+// });
