@@ -72,6 +72,36 @@ h1 {
   background-color: rgb(255, 248, 238);
 }
 
+.header-content-top-img {
+  width: 20%;
+}
+
+.hr-gray {
+  border: 1px solid gray;
+}
+
+.hr-black {
+  border: 2px solid black;
+}
+
+.header-content-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-content-top-title {
+  width: 90%;
+  font-size: 0.65em;
+}
+
+.header-content-date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  border-bottom: 2px dotted black;
+  align-self: center;
+}
+
 .news-navigation-content {
   display: flex;
   flex-wrap: wrap;
