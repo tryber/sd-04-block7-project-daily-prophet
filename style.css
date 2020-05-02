@@ -1,5 +1,5 @@
 .article-animation {
-  animation: article-grow 4s linear 2 alternate paused;
+  animation: article-grow 4s steps(30, end) 2 alternate paused;
 }
 
 @keyframes article-grow {
