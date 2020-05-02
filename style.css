@@ -1,11 +1,8 @@
-/* * {
-  border: 1px solid white;
-} */
-body,
-html {
-  margin: 0;
-  padding: 0;
+body , html {
   box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 li {
@@ -13,21 +10,22 @@ li {
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .nav {
   display: flex;
+  font-size: 15px;
   justify-content: space-around;
   margin: 10px 0;
-  font-size: 15px;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
+
   .container-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow;
   }
 
   .journal {
@@ -39,9 +37,9 @@ a {
   }
 
   header {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .image-logo img {
@@ -49,10 +47,10 @@ a {
   }
 
   .main-title {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     text-transform: uppercase;
   }
 
@@ -70,21 +68,21 @@ a {
 
   footer {
     display: flex;
+    font-size: 14px;
     justify-content: center;
     margin-bottom: 0;
-    font-size: 14px;
   }
 
   .ul-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 760px) and (orientation: landscape) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
   .container-orientation {
     border: 1px solid red;
   }
@@ -104,12 +102,12 @@ a {
   }
 
   .main-title {
-    width: 400px;
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     text-transform: uppercase;
+    width: 400px;
   }
 
   .the {
@@ -126,37 +124,37 @@ a {
 
   footer {
     display: flex;
+    font-size: 16px;
     justify-content: center;
     margin-bottom: 0;
-    font-size: 16px;
   }
 
   .ul-footer {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 500px;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   body {
     display: flex;
     justify-content: space-around;
   }
 
   .container-layout {
-    background-color: rgb(255, 0, 0);
+    background-color: red;
   }
 
   .journal {
     background-color: rgb(184, 184, 184);
-    padding: 10px;
-    margin: 40px 0;
-    width: 900px;
-    height: 1000px;
     border-radius: 15px;
+    height: 1000px;
+    margin: 40px 0;
+    padding: 10px;
+    width: 900px;
   }
 
   /* ANIMAÇÃO LOGO */
@@ -164,12 +162,15 @@ a {
     0% {
       transform: rotate(0);
     }
+
     30% {
       transform: rotate(30deg);
     }
+
     50% {
       transform: rotate(-30deg);
     }
+
     100% {
       transform: rotate(0deg);
     }
@@ -187,43 +188,45 @@ a {
 
   /* ANIMAÇÃO TITLE */
   @keyframes animatitle {
+
     0% {
+      opacity: 0.5;
       transform: translateX(900px) skewX(30deg);
-      opacity: 0.5;
     }
+
     30% {
-      transform: rotate(xx) translateX(0) skewX(30deg);
       opacity: 0.5;
+      transform: translateX(0) skewX(30deg);
     }
+
     60% {
-      transform: rotate(xx) translateX(0) skewX(15deg);
       opacity: 0.8;
+      transform: translateX(0) skewX(15deg);
     }
+
     100% {
-      transform: rotate(xx) translateX(0) skewX(0);
       opacity: 1;
+      transform: translateX(0) skewX(0);
     }
+
   }
 
   .title {
     animation: animatitle 5s 1 0s linear;
+    font-size: 70px;
   }
 
   .main-title {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
     align-items: center;
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     text-transform: uppercase;
+    width: 600px;
   }
 
   .the {
     font-size: 30px;
-  }
-
-  .title {
-    font-size: 70px;
   }
 
   .nav {
@@ -232,46 +235,54 @@ a {
 
   /* Pomo de ouro */
   .fly img {
-    width: 70px;
     position: absolute;
+    width: 70px;
   }
 
   /* ANIMAÇÃO DO POMO  */
   @keyframes flying {
+
     0% {
       transform: translateX(-100%) translateY(100px);
     }
+
     6% {
       transform: translateX(300px) translateY(100px);
     }
+
     13% {
       transform: translateX(500px) translateY(10px);
     }
+
     27% {
       transform: translateX(800px) translateY(-100px);
     }
+
     42% {
       transform: translateX(50px) translateY(200px);
     }
     65% {
       transform: translateX(500px) translateY(500px);
     }
+
     85% {
       transform: translateX(700px) translateY(100px);
     }
+
     100% {
       transform: translateX(1150px) translateY(100px);
     }
+
   }
 
   .fly {
-    transform: translateX(-300%);
-    animation-name: flying;
     animation-delay: 3s;
-    animation-duration: 10s;
-    animation-iteration-count: 3;
     animation-direction: alternate;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-name: flying;
+    transform: translateX(-300%);
   }
 
   /* Primeira Parte */
@@ -297,31 +308,85 @@ a {
   }
 
   .first-section aside {
-    background-color: rgb(219, 58, 30);
-    font-weight: 700;
-    display: flex;
     align-items: center;
+    background-color: rgb(219, 58, 30);
+    display: flex;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .borderRight {
+    border-right: 1px solid black;
+  }
+
+  /* ANIMAÇÃO BOLD */
+  @keyframes article-grow {
+
+    0% {
+      font-weight: 500;
+      transform: scale(0.2);
+    }
+
+    15% {
+      font-weight: 600;
+      transform: scale(0.5);
+    }
+
+    30% {
+      font-weight: 700;
+      transform: scale(0.8);
+    }
+
+    50% {
+      font-weight: 800;
+      transform: scale(1);
+    }
+
+  }
+
+  .article-animation {
+    animation-duration: 4s;
+    animation-name: article-grow;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    font-size: 2em;
+    text-align: justify;
+  }
+
+  .article-animation:active {
+    animation-play-state: running;
+  }
+
+  /* Segunda parte  */
+  .second-section {
+    border: 1px solid black;
+    margin: 10px 0;
     padding: 10px;
   }
 
   /* ANIMAÇÃO EXCLUSIVE */
   @keyframes animaexclusive {
+
     0% {
-      transform: scale(0.3);
       opacity: 0;
+      transform: scale(0.3);
     }
+
     50% {
-      transform: scale(1.1);
       opacity: 0.9;
+      transform: scale(1.1);
     }
+
     80% {
+      opacity: 1;
       transform: scale(0.8);
-      opacity: 1;
     }
+
     100% {
-      transform: scale(1);
       opacity: 1;
+      transform: scale(1);
     }
+    
   }
 
   .exclusive {
@@ -330,18 +395,17 @@ a {
 
   /* FOOTER */
   footer {
+    align-items: center;
     display: flex;
+    font-size: 20px;
     justify-content: center;
     margin-bottom: 0;
-    font-size: 20px;
-    align-items: center;
   }
 
   .ul-footer {
-    width: 600px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 600px;
   }
 }
