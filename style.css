@@ -91,7 +91,7 @@ main {
 
 .main-article p {
   font-size: 12pt;
-  line-height: 22px;
+  line-height: 20px;
   padding-top: 13px;
   text-align: justify;
   text-indent: 25px;
@@ -128,6 +128,7 @@ main {
 .interest-sec {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(50, 130, 50, 0.6));
   box-shadow: 2px 2px 5px black;
+  padding: 15px;
   width: 45%;
 }
 
@@ -137,9 +138,47 @@ main {
   transition: background-image 1.5s, box-shadow 0.5s;
 }
 
+.interest-sec img {
+  width: 65%;
+}
+
 img {
   transition: border 1s;
   width: 50%;
+}
+
+.rodape {
+  align-items: center;
+  background: linear-gradient(rgb(25, 22, 185), rgb(0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.link-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.link-list li {
+  margin: 8px 10px;
+}
+
+.link-list li a div {
+  background-image: url('https://paintingvalley.com/sketches/social-icons-sketch-16.png');
+  background-color: white;
+  background-size: 682px 581px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.github {
+  background-position: 24.1% 56.5%;
+}
+
+.linkedin {
+  background-position: 65.6% 4.5%;
 }
 
 .fly {
@@ -158,6 +197,7 @@ img {
 .witch-flying {
   animation: witch-fly 1.5s linear infinite alternate;
   position: absolute;
+  top: 455px;
 }
 
 @keyframes witch-fly {
