@@ -63,7 +63,7 @@
 }
 
 .article-animation {
-  animation: article-grow 4s;
+  animation: article-grow 4s paused;
   cursor: pointer;
   height: 500px;
   transition: 4s;
@@ -77,11 +77,13 @@
 @keyframes article-grow {
 
   from {
+    font-weight: 400;
     transform: scale(1);
   }
 
   to {
-    transform: scale(1);
+    font-weight: 900;
+    transform: scale(1.5);
   }
 }
 
