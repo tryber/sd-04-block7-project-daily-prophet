@@ -29,9 +29,9 @@ body {
   animation: flying 5s ease-in-out 3s 3 alternate forwards;
   background-image: url('pokebola-hp.png');
   background-size: 100%;
-  width: 20%;
   height: 20%;
   position: absolute;
+  width: 20%;
 }
 
 .lado-direito {
