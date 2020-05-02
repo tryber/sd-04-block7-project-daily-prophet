@@ -104,7 +104,7 @@ header div:nth-child( 2 ) img {
   100% { margin-left: 90%;}
 }
 
-.article-animation:focus {
+.article-animation {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
