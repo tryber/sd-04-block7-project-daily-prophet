@@ -1,5 +1,4 @@
-body,
-html {
+body , html {
   box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
@@ -23,9 +22,18 @@ a {
   text-transform: uppercase;
 }
 
+@keyframes walk {
+
+  to {
+    transform: translateX(100%);
+  }
+
+}
+
 /* ANIMAÇÃO BOLD */
 
 @keyframes article-grow {
+
   0% {
     font-weight: 500;
     transform: scale(0.2);
@@ -45,11 +53,13 @@ a {
     font-weight: 800;
     transform: scale(1);
   }
+
 }
 
 /* ANIMAÇÃO EXCLUSIVE */
 
 @keyframes animaexclusive {
+
   0% {
     opacity: 0;
     transform: scale(0.3);
@@ -69,11 +79,13 @@ a {
     opacity: 1;
     transform: scale(1);
   }
+
 }
 
 /* ANIMAÇÃO LOGO */
 
 @keyframes animalogo {
+
   0% {
     transform: rotate(0);
   }
@@ -89,11 +101,13 @@ a {
   100% {
     transform: rotate(0deg);
   }
+
 }
 
 /* ANIMAÇÃO TITLE */
 
 @keyframes animatitle {
+
   0% {
     opacity: 0.5;
     transform: translateX(900px) skewX(30deg);
@@ -113,11 +127,13 @@ a {
     opacity: 1;
     transform: translateX(0) skewX(0);
   }
+
 }
 
 /* ANIMAÇÃO DO POMO  */
 
 @keyframes flying {
+
   0% {
     transform: translateX(-100%) translateY(100px);
   }
@@ -149,9 +165,11 @@ a {
   100% {
     transform: translateX(1150px) translateY(100px);
   }
+
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
+
   .container-layout {
     background-color: yellow;
   }
@@ -209,7 +227,8 @@ a {
   }
 }
 
-@media screen and (max-width: 760px) and (orientation: landscape) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
   .container-orientation {
     border: 1px solid red;
   }
@@ -264,8 +283,10 @@ a {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   body {
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-around;
   }
@@ -275,7 +296,7 @@ a {
   }
 
   .journal {
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 15px;
     height: 1000px;
     margin: 40px 0;
@@ -309,6 +330,12 @@ a {
 
   .the {
     font-size: 30px;
+    transform: rotate(-60deg) scale(0.6);
+    transition: transform 2s ease-in;
+  }
+
+  .the:hover {
+    transform: rotate(0deg) scale(1);
   }
 
   .nav {
@@ -318,7 +345,6 @@ a {
   /* Pomo de ouro */
   .fly img {
     position: absolute;
-    z-index: 2;
     width: 70px;
   }
 
@@ -391,30 +417,24 @@ a {
 
   .feet-conteiner {
     display: flex;
+    height: 300px;
     justify-content: center;
     width: 700px;
-    height: 300px;
   }
 
   .feets {
-    width: 600px;
     height: 300px;
+    width: 600px;
   }
 
   .cover {
-    position: absolute;
-    left: 0;
-    background: #fff;
+    animation: walk 1.5s steps(10, end) infinite;
+    background: whitesmoke;
     height: 300px;
-    width: 100%;
+    left: 0;
     max-width: 1000px;
-    animation: walk 1s steps(10, end) 5;
-  }
-
-  @keyframes walk {
-    to {
-      transform: translateX(100%);
-    }
+    position: absolute;
+    width: 100%;
   }
 
   /* FOOTER */
@@ -432,4 +452,5 @@ a {
     justify-content: space-between;
     width: 600px;
   }
+
 }
