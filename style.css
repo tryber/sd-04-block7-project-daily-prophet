@@ -147,48 +147,6 @@ footer {
   font-size: 15px;
 }
 
-main {
-  border: 1px solid black;
-  margin: auto;
-  padding: 5px;
-  width: 96%;
-}
-
-article {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-section {
-  max-width: 60%;
-}
-
-aside {
-  max-width: 20%;
-}
-
-.article-animation {
-  animation: article-grow 1s linear 3s;
-}
-
-@keyframes article-grow {
-
-  from {
-    font-weight: 500;
-    transform: scale();
-  }
-
-  to {
-    font-weight: 900;
-    transform: scale(1.5);
-  }
-
-}
-
-.container-orientation {
-  border: 1px solid red;
-}
-
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -207,5 +165,125 @@ aside {
 
   .container-orientation {
     border: 1px solid red;
+  }
+}
+
+main {
+  animation: borders 3s steps(3, end) infinite;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding: 15px;
+  width: 94%;
+}
+
+@keyframes borders {
+
+  to {
+    border: 5px solid black;
+  }
+}
+
+.left {
+  width: 65%;
+}
+
+.article-one-maintitle {
+  background-color: black;
+  color: rgb(255, 248, 238);
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  padding: 3px;
+}
+
+.article-one-img {
+  float: left;
+  margin-right: 10px;
+}
+
+.rticle-one-p {
+  line-height: 1.2rem;
+}
+
+.quote {
+  background-color: darkgray;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.right {
+  width: 30%;
+}
+
+.aside-one-title {
+  background-color: black;
+  color: rgb(255, 248, 238);
+  font-size: 30px;
+  margin: 1px;
+  text-align: center;
+}
+
+.article-two-img {
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.one {
+  border-bottom: 4px double black;
+  margin-bottom: 30px;
+}
+
+.article-two-title {
+  font-size: 40px;
+  margin: 1px;
+}
+
+.two {
+  border-bottom: 4px double black;
+}
+
+.edition {
+  border: 5px double black;
+  margin-bottom: 40px;
+}
+
+.article-edition-title {
+  font-size: 40px;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.edition-p {
+  background-color: black;
+  color: white;
+  font-size: 70px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 50%;
+}
+
+.edition-p-two {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.article-animation {
+  animation: article-grow 4s;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation: article-grow 4s linear;
+  animation-play-state: running;
+  font-weight: 900;
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5);
   }
 }
