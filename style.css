@@ -104,11 +104,11 @@ header div:nth-child( 2 ) img {
   100% { margin-left: 90%;}
 }
 
-.article-animation {
+.article-animation:focus {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
-  animation-play-state: paused;
+  /* animation-play-state: paused; */
   font-size: 1rem;
   font-weight: 100;
 }
