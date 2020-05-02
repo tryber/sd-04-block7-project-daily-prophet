@@ -63,14 +63,22 @@
 @keyframes crescer {
 
   0% {
+    font-weight: 400;
     transform: scale(1);
   }
 
-  25% {
+  15% {
+    font-weight: 600;
     transform: scale(1.5);
   }
 
+  30% {
+    font-weight: 800;
+    transform: scale(2);
+  }
+
   50% {
+    font-weight: 900;
     transform: scale(2);
   }
 }
@@ -338,10 +346,14 @@ hr {
 .article-animation {
   animation-duration: 4s;
   animation-name: crescer;
-  animation-play-state: running;
+  animation-play-state: paused;
   animation-timing-function: linear;
   font-size: 2em;
   text-align: justify;
+}
+
+.article-animation:active {
+  animation-play-state: running;
 }
 
 .section3 .container_ladrao {
@@ -356,7 +368,7 @@ hr {
   margin-left: 35px;
 }
 
-.negocim {
+.fly {
   align-self: flex-end;
   animation: flying 5s linear 3s 3 alternate forwards;
   height: 6%;
