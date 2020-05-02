@@ -307,6 +307,7 @@ aside {
 
 .article-animation {
   animation: article-grow 4s;
+  animation-play-state: paused;
 }
 
 @keyframes article-grow {

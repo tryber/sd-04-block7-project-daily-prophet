@@ -1,6 +1,7 @@
-// const activeAnimation = document.querySelectorAll('.article-animation');
+const article = document.querySelector('.article-container');
 
-// console.log(activeAnimation)
-// activeAnimation.addEventListener('click', (e) => {
-//   e.target.style.animation = 'article-grow 4s';
-// });
+article.addEventListener('click', (e) => {
+  if (e.target.classList.contains('article-animation')) {
+    e.target.style.animationPlayState = 'running';
+  }
+});
