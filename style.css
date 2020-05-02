@@ -22,8 +22,16 @@ body {
   border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
+  font-family: Old newspaper font, Tahoma, sans-serif;
   justify-content: space-between;
+  text-align: justify;
   width: 100%;
+}
+
+p {
+  font-size: 10px;
+  margin: 0;
+
 }
 
 /* Header */
@@ -34,16 +42,16 @@ header {
   margin: 10px;
 }
 
-.title {
+.header-title {
   display: none;
 }
 
-figure {
+.header-figure {
   display: flex;
 }
 
 /* Name */
-.name {
+.header-logo {
   object-fit: contain;
   width: 100%;
 }
@@ -87,6 +95,10 @@ figure {
   width: 90%;
 }
 
+aside {
+  padding: 0 3px;
+}
+
 /* News column 1 */
 .column-1 {
   display: flex;
@@ -95,6 +107,15 @@ figure {
   width: 350px;
 }
 
+.column-1-aside-1 {
+  align-items: flex-start;
+  display: flex;
+  margin: 0;
+}
+
+.column-1-aside-1 span {
+  font-size: 47px;
+}
 
 /* News column 2 */
 .column-2 {
@@ -106,6 +127,7 @@ figure {
 .column-2-left {
   display: flex;
   flex-flow: column nowrap;
+  font-size: 10px;
   width: 70%;
 }
 
@@ -117,7 +139,24 @@ figure {
 }
 
 .pointer-finger {
+  animation: finger 3s;
+  margin-left: 2px;
   width: 22%;
+}
+
+@keyframes finger {
+
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .exclusive-box {
@@ -137,6 +176,7 @@ figure {
   padding: 0;
   text-align: center;
   text-transform: uppercase;
+  transition: color 3s;
   width: 100%;
 }
 
@@ -147,10 +187,47 @@ figure {
   text-align: center;
 }
 
+.line1 {
+  animation: underline 6s 3s 3 alternate forwards;
+  border-bottom: 2px solid black;
+  left: 25px;
+  position: absolute;
+  top: 248px;
+  visibility: hidden;
+}
+
+@keyframes underline {
+
+  30% {
+    visibility: visible;
+    width: 0;
+  }
+
+  80% {
+    visibility: visible;
+    width: 225px;
+  }
+
+  100% {
+    visibility: visible;
+    width: 225px;
+  }
+}
+
 .sirius {
   height: auto;
   object-fit: contain;
   width: 100%;
+}
+
+.column-2-left-aside-1 {
+  align-items: flex-start;
+  display: flex;
+  margin: 0;
+}
+
+.column-2-left-aside-1 span {
+  font-size: 47px;
 }
 
 .column-2-right {
@@ -161,37 +238,59 @@ figure {
   width: 30%;
 }
 
+.column-2-right-aside-1 {
+  align-items: flex-start;
+  display: flex;
+  margin: 0;
+}
+
+.column-2-right-aside-1 span {
+  font-size: 47px;
+}
+
+.column-2-right-aside-3 img {
+  object-fit: contain;
+  padding-top: 5px;
+  width: 100%;
+}
+
+.column-2-right-aside-4 .box {
+  color: black;
+  font-family: Anton, sans-serif;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skew(1deg);
+  width: 100%;
+}
+
 .fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
-  left: 35px;
+  animation: flying 6s 3s 3 alternate forwards;
+  left: -18px;
   object-fit: contain;
   position: absolute;
-  top: 170px;
-  transform: rotate(10deg);
-  width: 30%;
+  top: 133px;
+  transform: rotate(35deg);
+  visibility: hidden;
+  width: 20%;
 }
 
 @keyframes flying {
 
-  35% {
-    transform: translate(65px, 0) rotate(10deg);
-  }
-
-  50% {
-    transform: translate(120px, 0) rotate(10deg);
+  30% {
+    transform: translate(65px, 35px) rotate(100deg);
+    visibility: visible;
   }
 
   80% {
-    transform: translate(210px, 0) rotate(10deg);
+    transform: translate(290px, 35px) rotate(100deg);
   }
 
   100% {
-    transform: translate(165px, -40px) rotate(-50deg);
+    transform: translate(230px, -5px) rotate(35deg);
+    visibility: visible;
   }
 }
 
