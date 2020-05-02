@@ -111,6 +111,7 @@ header div:nth-child( 2 ) img {
 
 .article-animation:focus {
   animation: article-grow 4s ease-in forwards;
+  animation-play-state: paused;
   outline: 0 solid;
 }
 
