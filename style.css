@@ -209,9 +209,9 @@ hr {
   width: 1rem;
 }
 
-.article-animation {
+/* .article-animation {
   animation: article-grow 4s forwards;
-}
+} */
 
 @media ( orientation : landscape ) {
 
@@ -294,6 +294,16 @@ hr {
 }
 
 @keyframes article-grow {
+
+  0% {
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+  }
+
+  50% {
+    font-weight: 600;
+  }
 
   100% {
     font-weight: 700;

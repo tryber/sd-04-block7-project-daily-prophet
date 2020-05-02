@@ -12,6 +12,7 @@ menuButton.addEventListener('click', () => {
 
 articles.forEach((article) => {
   article.addEventListener('click', () => {
-    article.classList.toggle('article-animation');
+    // article.style.animation = 'article-grow 4s forwards';
+    article.style.animation = article.style.animation === '' ? 'article-grow 4s forwards' : '';
   });
 });
