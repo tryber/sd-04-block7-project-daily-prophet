@@ -22,6 +22,144 @@ a {
   text-transform: uppercase;
 }
 
+/* ANIMAÇÃO BOLD */
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 500;
+    transform: scale(0.2);
+  }
+
+  15% {
+    font-weight: 600;
+    transform: scale(0.5);
+  }
+
+  30% {
+    font-weight: 700;
+    transform: scale(0.8);
+  }
+
+  50% {
+    font-weight: 800;
+    transform: scale(1);
+  }
+
+}
+
+/* ANIMAÇÃO EXCLUSIVE */
+
+@keyframes animaexclusive {
+
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+/* ANIMAÇÃO LOGO */
+
+@keyframes animalogo {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  30% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
+/* ANIMAÇÃO TITLE */
+
+@keyframes animatitle {
+
+  0% {
+    opacity: 0.5;
+    transform: translateX(900px) skewX(30deg);
+  }
+
+  30% {
+    opacity: 0.5;
+    transform: translateX(0) skewX(30deg);
+  }
+
+  60% {
+    opacity: 0.8;
+    transform: translateX(0) skewX(15deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+  }
+
+}
+
+/* ANIMAÇÃO DO POMO  */
+
+@keyframes flying {
+
+  0% {
+    transform: translateX(-100%) translateY(100px);
+  }
+
+  6% {
+    transform: translateX(300px) translateY(100px);
+  }
+
+  13% {
+    transform: translateX(500px) translateY(10px);
+  }
+
+  27% {
+    transform: translateX(800px) translateY(-100px);
+  }
+
+  42% {
+    transform: translateX(50px) translateY(200px);
+  }
+
+  65% {
+    transform: translateX(500px) translateY(500px);
+  }
+
+  85% {
+    transform: translateX(700px) translateY(100px);
+  }
+
+  100% {
+    transform: translateX(1150px) translateY(100px);
+  }
+
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -157,25 +295,6 @@ a {
     width: 900px;
   }
 
-  /* ANIMAÇÃO LOGO */
-  @keyframes animalogo {
-    0% {
-      transform: rotate(0);
-    }
-
-    30% {
-      transform: rotate(30deg);
-    }
-
-    50% {
-      transform: rotate(-30deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
   .image-logo {
     animation: animalogo 5s infinite ease-in-out alternate;
   }
@@ -184,31 +303,6 @@ a {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
-  }
-
-  /* ANIMAÇÃO TITLE */
-  @keyframes animatitle {
-
-    0% {
-      opacity: 0.5;
-      transform: translateX(900px) skewX(30deg);
-    }
-
-    30% {
-      opacity: 0.5;
-      transform: translateX(0) skewX(30deg);
-    }
-
-    60% {
-      opacity: 0.8;
-      transform: translateX(0) skewX(15deg);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0) skewX(0);
-    }
-
   }
 
   .title {
@@ -237,42 +331,6 @@ a {
   .fly img {
     position: absolute;
     width: 70px;
-  }
-
-  /* ANIMAÇÃO DO POMO  */
-  @keyframes flying {
-
-    0% {
-      transform: translateX(-100%) translateY(100px);
-    }
-
-    6% {
-      transform: translateX(300px) translateY(100px);
-    }
-
-    13% {
-      transform: translateX(500px) translateY(10px);
-    }
-
-    27% {
-      transform: translateX(800px) translateY(-100px);
-    }
-
-    42% {
-      transform: translateX(50px) translateY(200px);
-    }
-    65% {
-      transform: translateX(500px) translateY(500px);
-    }
-
-    85% {
-      transform: translateX(700px) translateY(100px);
-    }
-
-    100% {
-      transform: translateX(1150px) translateY(100px);
-    }
-
   }
 
   .fly {
@@ -319,31 +377,6 @@ a {
     border-right: 1px solid black;
   }
 
-  /* ANIMAÇÃO BOLD */
-  @keyframes article-grow {
-
-    0% {
-      font-weight: 500;
-      transform: scale(0.2);
-    }
-
-    15% {
-      font-weight: 600;
-      transform: scale(0.5);
-    }
-
-    30% {
-      font-weight: 700;
-      transform: scale(0.8);
-    }
-
-    50% {
-      font-weight: 800;
-      transform: scale(1);
-    }
-
-  }
-
   .article-animation {
     animation-duration: 4s;
     animation-name: article-grow;
@@ -362,31 +395,6 @@ a {
     border: 1px solid black;
     margin: 10px 0;
     padding: 10px;
-  }
-
-  /* ANIMAÇÃO EXCLUSIVE */
-  @keyframes animaexclusive {
-
-    0% {
-      opacity: 0;
-      transform: scale(0.3);
-    }
-
-    50% {
-      opacity: 0.9;
-      transform: scale(1.1);
-    }
-
-    80% {
-      opacity: 1;
-      transform: scale(0.8);
-    }
-
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    
   }
 
   .exclusive {
