@@ -210,8 +210,7 @@ hr {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
+  animation: article-grow 4s forwards paused;
 }
 
 @media ( orientation : landscape ) {
@@ -310,5 +309,24 @@ hr {
     font-weight: 700;
     height: 150%;
     width: 150%;
+  }
+}
+
+@keyframes article-shrink {
+
+  0% {
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+  }
+
+  50% {
+    font-weight: 600;
+  }
+
+  100% {
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
   }
 }

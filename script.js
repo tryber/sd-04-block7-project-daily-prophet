@@ -12,7 +12,6 @@ menuButton.addEventListener('click', () => {
 
 articles.forEach((article) => {
   article.addEventListener('click', () => {
-    // article.style.animation = 'article-grow 4s forwards';
-    article.style.animationName = article.style.animationName === '' ? 'article-grow' : '';
+    article.style.animation = article.style.animation === '' || article.style.animationName === 'article-shrink' ? 'article-grow 4s forwards' : 'article-shrink 4s forwards';
   });
 });
