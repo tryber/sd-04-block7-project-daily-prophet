@@ -133,7 +133,7 @@ body {
 }
 
 body {
-  background-color : rgb(206, 200, 200);
+  background-image: linear-gradient(rgb(15, 15, 236), rgb(24, 5, 95), black);
   border: dashed 12px black;
   border-radius: 25px;
   display: flex;
@@ -141,25 +141,35 @@ body {
 }
 
 .box-legend {
+  background-color: black;
+  color: white;
+  font-family: Londrina Solid, cursive;
+  font-stretch: condensed;
+  padding-left: 15px;
   width: 400px;
 }
 
 .caixa-do-top {
+  font-weight: 600;
   height: 68px;
   width: 700px;
 }
 
 .caixa1-do-top {
+  background-color: black;
+  color: white;
   display: flex;
   font-family: Londrina Solid, cursive;
-  font-size: 18px;
-  height: 50px;
+  font-size: 20px;
+  height: 60px;
+  padding-left: 10px;
   width: 1100px;
 }
 
 .direita {
   align-items: center;
   background-color: white;
+  border: 4px dashed black;
   display: flex;
   flex-direction: column;
   font-size: large;
@@ -189,8 +199,27 @@ body {
 }
 
 .highlights {
+  border: 2px solid black;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.link {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.link a {
+  color: black;
+  font-family: Rubik Mono One, sans-serif;
+  font-size: large;
+  text-decoration: none;
+}
+
+.logo {
+  width: 150px;
 }
 
 .menu {
