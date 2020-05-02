@@ -225,14 +225,14 @@ ul a {
   100% {
     margin-left: 45%;
     transform: skew(20deg, 30deg) rotate(60deg);
-    transition-timing-function: steps(4, end)
+    transition-timing-function: steps(4, end);
   }
 
 }
 
-@keyframes article-grow {
-  
-}
+/* @keyframes article-grow {
+
+} */
 
 @media screen and ( max-width : 760px ) {
 
