@@ -68,9 +68,7 @@ main {
 
 .main-article {
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), 
-  rgba(40, 30, 30, 0.88) 70%, 
-  rgba(50, 50, 190, 0.6));
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(40, 30, 30, 0.88) 70%,rgba(50, 50, 190, 0.6));
   box-shadow: 2px 2px 5px black;
   color: white;
   display: flex;
@@ -80,9 +78,7 @@ main {
 }
 
 .main-article:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), 
-  rgba(40, 30, 30, 0.88) 70%, 
-  rgba(80, 80, 250, 0.9));
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(40, 30, 30, 0.88) 70%,rgba(80, 80, 250, 0.9));
   box-shadow: 5px 5px 8px white;
   transition: background-image 0.5s, box-shadow 0.5s;
 }
@@ -135,14 +131,14 @@ img {
 }
 
 .interest-sec {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(50, 130, 50, 0.6));
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(40, 30, 30, 0.88) 70%,rgba(50, 130, 50, 0.6));
   box-shadow: 2px 2px 5px black;
   padding: 15px;
   width: 45%;
 }
 
 .interest-sec:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(40, 30, 30, 0.88) 70%, rgba(80, 250, 80, 0.9));
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(40, 30, 30, 0.88) 70%,rgba(80, 250, 80, 0.9));
   box-shadow: 5px 5px 8px white;
   transition: background-image 1.5s, box-shadow 0.5s;
 }
