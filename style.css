@@ -209,11 +209,8 @@ hr {
   width: 1rem;
 }
 
-.clicked-article {
-  font-weight: 700;
-  height: 150%;
-  transition: all 4s ease-in-out;
-  width: 150%;
+.article-animation {
+  animation: article-grow 4s forwards;
 }
 
 @media ( orientation : landscape ) {
@@ -293,5 +290,15 @@ hr {
     flex-direction: column;
     justify-content: center;
     width: 800px;
+  }
+}
+
+@keyframes article-grow {
+  0% {}
+
+  100% {
+    width: 150%;
+    height: 150%;
+    font-weight: 700;
   }
 }

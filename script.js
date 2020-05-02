@@ -12,6 +12,6 @@ menuButton.addEventListener('click', () => {
 
 articles.forEach((article) => {
   article.addEventListener('click', () => {
-    article.classList.toggle('clicked-article');
+    article.classList.toggle('article-animation');
   });
 });
