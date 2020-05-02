@@ -305,7 +305,7 @@ aside {
   width: 50px;
 }
 
-.article-animation:active {
+.article-animation {
   animation: article-grow 4s;
 }
 
