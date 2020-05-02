@@ -155,8 +155,8 @@ h2 {
 }
 
 .article-animation:active {
-  animation: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
   height: auto;
 }
 
