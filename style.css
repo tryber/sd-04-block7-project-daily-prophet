@@ -1,0 +1,152 @@
+body {
+  display: grid;
+  font-family: Nanum Gothic, sans-serif;
+  margin: 17px 18px 17px 25px;
+  min-width: 100vh;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 , h2 , h3 {
+  display: block;
+}
+
+p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.container-layout {
+  align-content: flex-start;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.fly {
+  animation: flying 4s 3s steps(5, jump-none) 3 alternate forwards;
+  position: absolute;
+  transition-duration: 4s;
+  transition-property: flying;
+  width: 10%;
+}
+
+.head-line {
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.sub-lead {
+  border: 2px solid;
+  margin: 10px;
+}
+
+.head-line-h2 {
+  font-size: 2em;
+}
+
+.head-line-img {
+  display: block;
+  margin: 1em 0;
+  width: 4em;
+}
+
+.sub-articles {
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas: 'article-1' 'article-2' 'article-3' 'article-4';
+  grid-template-columns: 50% 50%;
+  margin: 10px;
+}
+
+.hand {
+  border: 2px solid;
+  height: 60px;
+  margin: 10px;
+  padding: 20px;
+  width: 100px;
+}
+
+.article-1 {
+  border: 2px solid;
+  grid-area: article-1;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.article-2 {
+  align-content: center;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.article-3 {
+  border: 2px solid;
+  grid-area: article-3;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.article-4 {
+  border: 2px solid;
+  grid-area: article-3;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: scale(1, 1) translate(0, 0) skew(0deg, 0deg);
+  }
+
+  50% {
+    margin-left: 50%;
+    transform: scale(2, 2) translate(0, 300px) skew(20deg, 10deg);
+  }
+
+  100% {
+    margin-left: 90%;
+    transform: scale(1, 1) translate(0, 0) skew(20deg, 10deg);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
