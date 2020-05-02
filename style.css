@@ -4,6 +4,10 @@ body {
   justify-content: center;
 }
 
+p {
+  text-indent: 20px;
+}
+
 .total-page {
   background-color: white;
   border-radius: 15px;
@@ -156,8 +160,9 @@ body {
   animation-fill-mode: forwards;
   animation-name: article-grow;
   animation-play-state: paused;
-  animation-timing-function: linear;
+  animation-timing-function: steps(4);
   cursor: pointer;
+
 }
 
 @keyframes article-grow {
