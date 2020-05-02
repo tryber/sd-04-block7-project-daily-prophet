@@ -151,6 +151,28 @@ body {
   text-align: justify;
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    width: 48%;
+  }
+
+  to {
+    font-weight: 700;
+    width: 98%;
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
