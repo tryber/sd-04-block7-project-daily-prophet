@@ -253,6 +253,25 @@ img {
   .container-layout {
     background-color: yellow;
   }
+
+  .cabecalho figure figcaption {
+    font-size: 10pt;
+  }
+
+  .artigo {
+    padding: 0;
+    text-align: center;
+  }
+
+  .artigo main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article {
+    width: 86%;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
