@@ -209,9 +209,10 @@ hr {
   width: 1rem;
 }
 
-/* .article-animation {
-  animation: article-grow 4s forwards;
-} */
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
 
 @media ( orientation : landscape ) {
 
