@@ -154,9 +154,13 @@ h2 {
   width: 100%;
 }
 
-.article-animation:active {
+.article-animation: {
   animation: article-grow linear 4s paused;
   height: auto;
+}
+
+.article-animation:active {
+  animation-play-state: running;
 }
 
 .article-animation p {
