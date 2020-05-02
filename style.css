@@ -136,7 +136,7 @@ header , section , footer , aside {
 }
 
 .fly {
-  animation: move-moon 30s steps(30, end) infinite;
+  animation: flying 3s 3s steps(30, end) 3 alternate forwards;
   width: 50px;
 }
 
@@ -340,9 +340,9 @@ hr {
   }
 }
 
-@keyframes move-moon {
+@keyframes flying {
 
   100% {
-    transform: translateX(100vw) scale(1.5, 1.5) skewX(10deg);
+    transform: translateX(90vw) scale(1.5, 1.5) skewX(10deg);
   }
 }
