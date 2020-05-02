@@ -154,7 +154,7 @@ h2 {
   width: 100%;
 }
 
-.article-animation: {
+.article-animation {
   animation: article-grow linear 4s paused;
   height: auto;
 }
