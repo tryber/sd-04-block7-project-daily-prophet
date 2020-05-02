@@ -1,6 +1,5 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: beige;
   margin: 0;
   padding: 0;
 }
@@ -9,22 +8,79 @@ body {
   font-size: 0;
 }
 
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.1;
+  margin: 4%;
+  text-align: justify;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 2px 0 0 rgb(251, 176, 59);
+}
+
+.number-radius {
+  background-color: black;
+  border-radius: 0.75em;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  height: 1.5em;
+  line-height: 1;
+  margin: -0.25em 0 0 1em;
+  padding: 0.25em 0 0;
+  position: relative;
+  text-align: center;
+  top: -1px;
+  width: 1.5em;
+}
+
+.number-radius:hover {
+  background-color: rgb(251, 176, 59);
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 248, 238);
+}
+
+.news-navigation-content {
+  display: flex;
+}
+
 @media screem and ( max-width : 760px ) {
 
-  .container-layout {
+  .container {
     background-color: yellow;
   }
 }
 
 @media screem and ( min-width : 1170px ) {
 
-  .container-layout {
+  .container {
     background-color: red;
   }
-}
-
-.container-layout {
-  background-color: yellow;
 }
 
 .fly {
@@ -78,4 +134,22 @@ body {
     font-weight: 700;
     transform: scale(1.5, 1.5);
   }
+}
+
+@media screem and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screem and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+.container-layout {
+  background-color: yellow;
 }
