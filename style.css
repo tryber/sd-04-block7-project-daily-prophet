@@ -1,16 +1,16 @@
-.article-animation:focus {
-  animation: article-grow 4s ease-in;
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
 }
 
 @keyframes article-grow {
 
   from {
-    font-size: 20px;
+    font-weight: 100;
     transform: scale(1, 1);
   }
 
   to {
-    font-size: 30px;
+    font-weight: 700;
     transform: scale(1.5, 1.5);
   }
 }
