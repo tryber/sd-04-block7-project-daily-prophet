@@ -19,8 +19,14 @@ p {
   text-align: justify;
 }
 
+ul {
+  margin: 0;
+  padding: 15px 0 0;
+}
+
 li {
   list-style: none;
+  margin: 0 0 20px;
 }
 
 a {
@@ -51,9 +57,10 @@ a:hover {
   width: 1.5em;
 }
 
-.number-radius:hover {
+a:hover .number-radius {
   background-color: rgb(251, 176, 59);
   color: black;
+  text-shadow: none;
 }
 
 h1 {
@@ -67,6 +74,8 @@ h1 {
 
 .news-navigation-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media screem and ( max-width : 760px ) {
