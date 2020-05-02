@@ -4,7 +4,8 @@ coruja.style.animationDelay = '3000ms';
 coruja.style.animationIterationCount = '3';
 coruja.style.animationDirection = 'alternate';
 
-const artigo = document.querySelector('.article-animation');
+/* onst artigo = document.querySelector('.article-animation');
 artigo.addEventListener('click', () => {
   artigo.style.animation = 'article-grow 4000ms linear';
 });
+ */

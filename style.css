@@ -7,6 +7,14 @@ body {
   padding: 0px;
 } */
 
+.article-animation {
+  animation: article-grow 4s linear paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+}
+
 .article-animation p {
   cursor: pointer;
 }
@@ -30,7 +38,7 @@ body {
   to {
     font-weight: 700;
     max-height: 500px;
-    transform: scale(1.5);
+    transform: scale(1.5, 1.5);
   }
 }
 
