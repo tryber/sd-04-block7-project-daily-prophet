@@ -160,12 +160,13 @@ h2 {
   height: auto;
 }
 
-.article-animation p{
-  color: black;
+.article-animation p {
   font-size: 1.1rem;
+  color: black;
   text-align: justify;
   padding: 10px;
 }
+
 .artigo2 {
   height: auto;
   width: 100%;
@@ -244,11 +245,11 @@ ul a {
   }
 
   50% {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   100% {
-    font-weight: bolder;
+    font-weight: 900;
     height: 150%;
     width: 150%;
   }
