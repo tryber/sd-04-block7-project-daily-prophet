@@ -95,8 +95,7 @@ nav {
 
   to {
     font-weight: 700;
-    transform: scale(1.5);
-    transform: skew(30deg);
+    transform: scale(1.5) skew(30deg);
   }
 }
 
@@ -107,7 +106,7 @@ nav {
   }
 
   to {
-    transform: translate(900%,900%);
+    transform: translate(900%, 900%);
   }
 }
 
