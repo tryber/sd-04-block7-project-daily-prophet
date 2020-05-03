@@ -46,6 +46,7 @@ body {
 }
 
 .div-exclusive {
+  align-self: center;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -62,6 +63,7 @@ body {
 .article-1 {
   border: 1px solid black;
   display: flex;
+  line-height: 28px;
   margin-left: 32px;
   padding: 0 2px;
 }
@@ -103,8 +105,9 @@ body {
 .article-2 {
   border: 1px solid black;
   display: flex;
+  line-height: 28px;
   margin-left: 32px;
-  padding: 0 2px;
+  padding: 8px;
 }
 
 .img-dumb {
@@ -115,8 +118,9 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  line-height: 28px;
   margin-left: 32px;
-  padding: 0 2px;
+  padding: 8px;
 }
 
 .footer {
@@ -158,9 +162,8 @@ body {
     flex-direction: column;
   }
 
-  .exclusive {
+  .div-exclusive {
     animation-name: none;
-    width: 50%;
   }
 
   .section-2 {
@@ -178,6 +181,11 @@ body {
 
   .fly {
     display: none;
+  }
+
+  .img-dumb {
+    float: none;
+    width: 100%;
   }
 }
 
