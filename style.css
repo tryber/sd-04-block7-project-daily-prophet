@@ -529,7 +529,7 @@ td {
 }
 
 .article-animation {
-  animation: article-grow 3s ease-out 0s paused backwards;
+  animation: article-grow 4s ease-out 0s paused backwards;
   margin: 5px;
   overflow: auto;
   padding-right: 5px;
