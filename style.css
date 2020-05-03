@@ -67,9 +67,7 @@ h1 {
   width: 50%;
 }
 .noticia-1 { 
-  display: flex;.noticia-1 p {
-    width: 100%;
-  }
+  display: flex;
 }
 .noticia-1 p {
   width: 80%;
@@ -114,7 +112,7 @@ h1 {
 }
 
 @media screen and ( min-width : 1170px ) {
-  
+
 }
 
 @keyframes invisible { 
