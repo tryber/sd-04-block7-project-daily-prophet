@@ -3,7 +3,7 @@ body {
 }
 
 .fundo {
-  animation: invisible 3s linear;
+  
   background-color: rgb(250, 248, 227);
   border-radius: 10px;
   margin-left: auto;
