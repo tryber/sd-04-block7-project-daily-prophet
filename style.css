@@ -43,7 +43,6 @@ aside {
 
   25% {
     opacity: 0.5;
-    transform: scale(0.1);
     transform: rotate(xx) translateX(0) skewX(30deg);
   }
 
@@ -55,6 +54,35 @@ aside {
   100% {
     opacity: 1;
     transform: rotate(xx) translateX(0) skewX(0);
+  }
+}
+
+.animacao {
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-name: animation;
+}
+
+@keyframes animation {
+
+  0% {
+    opacity: 0.3;
+    transform: scale(0.2);
+  }
+
+  25% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
   }
 }
 
