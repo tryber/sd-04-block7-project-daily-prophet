@@ -1,0 +1,53 @@
+header {
+  border: 1px solid black;
+}
+
+article {
+  border: 1px solid black;
+  display: flex;
+  height: 25em;
+}
+
+aside{
+  border: 1px solid black;
+  float: right;
+  height: 25em;
+  width: 25em;
+  top: -10px;
+}
+
+.artigo {
+  border: 1px solid black;
+  width: 55em;
+}
+
+.container-layout {
+    background-color: rgb(255, 255, 0);
+}
+
+.container-layout {
+    background-color: rgb(255, 0, 0);
+ }
+
+ .container-orientation{
+    border: 1px solid red;
+}
+
+
+@media only screen and (max-width: 760px) {
+  .container-layout {
+    background-color: rgb(255, 255, 0);
+ }
+}
+
+@media only screen and (min-width: 1170px) {
+    .container-layout {
+      background-color: rgb(255, 0, 0);
+   }
+}
+
+@media all and (orientation:landscape) {
+    .container-orientation{
+        border: 1px solid red;
+    }
+}
