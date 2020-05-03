@@ -46,18 +46,17 @@ body {
 }
 
 .div-exclusive {
-  background-color: black;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: scaling;
+  background-color: black;
   transition-timing-function: ease-in-out;
 }
 
 .exclusive {
   color: white;
   font-size: 32px;
-  
 }
 
 .article-1 {
@@ -147,8 +146,8 @@ body {
 }
 
 .article-animation:active {
-  animation-name: animation-grow;
   animation-duration: 1s;
+  animation-name: animation-grow;
   animation-timing-function: ease;
 }
 
@@ -249,18 +248,19 @@ body {
 }
 
 @keyframes animation-grow {
+  
   0% {
-    transform: scale(1);
     font-weight: 200;
+    transform: scale(1);
   }
 
   50% {
-    transform: scale(1.25);
     font-weight: 700;
+    transform: scale(1.25);
   }
 
   100% {
-    transform: scale(1.5);
     font-weight: 900;
+    transform: scale(1.5);
   }
 }
