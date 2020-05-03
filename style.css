@@ -1,15 +1,56 @@
-.container {
+body {
   box-sizing: border-box;
+  display: block;
+  font-family: monospace;
+  height: 100%;
+  margin: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
   width: 100%;
 }
 
 header {
-  background-color: blue;
-  height: 10vh;
+  background-color: white;
+  display: flex;
+  height: 11vh;
+  justify-content: center;
   width: 100%;
+}
+
+@keyframes typing {
+
+  to {
+    width: 275px;
+  }
+}
+
+.title {
+  animation: typing 6s steps(20, end) 3 alternate forwards;
+  height: 48px;
+  overflow: hidden;
+  width: 0;
+  word-spacing: -16px;
+}
+
+@keyframes bar {
+
+  to {
+    color: black;
+  }
+}
+
+.bar {
+  animation: bar 1s steps(2, start) infinite;
+  color: white;
+  font-size: 25px;
+  width: 0;
 }
 
 .body-container {
@@ -18,6 +59,7 @@ header {
 
 .universe-and-aside {
   display: flex;
+  overflow: hidden;
 }
 
 .universe {
@@ -25,27 +67,55 @@ header {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  height: 80vh;
+  margin-right: 4px;
+  overflow: hidden;
   width: 75%;
 }
 
 aside {
-  background-color: blue;
+  background-color: green;
+  border-radius: 5px;
+  margin: 0 2px;
+  max-height: 80vh;
   overflow: hidden;
-  padding: 10px;
   width: 25%;
 }
 
 .main-scenario {
   align-items: flex-end;
   display: flex;
-  height: 72vh;
+  height: 65vh;
   justify-content: space-around;
   overflow: hidden;
   width: 100%;
 }
 
 footer {
-  height: 5vh;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  height: 7vh;
+  justify-content: center;
+  margin: 3px 0;
+  width: 100%;
+}
+
+.alex {
+  padding-right: 10px;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo > a {
+  padding: 2px;
 }
 
 table {
@@ -57,7 +127,8 @@ table {
 .stars {
   height: 100%;
   margin: auto;
-  padding: 20px;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
   width: 100%;
 }
@@ -398,7 +469,6 @@ td {
   display: flex;
   height: 200px;
   overflow: hidden;
-  transform: rotate(1turn);
   width: 200px;
 }
 
@@ -407,10 +477,10 @@ td {
   border-radius: 40%;
   display: block;
   height: 70px;
-  left: 120px;
+  left: 12px;
   position: absolute;
-  top: 20px;
-  width: 55px;
+  top: 2px;
+  width: 65px;
 }
 
 .south-america {
@@ -418,11 +488,24 @@ td {
   border-radius: 20%;
   display: block;
   height: 35px;
-  left: 120px;
+  left: 45px;
   position: absolute;
-  top: -18px;
+  top: 75px;
   transform: rotate(25deg);
-  width: 35px;
+  width: 40px;
+}
+
+.africa {
+  background-color: green;
+  border-radius: 40%;
+  display: block;
+  height: 55px;
+  left: 110px;
+  overflow: hidden;
+  position: absolute;
+  top: 56px;
+  transform: rotate(-45deg);
+  width: 60px;
 }
 
 .europe {
@@ -430,21 +513,9 @@ td {
   border-radius: 40%;
   display: block;
   height: 45px;
-  left: 30px;
-  overflow: hidden;
+  left: 115px;
   position: absolute;
-  top: 39px;
-  width: 55px;
-}
-
-.africa {
-  background-color: green;
-  border-radius: 40%;
-  display: block;
-  height: 45px;
-  left: 34px;
-  position: absolute;
-  top: -10px;
+  top: 5px;
   transform: rotate(-35deg);
   width: 50px;
 }
@@ -458,7 +529,10 @@ td {
 }
 
 .article-animation {
-  animation: article-grow 3s ease-out 0s backwards;
+  animation: article-grow 3s ease-out 0s paused backwards;
+  margin: 5px;
+  overflow: auto;
+  padding-right: 5px;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -468,7 +542,21 @@ td {
   }
 
   aside {
+    margin: 3px 0;
     width: 100%;
+  }
+
+  .alex {
+    text-align: center;
+    width: 80%;
+  }
+
+  .logo {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 20%;
   }
 
   .universe {
