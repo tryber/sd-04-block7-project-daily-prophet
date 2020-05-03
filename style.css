@@ -11,7 +11,12 @@ body {
 
 .main-content {
   background-color: rgb(228, 228, 228);
-  width: 73vw;
+  width: 65vw;
+}
+
+.container-layout {
+  height: 1px;
+  width: 65vw;
 }
 
 .logos {
@@ -20,17 +25,38 @@ body {
 }
 
 .logo-letras {
-  height: 25vmin;
+  height: 7vmax;
   max-width: 55vw;
 }
 
 .logo-escudo {
-  height: 30vmin;
-  width: 15vw;
+  height: 7vmax;
+  width: 10vw;
 }
 
 .navi {
   display: flex;
-  font-size: 2em;
+  font-size: 3.2vw;
   justify-content: space-around;
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout { background-color: red; }
+
+  .logos-linesD { display: none; }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout { background-color: yellow; }
+
+  .logos-linesD { display: none; }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px red solid;
+  }
 }
