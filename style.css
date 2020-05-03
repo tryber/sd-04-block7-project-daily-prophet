@@ -130,19 +130,11 @@ body {
 }
 
 .skew {
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-name: skewing;
-  transition-duration: 2s;
-  transition-timing-function: ease-out;
+  animation: skewing 5s steps(100,end) infinite;
 }
 
 .translate {
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-name: translating;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
+  animation: translating 5s steps(100,end) infinite;
 }
 
 .article-animation {
