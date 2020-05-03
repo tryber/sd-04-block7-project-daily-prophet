@@ -42,8 +42,17 @@ nav ul {
 }
 
 nav ul li {
+  font-size: 20px;
   margin-left: 5%;
   margin-right: 5%;
+  transition-delay: 500ms;
+  transition-duration: 1s;
+  transition-property: text-decoration;
+  transition-timing-function: step-start;
+}
+
+nav ul li:hover{
+  text-decoration: overline;
 }
 
 .asideAndMain {
@@ -173,7 +182,7 @@ nav ul li {
 }
 
 .fly {
-  animation: flying 2s ease-in-out 3s 3 alternate forwards;
+  animation: flying 1s linear 3s 3 alternate forwards;
 }
 
 @keyframes flying {
