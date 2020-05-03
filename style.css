@@ -3,12 +3,12 @@ body {
 }
 
 .fundo {
+  animation: invisible 3s linear;
   background-color: rgb(250, 248, 227);
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  animation: invisible 3s linear;
 }
 
 .Pag {
@@ -66,14 +66,16 @@ h1 {
   margin-right: auto;
   width: 50%;
 }
-.noticia-1 { 
+
+.noticia-1 {
   display: flex;
 }
+
 .noticia-1 p {
   width: 80%;
 }
 
-.noticia-1 #not-1 {
+.noticia-1 .not-1 {
   height: 10%;
   margin: auto 0;
   transform: rotate(-90deg);
@@ -104,7 +106,7 @@ h1 {
     width: 100%;
   }
 
-  .noticia-1 #not-1 {
+  .noticia-1 .not-1 {
     height: 10%;
     margin: auto 0;
     transform: rotate(-90deg);
@@ -113,13 +115,28 @@ h1 {
 
 @media screen and ( min-width : 1170px ) {
 
+  .noticia-1 {
+    display: flex;
+  }
+
+  .noticia-1 p {
+    width: 100%;
+  }
+
+  .noticia-1 .not-1 {
+    height: 10%;
+    margin: auto 0;
+    transform: rotate(-90deg);
+  }
 }
 
-@keyframes invisible { 
-  0%{
-    opacity: 5%;
+@keyframes invisible {
+
+  0% {
+    /*opacity: '5%';*/
   }
-  25%{
-    opacity: 10%;
+
+  25% {
+    /*opacity: '5';*/
   }
 }
