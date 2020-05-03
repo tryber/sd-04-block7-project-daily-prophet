@@ -45,13 +45,10 @@ nav ul li {
   font-size: 20px;
   margin-left: 5%;
   margin-right: 5%;
-  transition-delay: 500ms;
-  transition-duration: 1s;
-  transition-property: text-decoration;
-  transition-timing-function: step-start;
+  transition: text-decoration 1s step-start 500ms;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   text-decoration: overline;
 }
 
