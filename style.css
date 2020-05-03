@@ -1,0 +1,160 @@
+/* * {
+  border: black 1px solid;
+} */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header div:nth-child( 1 ) {
+  height: 65px;
+}
+
+.container-layout img {
+  height: 100%;
+  width: auto;
+}
+
+header div:nth-child( 1 ) img {
+  height: 100%;
+  width: auto;
+}
+
+header div:nth-child( 2 ) {
+  height: 50px;
+}
+
+header div:nth-child( 2 ) img {
+  height: 100%;
+  width: auto;
+}
+
+.caption-title {
+  font-size: 0.6rem;
+  margin-top: 0;
+  text-align: center;
+  transition: background-color 2s;
+}
+
+.caption-title:hover {
+  background-color: red;
+}
+
+.container-layout {
+  background-color: yellow;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.container-layout img:nth-child( 1 ) {
+  animation-duration: 4s;
+  animation-name: skew;
+  animation-timing-function: steps(5, end);
+}
+
+@keyframes skew {
+
+  0% { transform: skewX(0);}
+
+  100% { transform: skewX(20deg);}
+}
+
+
+.container-layout img:nth-child( 2 ):hover {
+  transform: translateX(20px);
+}
+
+.container-layout img:nth-child( 3 ):hover {
+  transform: scale(1.2, 1.2);
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-container aside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.picture-sun-container {
+  margin: 15px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes flying {
+
+  0% { margin-left: 0;}
+
+  100% { margin-left: 90%;}
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.article-animation-backwards {
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-name: article-grow;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.play {
+  animation-play-state: running;
+}
+
+@keyframes article-grow {
+
+  0% { font-size: 1rem;
+    font-weight: 100;
+  }
+
+  50% { font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  75% { font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  100% {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px red solid;
+  }
+}
