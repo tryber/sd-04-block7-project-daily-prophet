@@ -130,13 +130,3 @@ h1 {
   }
 }
 
-@keyframes invisible {
-
-  0% {
-    /*opacity: '5%';*/
-  }
-
-  25% {
-    /*opacity: '5';*/
-  }
-}
