@@ -1,5 +1,6 @@
 header {
   border: 1px solid black;
+  height: 6em;
 }
 
 article {
@@ -20,6 +21,38 @@ aside {
   width: 55em;
 }
 
+.fly {
+  animation-name: flying;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.fly img {
+  width: 70px;
+}
+
+@keyframes flying {
+    0% {
+      transform: translateX(900px) skewX(30deg);
+      opacity: 0.5;
+    }
+    30% {
+      transform: rotate(xx) translateX(0) skewX(30deg);
+      opacity: 0.5;
+    }
+    60% {
+      transform: rotate(xx) translateX(0) skewX(15deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: rotate(xx) translateX(0) skewX(0);
+      opacity: 1;
+    }
+  }
+
 @media only screen and ( max-width : 760px ) {
 
   .container-layout { background-color: yellow; }
@@ -30,7 +63,7 @@ aside {
   .container-layout { background-color: red; }
 }
 
-@media only screen and ( orientation : landscape ) {
+@media only screen and ( max-width : 600px ) and ( orientation : landscape ) {
 
   .container-orientation { border: 1px solid;
     border-color: red;
