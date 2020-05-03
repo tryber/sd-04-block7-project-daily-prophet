@@ -41,12 +41,13 @@ aside {
     transform: translateX(900px) skewX(30deg);
   }
 
-  30% {
+  25% {
     opacity: 0.5;
+    transform: scale(0.1);
     transform: rotate(xx) translateX(0) skewX(30deg);
   }
 
-  60% {
+  50% {
     opacity: 0.8;
     transform: rotate(xx) translateX(0) skewX(15deg);
   }
@@ -67,7 +68,7 @@ aside {
   .container-layout { background-color: red; }
 }
 
-@media only screen and ( max-width : 600px ) and ( orientation : landscape ) {
+@media only screen and ( orientation : landscape ) {
 
   .container-orientation { border: 1px solid;
     border-color: red;
