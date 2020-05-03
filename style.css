@@ -30,7 +30,9 @@ aside {
   .container-layout { background-color: red; }
 }
 
-@media all and ( orientation : landscape ) {
+@media only screen and ( orientation : landscape ) {
 
-  .container-orientation { border: 1px solid rgb(255,0,0); }
+  .container-orientation { border: 1px solid;
+  border-color: red;
+  }
 }
