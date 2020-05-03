@@ -126,8 +126,12 @@ body {
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
   transition-duration: 2s;
-  transition-property: all;
+}
+
+.article-animation:active {
+  animation-play-state: running;
 }
 
 @keyframes hide {
@@ -179,12 +183,12 @@ body {
 @keyframes article-grow {
 
   from {
-    font-size: 50%;
+    font-size: 100%;
   }
 
   to {
-    font-size: 100%;
-    font-weight: 400;
+    font-size: 150%;
+    font-weight: 900;
   }
 }
 
