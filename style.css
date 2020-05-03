@@ -1,0 +1,393 @@
+/* *{
+  border: 2px solid brown;
+} */
+
+@keyframes skewing {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(180deg);
+  }
+
+}
+
+@keyframes translating {
+
+  0% {
+    transform: translate(50px, 15px);
+  }
+
+  100% {
+    transform: translate(-50px, -15px);
+  }
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale(0.5, 2);
+  }
+
+  50% {
+    transform: scale(1.5, 0.5);
+  }
+
+  75% {
+    transform: scale(1, 1);
+  }
+
+  0% {
+    transform: scale(0.5, 2);
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    left: 0;
+  }
+
+  30% {
+    transform: scale(3, 3);
+  }
+
+  100% {
+    left: 80%;
+    transform: translateY(10%);
+  }
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 400;
+    transform: scale(0.4);
+  }
+
+  15% {
+    font-weight: 600;
+    transform: scale(0.7);
+  }
+
+  30% {
+    font-weight: 800;
+    transform: scale(1.2);
+  }
+
+  50% {
+    font-weight: 900;
+    transform: scale(1.6);
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    flex-flow: wrap;
+  }
+
+  .container-layout .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+  }
+
+  .container-layout .section2 img {
+    width: 90%;
+  }
+
+  .container-layout .section2 .par2 {
+    font-size: 1em;
+    text-align: justify;
+    width: 90%;
+  }
+
+  /* .container-layout .topheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .container-layout .topheader img {
+    height: 20%;
+    width: 20%;
+  }
+
+  .container-layout .topheader .h1_top {
+    font-size: 2em;
+    margin-left: 10%;
+    width: 50%;
+  }
+
+  .container-layout .exclusivo {
+    justify-content: center;
+  }
+
+  .container-layout .section1 {
+    display: flex;
+    flex-direction: column;
+    height: 7%;
+    justify-content: center;
+    width: 99%;
+  }
+
+  .container-layout .article1 {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+  }
+
+  .container-layout .article1 p {
+    font-size: 2em;
+    width: 85%;
+  }
+
+  .container-layout .navegacao {
+    font-size: 1.5em;
+  }
+
+  .container-layout .section3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .container-layout .container_ladrao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .container-layout .container_ladrao img {
+    height: 50%;
+    padding-top: 40%;
+    text-align: center;
+    width: 250%;
+  }
+
+  .container-layout .container_ladrao p {
+    font-size: 1.5em;
+    text-align: justify;
+    width: 90%;
+  }
+
+  .container-layout .ladraozinho span {
+    font-size: 3em;
+  }
+
+  .container-layout .rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+  } */
+
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+}
+
+body , html {
+  box-sizing: border-box;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-bottom: 1px solid #1e0242;
+  border-top: 0.188em solid #1e0242;
+  height: 0.5em;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navegacao a {
+  color: #1e0242;
+  margin-right: 5em;
+}
+
+
+.topheader {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  margin-left: 3em;
+  width: 85%;
+}
+
+.topheader .h1_top {
+  align-self: center;
+  display: flex;
+  font-size: 4em;
+  text-align: center;
+}
+
+.topheader img {
+  margin-left: 3em;
+  width: 20%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: center;
+  margin-left: 5em;
+  padding-bottom: 1em;
+  width: 90%;
+}
+
+.exclusivo .span1 {
+  font-size: 3em;
+  margin-left: 10em;
+  text-align: center;
+}
+
+.article1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.article1 .titulo2 {
+  animation: skewing 5s linear infinite alternate-reverse;
+  font-size: 3em;
+  font-weight: 800;
+  width: 50%;
+}
+
+.article1 .span2 {
+  display: flex;
+  font-size: 4em;
+  text-align: center;
+  width: 80%;
+}
+
+.article1 .par1 {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  text-align: justify;
+}
+
+.exclusivo .span2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.section2 img {
+  animation: scaling 6s linear infinite alternate;
+  height: 70%;
+  padding-top: 0.5em;
+  width: 109%;
+}
+
+.section2 .par2 {
+  text-align: justify;
+  width: 43%;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-between;
+  margin-left: 35px;
+  transition: transform 100ms ease-in-out;
+  width: 90%;
+}
+
+.section3:active {
+  transform: translate(200px, 150px) rotate(20deg);
+}
+
+.span3 {
+  font-size: 4em;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.span3:hover {
+  background-color: black;
+  color: white;
+}
+
+.section3 .ladrao {
+  margin-left: 2%;
+  width: 90%;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+  font-size: 2em;
+  margin-left: 4em;
+  text-align: justify;
+  transition-duration: 10s;
+  transition-property: width;
+  transition-timing-function: steps(15, start);
+  width: 80%;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+  width: 45%;
+}
+
+.section3 .container_ladrao {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape {
+  animation: translating 5s ease-in-out 1s infinite alternate;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 35px;
+}
+
+.fly {
+  align-self: flex-end;
+  animation: flying 5s linear 3s 3 alternate forwards;
+  height: 6%;
+  position: absolute;
+}
