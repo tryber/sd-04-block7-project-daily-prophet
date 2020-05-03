@@ -22,12 +22,12 @@ aside {
 }
 
 .fly {
-  animation-name: flying;
   animation-delay: 3s;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
   animation-direction: alternate;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
 }
 
 .fly img {
@@ -35,23 +35,27 @@ aside {
 }
 
 @keyframes flying {
-    0% {
-      transform: translateX(900px) skewX(30deg);
-      opacity: 0.5;
-    }
-    30% {
-      transform: rotate(xx) translateX(0) skewX(30deg);
-      opacity: 0.5;
-    }
-    60% {
-      transform: rotate(xx) translateX(0) skewX(15deg);
-      opacity: 0.8;
-    }
-    100% {
-      transform: rotate(xx) translateX(0) skewX(0);
-      opacity: 1;
-    }
+  0% {
+
+    opacity: 0.5;
+    transform: translateX(900px) skewX(30deg);
   }
+  30% {
+
+    opacity: 0.5;
+    transform: rotate(xx) translateX(0) skewX(30deg);
+  }
+  60% {
+
+    opacity: 0.8;
+    transform: rotate(xx) translateX(0) skewX(15deg);
+  }
+  100% {
+
+    opacity: 1;
+    transform: rotate(xx) translateX(0) skewX(0);
+  }
+}
 
 @media only screen and ( max-width : 760px ) {
 
