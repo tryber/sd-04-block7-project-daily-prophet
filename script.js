@@ -22,7 +22,7 @@ function starsDisappearing() {
 }
 
 setInterval(function () {
-  for (let i = 0; i < 28; i += 1) {
+  for (let i = 0; i < 30; i += 1) {
     const rIndex = randomTd();
     // let rDelay = randomDelay();
     // starsTd[rIndex].style.animationDuration= `${rDelay}s`;
