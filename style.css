@@ -130,11 +130,11 @@ body {
 }
 
 .skew {
-  animation: skewing 5s steps(100,end) infinite;
+  animation: skewing 5s steps(100, end) infinite;
 }
 
 .translate {
-  animation: translating 5s steps(100,end) infinite;
+  animation: translating 5s steps(100, end) infinite;
 }
 
 .article-animation {
