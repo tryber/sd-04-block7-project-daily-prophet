@@ -33,7 +33,11 @@ setInterval(function () {
   return saveArray;
 }, 3000);
 
+const articleDiv = document.querySelector('article');
 
+articleDiv.addEventListener('click', function () {
+  articleDiv.classList.add('article-animation');
+});
 // function starsDisappearing() {
 //   for (let i = 0; i < saveArray.length; i += 1) {
 //     starsTd[i].className = 'star starsFlashing';
