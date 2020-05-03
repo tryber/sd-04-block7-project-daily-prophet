@@ -64,22 +64,22 @@
 
   0% {
     font-weight: 400;
-    transform: scale(1);
+    transform: scale(0.4);
   }
 
   15% {
     font-weight: 600;
-    transform: scale(1.5);
+    transform: scale(0.7);
   }
 
   30% {
     font-weight: 800;
-    transform: scale(2);
+    transform: scale(1.2);
   }
 
   50% {
     font-weight: 900;
-    transform: scale(2);
+    transform: scale(1.6);
   }
 }
 
@@ -330,16 +330,27 @@ hr {
   font-size: 20px;
   justify-content: space-between;
   margin-left: 35px;
+  transition: transform 100ms ease-in-out;
   width: 90%;
 }
 
-.ladraozinho span {
+.section3:active {
+  transform: translate(200px, 150px) rotate(20deg);
+}
+
+.span3 {
   font-size: 4em;
   margin-left: 2em;
   text-align: center;
 }
 
+.span3:hover {
+  background-color: black;
+  color: white;
+}
+
 .section3 .ladrao {
+  margin-left: 2%;
   width: 90%;
 }
 
@@ -349,11 +360,17 @@ hr {
   animation-play-state: paused;
   animation-timing-function: linear;
   font-size: 2em;
+  margin-left: 4em;
   text-align: justify;
+  transition-duration: 10s;
+  transition-property: width;
+  transition-timing-function: steps(15, start);
+  width: 80%;
 }
 
 .article-animation:active {
   animation-play-state: running;
+  width: 45%;
 }
 
 .section3 .container_ladrao {
