@@ -123,6 +123,13 @@ body {
   transition-timing-function: ease;
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  transition-duration: 2s;
+  transition-property: all;
+}
+
 @keyframes hide {
 
   1% {
@@ -166,6 +173,18 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 50%;
+  }
+
+  to {
+    font-size: 100%;
+    font-weight: 400;
   }
 }
 
