@@ -18,3 +18,175 @@
     border: 1px solid red;
   }
 }
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerImages {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerImages img {
+  width: 15%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
+}
+
+nav ul li {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.asideAndMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.beta {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  animation-iteration-count: infinite;
+  animation: colorsBackground 10s;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.ball {
+  animation-iteration-count: infinite;
+  animation: colorsBall 10s;
+  background-color: black;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes colorsBackground{
+
+  0% {
+    background-color: black;
+    
+  }
+
+  11.11% {
+    background-color: white;
+  }
+
+  22.22% {
+    background-color: black;
+  }
+
+  33.33% {
+    background-color: white;
+  }
+  
+  44.44% {
+    background-color: black;
+  }
+  
+  55.55% {
+    background-color: white;
+  }
+
+  66.66% {
+    background-color: black;
+  }
+
+  77.77% {
+    background-color: white;
+  }
+  
+  88.88% {
+    background-color: black;
+  }
+  
+  100% {
+    background-color: white;
+  }  
+}
+
+@keyframes colorsBall{
+
+  0% {
+    background-color: white;
+    
+  }
+
+  11.11% {
+    background-color: black;
+  }
+
+  22.22% {
+    background-color: red;
+  }
+
+  33.33% {
+    background-color: red;
+  }
+  
+  44.44% {
+    background-color: yellow;
+  }
+  
+  55.55% {
+    background-color: yellow;
+  }
+
+  66.66% {
+    background-color: green;
+  }
+
+  77.77% {
+    background-color: green;
+  }
+  
+  88.88% {
+    background-color: blue;
+  }
+  
+  100% {
+    background-color: blue;
+  }
+}
+
+.fly {
+  animation: flying 2s ease-in-out 3s 3 alternate forwards;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(450px);
+  }
+}
