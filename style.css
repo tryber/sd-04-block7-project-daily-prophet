@@ -33,6 +33,6 @@ aside {
 @media only screen and ( orientation : landscape ) {
 
   .container-orientation { border: 1px solid;
-  border-color: red;
+    border-color: red;
   }
 }
