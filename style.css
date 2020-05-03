@@ -191,7 +191,7 @@ body {
   }
 }
 
-@media ( orientation : landscape ) {
+@media (orientation : landscape) {
 
   .container-orientation {
     border: 1px solid red;
@@ -248,7 +248,7 @@ body {
 }
 
 @keyframes animation-grow {
-  
+
   0% {
     font-weight: 200;
     transform: scale(1);
