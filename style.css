@@ -113,6 +113,14 @@ header div:nth-child( 2 ) img {
   font-weight: 100;
 }
 
+.article-animation-backwards {
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-name: article-grow;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 .play {
   animation-play-state: running;
 }
