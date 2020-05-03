@@ -1,4 +1,3 @@
-
 body {
   background-color: #1c1915;
 }
@@ -17,8 +16,7 @@ body {
 }
 
 .first-part img {
-  width: 400px ;
-
+  width: 400px;
 }
 
 .sub-title {
@@ -53,7 +51,7 @@ h1 {
 }
 
 .cont-2 {
-  padding-right: 7% ;
+  padding-right: 7%;
 }
 
 .second-part {
@@ -68,16 +66,16 @@ h1 {
   width: 50%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width: 760px ) {
   .first-part {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   .first-part img {
-    width: 100%;
     margin: 4%;
+    width: 100%;
   }
 
   .second-part {
@@ -92,9 +90,9 @@ h1 {
     width: 100%;
   }
 
-  .noticia-1 h1 {
-    transform: rotate(-90deg);
-    height: 10%;
+  .not-1 {
     margin: auto 0;
+    height: 10%;
+    transform: rotate(-90deg);
   }
 }
