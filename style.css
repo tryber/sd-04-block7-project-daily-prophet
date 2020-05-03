@@ -45,16 +45,19 @@ body {
   justify-content: space-between;
 }
 
-.exclusive {
+.div-exclusive {
+  background-color: black;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: scaling;
-  background-color: black;
+  transition-timing-function: ease-in-out;
+}
+
+.exclusive {
   color: white;
   font-size: 32px;
-  padding: 8px;
-  transition-timing-function: ease-in-out;
+  
 }
 
 .article-1 {
@@ -105,6 +108,10 @@ body {
   padding: 0 2px;
 }
 
+.img-dumb {
+  float: right;
+}
+
 .article-aside {
   border: 1px solid black;
   display: flex;
@@ -137,6 +144,12 @@ body {
   animation-name: translating;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
+}
+
+.article-animation:active {
+  animation-name: animation-grow;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -209,7 +222,7 @@ body {
   }
 
   50% {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 
   100% {
@@ -227,10 +240,27 @@ body {
 @keyframes translating {
 
   50% {
-    transform: translate(350px);
+    transform: translate(-100px);
   }
 
   100% {
     transform: translate(initial);
+  }
+}
+
+@keyframes animation-grow {
+  0% {
+    transform: scale(1);
+    font-weight: 200;
+  }
+
+  50% {
+    transform: scale(1.25);
+    font-weight: 700;
+  }
+
+  100% {
+    transform: scale(1.5);
+    font-weight: 900;
   }
 }
