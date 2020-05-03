@@ -8,12 +8,11 @@ article {
   height: 25em;
 }
 
-aside{
+aside {
   border: 1px solid black;
   float: right;
   height: 25em;
   width: 25em;
-  top: -10px;
 }
 
 .artigo {
@@ -21,18 +20,9 @@ aside{
   width: 55em;
 }
 
-.container-layout {
-    background-color: rgb(255, 255, 0);
+.container-orientation{
+  border: 1px solid red;
 }
-
-.container-layout {
-    background-color: rgb(255, 0, 0);
- }
-
- .container-orientation{
-    border: 1px solid red;
-}
-
 
 @media only screen and (max-width: 760px) {
   .container-layout {
@@ -41,12 +31,12 @@ aside{
 }
 
 @media only screen and (min-width: 1170px) {
-    .container-layout {
-      background-color: rgb(255, 0, 0);
+  .container-layout {
+    background-color: rgb(255, 0, 0);
    }
 }
 
-@media all and (orientation:landscape) {
+@media all and (orientation: landscape) {
     .container-orientation{
         border: 1px solid red;
     }
