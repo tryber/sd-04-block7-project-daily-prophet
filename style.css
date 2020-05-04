@@ -40,6 +40,40 @@ body {
   justify-content: space-around;
 }
 
+.test {
+  background-image: url("img/bolinha_Harry_Poter_animation.png");
+  height: 31px;
+  width: 72px;
+  -webkit-animation: animacao 4.5s steps(8)  infinite;
+  -webkit-animation: ease;
+  animation: animacao 4.5s steps(8) infinite ;
+  animation-timing-function: ease;
+}
+
+@keyframes animacao {
+  from {
+    transform: translateX(0);
+    background-position: 0;
+  }
+
+  to {
+    transform: translateX(53vw);
+    background-position: -576px;
+  }
+}
+
+@-webkit-keyframes animacao {
+  from {
+    transform: translateX(0);
+    background-position: 0;
+  }
+
+  to {
+    transform: translateX(53vw);
+    background-position: -576px;
+  }
+}
+
 @media screen and ( min-width : 1170px ) {
 
   .container-layout { background-color: red; }
