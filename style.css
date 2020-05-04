@@ -108,13 +108,13 @@ h1 {
   0% {
     transform: skew(0deg);
   }
-  
+
   100% {
     transform: skew(180deg);
   }
 }
 
-body:hover { 
+body:hover {
   background-color: red;
 }
 
