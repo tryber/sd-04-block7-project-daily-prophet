@@ -149,7 +149,7 @@ h1 {
 
 @keyframes flying {
 
-  0% { 
+  0% {
 		transform: translate(1px, 1px);
   }
 
