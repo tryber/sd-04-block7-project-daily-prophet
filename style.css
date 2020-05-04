@@ -104,13 +104,14 @@ h1 {
 }
 
 @keyframes skewing {
+
   0% {
     transform: skew(0deg);
   }
+  
   100% {
     transform: skew(180deg);
   }
-}
 }
 
 body:hover { 
