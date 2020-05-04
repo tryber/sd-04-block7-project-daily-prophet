@@ -117,6 +117,7 @@ h1 {
 
   .fly {
     animation: flying 5s linear 3s 3 alternate;
+    animation-fill-mode: forwards;
     position: absolute;
   }
 }
@@ -125,6 +126,7 @@ h1 {
 
   .fly {
     animation: flying 5s linear 3s 3 alternate;
+    animation-fill-mode: forwards;
     position: absolute;
   }
 
