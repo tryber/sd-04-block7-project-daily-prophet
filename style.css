@@ -116,16 +116,16 @@ h1 {
   }
 
   .fly {
-    position: absolute;
     animation: flying 5s linear 3s 3 alternate;
+    position: absolute;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
 
   .fly {
-    position: absolute;
     animation: flying 5s linear 3s 3 alternate;
+    position: absolute;
   }
 
   .container-layout {
