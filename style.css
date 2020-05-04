@@ -309,19 +309,13 @@ img {
   .main-article .text-title {
     font-size: 16pt;
   }
-  
+
   .main-article p , .interest-sec p {
     font-size: 14pt;
     line-height: 27px;
     padding-top: 14px;
     text-align: justify;
     text-indent: 25px;
-  }
-
-  .artigo main , .lateral {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
   }
 
   main , .interest-sec {
@@ -334,6 +328,12 @@ img {
 
   .main-article , .interest-sec {
     width: 86%;
+  }
+
+  .artigo main , .lateral {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .fly {
