@@ -1,5 +1,6 @@
 body {
   background-color: #1c1915;
+  transition: background-color 2s;
 }
 
 .fundo {
@@ -96,6 +97,24 @@ h1 {
   animation-duration: 200ms;
   animation-iteration-count: 5;
   animation-name: rot-sca;
+}
+
+.skew {
+  animation: skewing 4s linear 1;
+}
+
+@keyframes skewing {
+  0% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(180deg);
+  }
+}
+}
+
+body:hover { 
+  background-color: red;
 }
 
 @media screen and ( max-width : 760px ) {
