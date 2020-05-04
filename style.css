@@ -149,24 +149,24 @@ h1 {
 
 @keyframes flying {
 
-0% {
- transform: translate( 1px , 1px );
-}
+	0% {
+		transform: translate( 1px , 1px );
+	}
 
-25% {
- transform: translate( 100% , 100% );
-}
+	25% {
+ 		transform: translate( 100% , 100% );
+	}
 
-50% {
- transform: translate( 250%, 250%);
-}
+	50% {
+ 		transform: translate( 250%, 250%);
+	}
 
-75% {
- transform: translate( 300% , 400%);
-}
+	75% {
+ 		transform: translate( 300% , 400%);
+	}
 
-100% {
- transform: translate( 1px , 1px );
-}
+	100% {
+ 		transform: translate( 1px , 1px );
+	}
 
 }
