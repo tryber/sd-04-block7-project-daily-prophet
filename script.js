@@ -36,7 +36,8 @@ const planets = document.querySelector('.planet-main');
 
 function resetAnimation(element) {
   element.style.animation = 'none';
-  const reflow = element.offsetHeight; // triggering reflow and restarting the element's animation 
+  // triggering reflow and restarting the element's animation:
+  const reflow = element.offsetHeight;
   element.style.animation = null;
   return reflow;
 }
