@@ -8,6 +8,7 @@ html , body {
 
 .container-layout {
   align-items: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
 }
@@ -26,12 +27,15 @@ html , body {
   border-bottom: 8px double black;
   border-top: 5px solid black;
   color: floralwhite;
+  display: flex;
+  justify-content: center;
   padding-top: 10px;
   text-align: center;
   width: 100%;
 }
 
 .cabecalho figure {
+  margin: 0;
   width: 100%;
 }
 
@@ -40,7 +44,7 @@ html , body {
 }
 
 .cabecalho figure figcaption {
-  font-size: 16pt;
+  font-size: 18pt;
   font-weight: 700;
   margin-top: 5px;
 }
@@ -88,6 +92,7 @@ main {
   font-size: 14pt;
   margin: 0;
   padding-top: 12px;
+  text-align: center;
 }
 
 .main-article p {
@@ -260,7 +265,7 @@ img {
   }
 
   100% {
-    margin-left: 90%;
+    margin-left: 85%;
     opacity: 1;
     transform: translateY(-7px);
   }
@@ -278,10 +283,21 @@ img {
 
   .container-layout {
     background-color: yellow;
+    width: 100%;
+  }
+
+  .pseudo-container {
+    width: 98%;
+  }
+
+  .cabecalho .titulo {
+    width: 80%;
   }
 
   .cabecalho figure figcaption {
-    font-size: 10pt;
+    font-size: 13pt;
+    margin-top: 16px;
+    text-align: center;
   }
 
   .artigo {
@@ -290,14 +306,38 @@ img {
     width: 100%;
   }
 
+  .main-article .text-title {
+    font-size: 16pt;
+  }
+  
+  .main-article p , .interest-sec p {
+    font-size: 14pt;
+    line-height: 27px;
+    padding-top: 14px;
+    text-align: justify;
+    text-indent: 25px;
+  }
+
   .artigo main , .lateral {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
+  main , .interest-sec {
+    padding: 2px;
+  }
+
+  .main-article {
+    padding: 2px;
+  }
+
   .main-article , .interest-sec {
     width: 86%;
+  }
+
+  .fly {
+    display: none;
   }
 }
 
