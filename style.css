@@ -1,0 +1,365 @@
+body {
+  background-attachment: fixed;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Times, serif;
+  margin: 1%;
+  padding: 1%;
+  text-align: left;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  word-wrap: break-word;
+}
+
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  transform: scale(1, 2);
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.mainArticle {
+  display: flex;
+  flex-wrap: wrap;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 60%;
+}
+
+.figure {
+  display: flex;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.videoOne {
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-name: show;
+  border-radius: 100%;
+  height: 160px;
+  padding: 2%;
+  position: relative;
+  top: 10px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 270px;
+}
+
+.videoTwo {
+  animation: appear 5s;
+  border-radius: 99px;
+  padding: 2%;
+  position: absolute;
+  top: 395px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 300px;
+}
+
+.slythrinIMG {
+  animation: hide 5s steps(1, end);
+  border-radius: 100%;
+  height: 160px;
+  padding: 2%;
+  position: absolute;
+  top: 395px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 280px;
+}
+
+.figCap {
+  position: relative;
+  right: 315px;
+  top: 200px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 480px;
+}
+
+.pOne {
+  margin-top: 80px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  float: left;
+  margin-left: 213px;
+  margin-top: -113px;
+  opacity: 0;
+  position: absolute;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  transition-duration: 2s;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+}
+
+@keyframes hide {
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.1) skew(20deg, 10deg);
+  }
+}
+
+@keyframes show {
+
+  1% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+
+  1% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flying {
+
+  1% {
+    opacity: 0;
+    transform: translate(10px, 0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 100%;
+  }
+
+  to {
+    font-size: 150%;
+    font-weight: 900;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .fly {
+    margin-left: 441px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .videoTwo {
+    top: 350px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .slythrinIMG {
+    top: 350px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    display: block;
+    font-size: 20px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 595px;
+  }
+
+  .h2 {
+    margin-top: 100px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .fly {
+    margin-left: 95px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .videoOne {
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 1px;
+  }
+
+  .videoTwo {
+    left: 10px;
+    position: absolute;
+    top: 550px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 200px;
+  }
+
+  .slythrinIMG {
+    height: 1px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 1px;
+  }
+
+  .figCap {
+    height: 5px;
+    padding: 5px;
+    position: relative;
+    right: 40px;
+    top: 180px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 300px;
+    word-wrap: break-word;
+  }
+
+  p {
+    margin: 5px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .pOne {
+    margin-top: 150px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+}
+
+@media screen and ( orientation : landscape ) and ( max-width : 769px ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .fly {
+    margin-left: 164px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .h2 {
+    margin-top: 80px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .videoOne {
+    left: 70px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 100px;
+  }
+
+  .videoTwo {
+    top: 475px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 250px;
+  }
+
+  .slythrinIMG {
+    height: 150px;
+    top: 475px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 240px;
+  }
+
+  .figCap {
+    height: 5px;
+    padding: 5px;
+    position: relative;
+    right: 120px;
+    top: 190px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 300px;
+    word-wrap: break-word;
+  }
+}
