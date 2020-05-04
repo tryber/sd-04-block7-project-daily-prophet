@@ -227,25 +227,89 @@ footer {
   }
 }
 
+@media screen and ( min-width : 360px ) and ( max-width : 768px ) {
+
+  .all {
+    border: 0.01px solid black;
+    margin: 10px;
+    width: 105%;
+  }
+
+  .aside-one-img {
+    display: initial;
+  }
+
+  .article-one-img {
+    width: 350px;
+  }
+
+  .article-two-img {
+    width: 350px;
+  }
+
+  .logo {
+    display: initial;
+    width: 300px;
+  }
+
+  .article-three-img {
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  aside {
+    margin-top: 10px;
+    width: 350px;
+  }
+}
+
+@media screen and ( max-width : 320px ) {
+
+  .all {
+    border: 0.01px solid black;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .aside-one-img {
+    display: initial;
+    width: 250px;
+  }
+
+  .article-one-img {
+    width: 300px;
+  }
+
+  .article-two-img {
+    width: 300px;
+  }
+
+  .logo {
+    display: initial;
+    width: 300px;
+  }
+
+  .article-three-img {
+    width: 300px;
+  }
+
+  aside {
+    margin-top: 10px;
+    width: 300px;
+  }
+}
+
 main {
-  animation: borders 3s steps(3, end) infinite;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
   padding: 15px;
   width: 94%;
-}
-
-@keyframes borders {
-
-  to {
-    border: 5px solid black;
-  }
-}
-
-.left {
-  width: 65%;
 }
 
 .article-one-maintitle {
