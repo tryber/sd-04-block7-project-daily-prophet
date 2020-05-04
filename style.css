@@ -83,11 +83,13 @@ h1 {
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
 }
 
-.article-animation:hover p {
+.article-animation:active p {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: running;
 }
 
 .harry {
