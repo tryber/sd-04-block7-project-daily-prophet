@@ -80,6 +80,16 @@ h1 {
   transform: rotate(-90deg);
 }
 
+.article-animation:hover {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
+.article-animation:hover p {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -170,4 +180,16 @@ h1 {
   100% {
     transform: translate(1px, 2px);
   }
+}
+
+@keyframes article-grow {
+  0% {
+    width: 100%;
+  }
+  
+  100% {
+    font-size: x-large;
+    font-weight: 900;
+    width: auto;
+  }  
 }
