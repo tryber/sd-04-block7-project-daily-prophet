@@ -80,7 +80,7 @@ h1 {
   transform: rotate(-90deg);
 }
 
-.article-animation:hover {
+.article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
 }
