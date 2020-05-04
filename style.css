@@ -114,9 +114,19 @@ h1 {
     margin: auto 0;
     transform: rotate(-90deg);
   }
+
+  .fly {
+    position: absolute;
+    animation: flying 5s linear 3s 3 alternate;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
+
+  .fly {
+    position: absolute;
+    animation: flying 5s linear 3s 3 alternate;
+  }
 
   .container-layout {
     background-color: red;
@@ -135,4 +145,26 @@ h1 {
     margin: auto 0;
     transform: rotate(-90deg);
   }
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(1px,1px);
+  }
+  25% {
+    transform: translate(100% , 100% );
+  }
+
+  50% {
+    transform: translate(250%, 250%);
+  }
+
+  75% {
+    transform: translate( 300% , 400%);
+  }
+
+ 100%{ 
+   transform: translate(1px,1px);
+ }
 }
