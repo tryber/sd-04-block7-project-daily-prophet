@@ -233,6 +233,7 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
   }
+
   .container-layout {
     align-items: center;
     background-color: blue;
@@ -287,9 +288,9 @@ footer {
     text-align: center;
   }
 
-  .col-1,
-  .col-2,
-  .col-3,
+  .col-1, 
+  .col-2, 
+  .col-3, 
   .col-4 {
     align-items: center;
     display: flex;
@@ -324,6 +325,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .sub-headline {
     display: flex;
     flex-direction: row-reverse;
@@ -407,6 +409,7 @@ footer {
   section img {
     width: 200px;
   }
+
   article {
     display: flex;
     flex-direction: column;
@@ -417,7 +420,10 @@ footer {
     text-align: center;
   }
 
-  .col-1, .col-2, .col-3, .col-4 {
+  .col-1, 
+  .col-2, 
+  .col-3, 
+  .col-4 {
     align-items: center;
     display: flex;
     flex-direction: column;
