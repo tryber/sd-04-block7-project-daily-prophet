@@ -1,0 +1,133 @@
+header {
+  border: 1px solid black;
+  height: 6em;
+}
+
+article {
+  border: 1px solid black;
+  display: flex;
+  height: 25em;
+}
+
+aside {
+  border: 1px solid black;
+  float: right;
+  height: 25em;
+  width: 25em;
+}
+
+.artigo {
+  border: 1px solid black;
+  width: 55em;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+.fly img {
+  width: 70px;
+}
+
+@keyframes flying {
+
+  0% {
+    opacity: 0.5;
+    transform: translateX(900px) skewX(30deg);
+  }
+
+  25% {
+    opacity: 0.5;
+    transform: rotate(xx) translateX(0) skewX(30deg);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: rotate(xx) translateX(0) skewX(15deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(xx) translateX(0) skewX(0);
+  }
+}
+
+.animacao {
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-name: animation;
+}
+
+@keyframes animation {
+
+  0% {
+    opacity: 0.3;
+    transform: scale(0.2);
+  }
+
+  25% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.article-animation {
+  animation: article-grow steps(4) infinite;
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+  font-size: 14px;
+  transition-delay: 2s;
+  transition-duration: 4s;
+  transition-property: font-size;
+}
+
+@keyframes article-grow {
+
+  0% {
+    transition-duration: 4s;
+  }
+
+  100% {
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
+
+.article-animation:hover {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout { background-color: yellow; }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout { background-color: red; }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation { border: 1px solid;
+    border-color: red;
+  }
+}
