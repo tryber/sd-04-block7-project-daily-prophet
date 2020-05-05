@@ -31,7 +31,6 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
 }
-
 .sub-headline {
   display: flex;
   flex-direction: row-reverse;
@@ -47,9 +46,9 @@ h3 {
 }
 
 .col-1 {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  width: 40%;
 }
 
 .col-2 {
@@ -67,10 +66,10 @@ h3 {
 
 .col-4 {
   display: flex;
-  width: 800px;
-  text-align: justify;
-  padding: 20px;
   margin-left: 30%;
+  padding: 20px;
+  text-align: justify;
+  width: 800px;
 }
 
 .center {
@@ -89,13 +88,15 @@ footer {
 }
 
 .article-animation {
+  background: yellow;
   padding: 20px;
 }
 
-.article-animation:hover {
+.article-animation:hover p {
   animation-duration: 4s;
   animation-name: article-grow;
   animation-timing-function: linear;
+  border: 1px solid purple;
 }
 
 @keyframes article-grow {
@@ -219,6 +220,7 @@ footer {
   }
   .container-layout {
     align-items: center;
+    background-color: blue;
     display: flex;
     flex-direction: row;
   }
@@ -248,20 +250,25 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   section img {
     width: 200px;
   }
+
   article {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   h2 {
     text-align: center;
   }
+
   p {
     text-align: center;
   }
+
   .col-1,
   .col-2,
   .col-3,
@@ -371,6 +378,7 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
   .headline {
     display: flex;
     flex-direction: column;
@@ -380,6 +388,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
+
   section img {
     width: 200px;
   }
@@ -388,6 +397,7 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+
   h2 {
     text-align: center;
   }
