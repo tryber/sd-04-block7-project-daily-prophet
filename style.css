@@ -13,7 +13,9 @@
 }
 
 .main-container {
-  background-image: url('./Pergaminho-memory.jpg');
+  background-image: url('./Pergaminho-memory2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -180,6 +182,8 @@
     transform: scale(1.2, 1.2);
   }
 }
+
+
 
 @media screen and ( max-width : 760px ) {
 
