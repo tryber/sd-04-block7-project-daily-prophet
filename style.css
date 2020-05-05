@@ -107,9 +107,8 @@
   width: 100%;
 }
 
-.article-animation:hover {
+.article-animation {
   animation: article-grow 4s;
-  animation-fill-mode: forwards;
 }
 
 .img-article2 {
@@ -180,8 +179,8 @@
   }
 
   100% {
-    transform: scale(1.1, 1.1);
     font-weight: 900;
+    transform: scale(1.1, 1.1);
   }
 }
 
