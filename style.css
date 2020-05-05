@@ -72,17 +72,6 @@
   animation: opacity 1s;
 }
 
-@keyframes opacity {
-
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .fly {
   animation: flying linear;
   animation-delay: 3s;
@@ -93,21 +82,6 @@
   float: left;
   position: absolute;
   width: 100px;
-}
-
-@keyframes flying {
-
-  0% {
-    transform: rotate(-50deg);
-  }
-
-  10% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(267px, 530px);
-  }
 }
 
 .aside {
@@ -133,19 +107,9 @@
   width: 100%;
 }
 
-@keyframes sirius {
-
-  0% {
-    transform: scale(1.02, 1.01);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
 .article-animation:hover {
   animation: article-grow 4s;
+  animation-fill-mode: forwards;
 }
 
 .img-article2 {
@@ -172,6 +136,43 @@
   text-align: center;
 }
 
+@keyframes opacity {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    transform: rotate(-50deg);
+  }
+
+  10% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(267px, 530px);
+  }
+}
+
+@keyframes sirius {
+
+  0% {
+    transform: scale(1.02, 1.01);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 @keyframes article-grow {
 
   0% {
@@ -179,7 +180,8 @@
   }
 
   100% {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
+    font-weight: 900;
   }
 }
 
