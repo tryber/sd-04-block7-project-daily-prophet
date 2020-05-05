@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  display: block;
   font-family: Vollkorn, serif;
   margin: 1% 20%;
   width: auto;
@@ -41,10 +42,10 @@ header img {
   animation-direction: alternate;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-name: floating;
+  animation-name: flying;
 }
 
-@keyframes floating {
+@keyframes flying {
 
   0% {
     bottom: 0;
@@ -97,4 +98,25 @@ nav ul li {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    max-width: 760px;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    min-width: 1170px;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+  
+  body {
+    font-size: 10px;
+  }
 }
