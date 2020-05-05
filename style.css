@@ -102,13 +102,13 @@ aside {
 
   100% {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 100;
   }
 }
 
 .article-animation:hover {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 20;
 }
 
 @media only screen and ( max-width : 760px ) {
