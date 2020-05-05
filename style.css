@@ -57,12 +57,30 @@ nav ul li:hover {
   flex-direction: row;
 }
 
+.alfa {
+  border: ridge 2px black;
+  display: flex;
+  height: 139.5px;
+  justify-content: flex-start;
+}
+
+p {
+  margin-left: 8%;
+  overflow-y: scroll;
+}
+
 .beta {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
-.main {
+.overflow {
+  width: min-content;
+  word-wrap: break-word;
+}
+
+main {
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -213,20 +231,20 @@ nav ul li:hover {
 @keyframes skewing {
 
   0% {
-    transform: skew(20deg, 20deg);
+    transform: skew(-20deg, -20deg);
   }
 
   50% {
-    transform: skew(30deg, 30deg);
+    transform: skew(-30deg, -30deg);
   }
 
   100% {
-    transform: skew(50deg, 50deg);
+    transform: skew(-50deg, -50deg);
   }
 }
 
 .scaling {
-  animation: scaling 3s linear;
+  animation: scaling 3s ease-in;
 }
 
 @keyframes scaling {
@@ -236,10 +254,29 @@ nav ul li:hover {
   }
 
   50% {
-    transform: scale(0.2, 0.2);
+    transform: scale(0.5, 0.5);
   }
 
   100% {
-    transform: scale(0.5, 0.5);
+    transform: scale(0.9, 0.9);
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s steps(400);
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+  font-weight: 100;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 200;
+  }
+
+  100% {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
   }
 }
