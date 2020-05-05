@@ -11,6 +11,12 @@
   justify-content: space-around;
   width: 100%;
 }
+.main-container {
+  background-image: url(./Pergaminho.jpg);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
 
 .nav {
   align-items: center;
@@ -23,18 +29,42 @@
   background-color: transparent;
   border-bottom: 5px double black;
   border-top: 5px double black;
-  width: 98%;
+  height: 135px;
+  margin-top: 50px ;
 }
 
 .nav small {
   background-color: white;
   opacity: 0.5;
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 
+.content-main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-articles {
+  width: 75%;
+  margin: 10px 20px;
+}
+
+.content-articles article {
+  width: 50%;
+}
+
+.content-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  width: 100%  ;
+}
 .opacity {
-  animation: opacity 5s linear;
-  opacity: 0;
+  animation: opacity 1s;
 }
 
 @keyframes opacity {
@@ -49,6 +79,7 @@
 }
 
 .fly {
+  float: left;
   animation: flying linear;
   animation-delay: 3s;
   animation-direction: alternate;
@@ -75,26 +106,25 @@
 }
 
 .aside {
-  background-color: grey;
   display: flex;
   flex-direction: column;
-  float: right;
-  width: 25%;
+  justify-content: flex-end;
+  padding: 5px;
+  width: 100%;
 }
 
 .aside small {
+  background-color: rgb(150, 150, 150, 0.4);
   font-size: 20px;
   font-weight: 800;
   text-align: center;
 }
 
 .aside img {
-  align-items: flex-end;
   animation: sirius 200ms linear;
   animation-direction: alternate;
   animation-iteration-count: 30;
   border: 10px groove gray;
-  justify-content: flex-end;
   width: 100%;
 }
 
@@ -109,17 +139,24 @@
   }
 }
 
-.articles-initial {
-  background-color: ghostwhite;
-}
-
-.articles-initial h1 {
-  font-weight: 800;
-}
-
 .article-animation {
   animation: article-grow 4s;
   transform: scale(1, 1);
+}
+
+.section article {
+  margin: 5px 10px;
+  border: 1px solid red;
+}
+
+.title {
+  font-size: 180%;
+}
+
+.text {
+  max-width: 500px;
+  font-weight: 100;
+  text-align: center;
 }
 
 @keyframes article-grow {
@@ -146,6 +183,30 @@
   .image-logo {
     width: 80%;
   }
+
+  .content-main {
+    flex-direction: column;
+  }
+
+  .content-articles section {
+    flex-direction: column;
+    width: 100%;
+    align-content: 100%;
+  }
+
+  .section article {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .content-articles {
+    width: 90%;
+  }
+
+  .aside img {
+    margin: auto;
+    width: 80%;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
@@ -163,5 +224,44 @@
 
   .container-orientation {
     border: 1px solid red;
+  }
+}
+
+@media screen and ( max-width : 768px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .fly {
+    width: 100px;
+  }
+
+  .image-logo {
+    width: 80%;
+  }
+
+  .content-main {
+    flex-direction: column;
+  }
+
+  .content-articles section {
+    flex-direction: column;
+    width: 100%;
+    align-content: 100%;
+  }
+
+  .section article {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .content-articles {
+    width: 90%;
+  }
+
+  .aside img {
+    margin: auto;
+    width: 80%;
   }
 }
