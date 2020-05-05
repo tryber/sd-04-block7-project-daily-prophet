@@ -94,7 +94,6 @@ footer {
 
 .article-animation:hover p {
   animation-duration: 4s;
-  animation-name: article-grow;
   animation-timing-function: linear;
   border: 1px solid purple;
 }
@@ -236,7 +235,7 @@ footer {
 
   .container-layout {
     align-items: center;
-    background-color: blue;
+    background-color: yellow;
     display: flex;
     flex-direction: row;
   }
@@ -298,6 +297,10 @@ footer {
 }
 
 @media all and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
 
   .container-layout {
     display: flex;
