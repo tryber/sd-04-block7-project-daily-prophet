@@ -87,7 +87,7 @@ aside {
 }
 
 .article-animation {
-  animation: steps (4, end);
+  animation: article-grow steps (4, end);
   animation-duration: 4s;
   animation-name: article-grow;
   animation-play-state: paused;
