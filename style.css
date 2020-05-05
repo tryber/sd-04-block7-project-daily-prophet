@@ -87,8 +87,8 @@ aside {
 }
 
 .article-animation {
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
   font-size: 14px;
   transition-delay: 2s;
   transition-duration: 4s;
