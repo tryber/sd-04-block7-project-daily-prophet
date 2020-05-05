@@ -31,6 +31,7 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .sub-headline {
   display: flex;
   flex-direction: row-reverse;
@@ -99,6 +100,7 @@ footer {
 }
 
 @keyframes article-grow {
+
   0% {
     font-weight: 100;
     transform: scale(1, 0.5);
@@ -135,6 +137,7 @@ footer {
 }
 
 @keyframes scale {
+
   0% {
     transform: scale(0.5, 1);
   }
@@ -159,6 +162,7 @@ footer {
 }
 
 @keyframes skew {
+
   0% {
     transform: skew(0deg);
   }
@@ -182,6 +186,7 @@ footer {
 }
 
 @keyframes flying {
+
   0% {
     transform: translate(10px, -10px);
   }
@@ -215,13 +220,15 @@ footer {
   }
 }
 
-@media screen and (min-width : 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and (max-width : 760px) {
+@media screen and ( max-width : 760px ) {
+
   body {
     margin-left: 10%;
     margin-right: 10%;
@@ -245,15 +252,18 @@ footer {
     justify-content: center;
     margin-left: 0;
   }
+
   .sub-headline {
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
   }
+
   .skew {
     display: flex;
     flex-direction: column;
   }
+
   .center {
     display: flex;
     flex-direction: column;
@@ -289,7 +299,8 @@ footer {
   }
 }
 
-@media all and (orientation : landscape) {
+@media all and ( orientation : landscape ) {
+
   .container-layout {
     display: flex;
     justify-content: center;
@@ -374,7 +385,8 @@ footer {
   }
 }
 
-@media (min-width : 450px) and (max-width : 759px) {
+@media ( min-width : 450px ) and ( max-width : 759px ) {
+
   .container-layout {
     align-items: center;
     display: flex;
@@ -385,6 +397,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   .sub-headline {
     align-items: center;
     display: flex;
@@ -404,14 +417,12 @@ footer {
     text-align: center;
   }
 
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4 { 
+  .col-1, .col-2, .col-3, .col-4 {
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: 0;
     width: 100%;
   }
+
 }
