@@ -34,9 +34,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: clamp(16px, 4vw, 45px);
 
-  /* font-size: calc(1em + 2vw); */
+  /* font-size: clamp(16px, 4vw, 45px); */
 }
 
 body {
@@ -45,6 +44,7 @@ body {
   color: #261f0c;
   display: flex;
   flex-flow: column;
+  font-size: calc(0.5em + 2vw);
   justify-content: center;
   padding: 3% 2%;
 }
@@ -163,7 +163,7 @@ article {
   height: 2000px;
 }
 
-article > h2 , .h2-complement {
+.cover-title , .h2-complement {
   font-family: Payson_bold, sans-serif;
   font-size: 2.2em;
   letter-spacing: -3px;
@@ -185,9 +185,9 @@ article > h2 , .h2-complement {
   transform: scale(1, 2);
 }
 
-article .article-title-pointer {
+.article-title-pointer {
   animation: hand-pointing 1100ms infinite;
-  left: 30px;
+  left: 20px;
   padding-top: 5px;
   position: absolute;
 }
@@ -199,15 +199,15 @@ article .article-title-pointer {
 @keyframes hand-pointing {
 
   0% {
-    left: 5px;
+    left: 20px;
   }
 
   50% {
-    left: 25px;
+    left: 35px;
   }
 
   100% {
-    left: 5px;
+    left: 20px;
   }
 }
 
@@ -304,9 +304,9 @@ article .article-title-pointer {
 }
 
 .decree-animation {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
   animation-delay: 0.6s;
   animation-iteration-count: 4;
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
 }
 
 @keyframes shake {
@@ -354,10 +354,14 @@ article .article-title-pointer {
 
 @media screen and ( min-width : 1000px ) {
 
+  body {
+    font-size: calc(1em + 2vw);
+  }
+
   /* -- Article -- */
 
   /* Article title */
-  article > h2 {
+  .cover-title {
     font-size: 2.6em;
     word-spacing: -40px;
   }
