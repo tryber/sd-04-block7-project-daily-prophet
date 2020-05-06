@@ -1,0 +1,222 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  align-items: center;
+  background-color: #fff8ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  align-items: center;
+  background-color: #fff8ee;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 76%;
+}
+
+.main-title {
+  margin: 0;
+  width: 100%;
+}
+
+.header-subtitle {
+  align-self: center;
+  font-family: kreon, sans-serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.header hr {
+  width: 100%;
+}
+
+.top-line {
+  border-bottom: 1px solid #1c1915;
+  border-top: 2px solid #1c1915;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.bottom-line {
+  border-bottom: 2px solid #1c1915;
+  border-top: 1px solid #1c1915;
+  width: 100%;
+}
+
+.main-nav-bar {
+  display: flex;
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: #f3af3b;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-item {
+  font-family: kreon, sans-serif;
+  font-size: 22px;
+  list-style: none;
+}
+
+.nav-item:hover {
+  background-color: #1c1915;
+}
+
+.nav-item a {
+  color: #1c1915;
+  padding: 2px 20px;
+}
+
+.nav-item a:hover {
+  color: #f3af3b;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 76%;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.content-title {
+  align-self: center;
+  animation: vanish 5s infinite;
+  font-size: 36px;
+  transition: transform 1s;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.fly {
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  left: 70px;
+  position: absolute;
+  transform: scaleX(-1);
+}
+
+@keyframes flying {
+
+  from {
+    transform: translateY(0) translateX(0) skew(0deg, 5deg);
+  }
+
+  to {
+    transform: translateY(200%) translateX(550%) skew(5deg, 15deg);
+  }
+
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 500;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
+
+}
+
+@keyframes vanish {
+
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .header {
+    background-color: yellow;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shield {
+    width: 24%;
+  }
+
+  .title {
+    width: 76%;
+  }
+
+  .header-subtitle {
+    font-size: 22px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .fly {
+    left: 0;
+    width: 100px;
+  }
+
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+}
+
+@media screen and ( min-width : 761px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .header {
+    background-color: red;
+  }
+
+}
