@@ -40,7 +40,6 @@ html {
 
 body {
   align-items: center;
-  background-image: url('./img/cover.svg');
   color: #261f0c;
   display: flex;
   flex-flow: column;
@@ -50,13 +49,16 @@ body {
 }
 
 .cover {
-  background-image: url('./img/cover.svg');
   height: 200%;
   pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 99999;
+}
+
+.cover-img {
+  background-image: url('./img/cover.png');
 }
 
 h1 , h2 , p {
@@ -220,7 +222,6 @@ article {
   float: right;
   margin-left: 45px;
   position: relative;
-  shape-outside: circle(50%);
 }
 
 .magic-photo {
@@ -328,11 +329,13 @@ article {
   }
 }
 
-.article-content.part-3 {
+.part-3 {
   align-items: center;
   display: flex;
   flex-flow: row;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .part-3 .cover-footer {
@@ -355,14 +358,14 @@ article {
 @media screen and ( min-width : 1000px ) {
 
   body {
-    font-size: calc(1em + 2vw);
+    font-size: calc(0.8em + 2vw);
   }
 
   /* -- Article -- */
 
   /* Article title */
   .cover-title {
-    font-size: 2.6em;
+    font-size: 14vh;
     word-spacing: -40px;
   }
 
@@ -436,7 +439,7 @@ article {
   }
 
   .cover-footer .text {
-    font-size: 2.5em;
+    font-size: 13vh;
     transform: scale(1.02, 2);
   }
 }
