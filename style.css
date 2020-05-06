@@ -118,7 +118,7 @@ a {
 @keyframes flying {
 
   from {
-    transform: translateY(0) translateX(0) skew(5deg, 10deg);
+    transform: translateY(0) translateX(0) skew(0deg, 5deg);
   }
 
   to {
