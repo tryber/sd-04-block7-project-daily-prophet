@@ -125,6 +125,12 @@ aside > p {
   text-transform: uppercase;
 }
 
+.fly {
+  animation: flying 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
 .logo {
   max-width: 80%;
 }
@@ -177,3 +183,28 @@ aside > p {
     border: 1px solid red;
   }
 }
+
+
+@keyframes flying {
+
+  100% {
+    transform: translate(0, 0) rotate(0) skew(0) scale(1);
+  }
+
+  80% {
+    transform: translate(40%, -40%) rotate(-45deg) skew(-45deg) scale(1.25);
+  }
+
+  50% {
+    transform: translate(-40%, -80%) rotate(33deg) skew(33deg) scale(0.75);
+  }
+
+  20% {
+    transform: translate(20%, -40%) rotate(-17deg) skew(-17deg) scale(2);
+  }
+
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
