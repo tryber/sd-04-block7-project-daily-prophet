@@ -125,6 +125,24 @@ a {
 
 }
 
+.grow {
+  animation: grow 4s linear 2 alternate paused;
+}
+
+@keyframes grow {
+
+  from {
+    font-weight: 500;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
+
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
