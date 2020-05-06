@@ -138,7 +138,7 @@ aside > p {
 }
 
 .fly {
-  animation: flying 3s 3 alternate forwards;
+  animation: flying 2s 3s 3 alternate forwards;
 }
 
 .logo {
