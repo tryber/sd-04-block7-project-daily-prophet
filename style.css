@@ -355,6 +355,64 @@ article {
 
 }
 
+.fly {
+  animation: flying 4s ease-out forwards;
+  animation-delay: 3s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.fly .wand-image {
+  width: 50px;
+}
+
+.fly .wand-effect {
+  animation: wand-effect 3s ease-in;
+  animation-delay: 7s;
+  filter: contrast(30) brightness(50);
+  left: 26px;
+  opacity: 0;
+  position: absolute;
+  rotate: 90deg;
+  top: 24px;
+  width: 50px;
+}
+
+@keyframes flying {
+
+  0% {
+    right: 0;
+    rotate: 0deg;
+    top: 0;
+  }
+
+  25% {
+    rotate: -90deg;
+  }
+
+  100% {
+    right: 65%;
+    top: 425%;
+  }
+}
+
+@keyframes wand-effect {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 @media screen and ( min-width : 1000px ) {
 
   body {
