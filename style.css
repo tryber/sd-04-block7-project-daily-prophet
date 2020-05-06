@@ -40,38 +40,77 @@ body {
   justify-content: space-around;
 }
 
-.test {
-  background-image: url("img/bolinha_Harry_Poter_animation.png");
+@keyframes flying {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  30% {
+    transform: translate(23vw, 4vh);
+  }
+
+  60% {
+    transform: translate(37vw, 1vh);
+  }
+
+  100% {
+    transform: translate(55vw, 4vh);
+  }
+}
+
+@-webkit-keyframes flying {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  30% {
+    transform: translate(23vw, 4vh);
+  }
+
+  60% {
+    transform: translate(37vw, 1vh);
+  }
+
+  100% {
+    transform: translate(55vw, 4vh);
+  }
+}
+
+@keyframes flyingMove {
+
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -576px;
+  }
+}
+
+@-webkit-keyframes flyingMove {
+
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -576px;
+  }
+}
+
+.fly {
+  animation: flyingMove 0.7s steps(8) infinite;
+  -webkit-animation: flyingMove 0.7s steps(8) infinite;
+  background-image: url('img/bolinha_Harry_Poter_animation.png');
   height: 31px;
   width: 72px;
-  -webkit-animation: animacao 4.5s steps(8)  infinite;
-  -webkit-animation: ease;
-  animation: animacao 4.5s steps(8) infinite ;
-  animation-timing-function: ease;
 }
 
-@keyframes animacao {
-  from {
-    transform: translateX(0);
-    background-position: 0;
-  }
-
-  to {
-    transform: translateX(53vw);
-    background-position: -576px;
-  }
-}
-
-@-webkit-keyframes animacao {
-  from {
-    transform: translateX(0);
-    background-position: 0;
-  }
-
-  to {
-    transform: translateX(53vw);
-    background-position: -576px;
-  }
+.fly-move {
+  animation: flying 3 7s 3s alternate forwards;
+  -webkit-animation: flying 3 7s 3s alternate forwards;
 }
 
 @media screen and ( min-width : 1170px ) {
