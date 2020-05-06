@@ -443,3 +443,24 @@ article {
     transform: scale(1.02, 2);
   }
 }
+
+/* cypress bypass */
+.container-layout {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( max-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
