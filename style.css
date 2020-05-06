@@ -230,40 +230,12 @@ h1 {
   text-shadow: none;
 }
 
-@media screem and ( max-width : 760px ) {
-
-  .container {
-    background-color: yellow;
-  }
-}
-
-@media screem and ( min-width : 1170px ) {
-
-  .container {
-    background-color: red;
-  }
-}
-
 .fly {
   animation: flying 5s ease 3s 3 alternate forwards;
 }
 
 .artcle-animation {
   animation: article-grow 3s linear backwards paused;
-}
-
-@media screen and ( min-width : 760px ) {
-
-  .fonte {
-    color: blue;
-  }
-}
-
-@media screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color: red;
-  }
 }
 
 @media screen and ( orientation : landscape ) {
