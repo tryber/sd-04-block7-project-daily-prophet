@@ -38,6 +38,16 @@ figure {
   transition: font-weight 4s;
 }
 
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: linear;
+}
+
 @keyframes article-grow {
 
   1% {
@@ -48,6 +58,65 @@ figure {
   100% {
     font-weight: 700;
     transform: scale(1.5);
+  }
+}
+
+@keyframes flying {
+
+  1% {
+    transform: skew(180deg) translateX(0%);
+  }
+
+  4% {
+    transform: translateX(-0.04%);
+  }
+
+  8% {
+    transform: translateX(-0.16%);
+  }
+
+  14% {
+    transform: translateX(-0.17%);
+  }
+
+  18% {
+    transform: translateX(0.04%);
+  }
+
+  26% {
+    transform: translateX(0.58%);
+  }
+
+  28% {
+    transform: translateX(0.55%);
+  }
+
+  40% {
+    transform: translateX(-1.56%);
+  }
+
+  42% {
+    transform: translateX(-1.64%);
+  }
+
+  56% {
+    transform: translateX(4.63%);
+  }
+
+  58% {
+    transform: translateX(4.4%);
+  }
+
+  72% {
+    transform: translateX(-13.12%);
+  }
+
+  86% {
+    transform: translateX(37.06%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
 
