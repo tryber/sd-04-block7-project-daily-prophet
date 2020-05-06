@@ -99,6 +99,7 @@ a {
 
 .content-title {
   align-self: center;
+  animation: vanish 5s infinite;
   font-size: 36px;
 }
 
@@ -125,11 +126,11 @@ a {
 
 }
 
-.grow {
-  animation: grow 4s linear 2 alternate paused;
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
 }
 
-@keyframes grow {
+@keyframes article-grow {
 
   from {
     font-weight: 500;
@@ -139,6 +140,26 @@ a {
   to {
     font-weight: 800;
     transform: scale(1.5);
+  }
+
+}
+
+@keyframes vanish {
+
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0;
   }
 
 }
