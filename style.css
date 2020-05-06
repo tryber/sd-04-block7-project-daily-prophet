@@ -24,16 +24,6 @@ body {
   justify-content: center;
 }
 
-.logo-letras {
-  height: 7vmax;
-  max-width: 55vw;
-}
-
-.logo-escudo {
-  height: 7vmax;
-  width: 10vw;
-}
-
 .navi {
   display: flex;
   font-size: 3.2vw;
@@ -70,8 +60,50 @@ body {
   }
 }
 
+@keyframes escudoAnim {
+
+  0% {
+    transform: skew(0, 0);
+  }
+
+  25% {
+    transform: skew(-20deg, 20deg);
+  }
+
+  75% {
+    transform: skew(20deg, -20deg);
+  }
+
+  100% {
+    transform: skew(0, 0);
+  }
+}
+
+@keyframes letrasAnim {
+
+  0% {
+    transform: scale(0.1, 0.1);
+  }
+
+  25% {
+    transform: scale(0.3, 0.3);
+  }
+
+  75% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 .fly {
-  animation: 0.7s infinite steps(8)  flying;
+  animation-delay: 3s;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-name: flying;
+  animation-timing-function: steps(8);
   background-image: url('img/bolinha_Harry_Poter_animation.png');
   height: 31px;
   width: 72px;
@@ -79,6 +111,20 @@ body {
 
 .fly-move {
   animation: 7s linear 3s  3 alternate forwards flyingMove;
+  transition-timing-function: linear;
+}
+
+.logo-escudo {
+  animation: 2.5s escudoAnim;
+  height: 7vmax;
+  transition-timing-function: linear;
+  width: 10vw;
+}
+
+.logo-letras {
+  animation: 2.5s letrasAnim;
+  height: 7vmax;
+  max-width: 55vw;
   transition-timing-function: linear;
 }
 
