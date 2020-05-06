@@ -172,16 +172,6 @@ h1 {
   text-shadow: none;
 }
 
-.content-second {
-  border-top: 2px solid black;
-}
-
-.content-second-content {
-  display: flex;
-  flex-direction: row;
-  padding-top: 40px;
-}
-
 .title-vertical {
   display: flex;
   font-size: 3.5em;
