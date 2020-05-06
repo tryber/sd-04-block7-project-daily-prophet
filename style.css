@@ -9,6 +9,7 @@ body {
   animation-iteration-count: 3;
   animation-name: flying;
   width: 10%;
+  animation-direction: alternate;
 }
 
 @keyframes flying {
