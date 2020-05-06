@@ -171,6 +171,11 @@
   transition: steps(5, end);
 }
 
+.pomos {
+  margin: 40px 10px;
+  width: 35px;
+}
+
 @keyframes logo-image {
 
   0% {
