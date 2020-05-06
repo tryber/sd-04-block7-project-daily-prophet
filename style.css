@@ -256,10 +256,27 @@ article {
 }
 
 .capital-letter {
+  animation-delay: 6.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: capital-letter-reveal;
+  animation-timing-function: ease-out;
   float: left;
   font-family: Corvo_grunge, sans-serif;
   font-size: 4em;
   margin-right: 16px;
+  opacity: 0;
+}
+
+@keyframes capital-letter-reveal {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .article-content > p > .article-content-header {
@@ -356,8 +373,10 @@ article {
 }
 
 .fly {
-  animation: flying 4s ease-out forwards;
+  animation: flying 4s ease-in-out both;
   animation-delay: 3s;
+  animation-direction: alternate, normal;
+  animation-iteration-count: 3;
   position: absolute;
   right: 0;
   top: 0;
@@ -369,14 +388,14 @@ article {
 }
 
 .fly .wand-effect {
-  animation: wand-effect 3s ease-in;
-  animation-delay: 7s;
+  animation: wand-effect 2s;
+  animation-delay: 6s;
   filter: contrast(30) brightness(50);
   left: 26px;
   opacity: 0;
   position: absolute;
-  rotate: 90deg;
   top: 24px;
+  transform: rotate(90deg);
   width: 50px;
 }
 
@@ -384,17 +403,18 @@ article {
 
   0% {
     right: 0;
-    rotate: 0deg;
     top: 0;
+    transform: rotate(180deg);
   }
 
   25% {
-    rotate: -90deg;
+    transform: rotate(90deg);
   }
 
-  100% {
+  70% , 100% {
     right: 65%;
     top: 425%;
+    transform: rotate(180deg);
   }
 }
 
