@@ -1,0 +1,142 @@
+.container-layout {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+figure {
+  margin: 0;
+  width: 100%;
+}
+
+.logo-shield {
+  height: 152px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 155px;
+}
+
+.titulo {
+  width: 100%;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  transition: font-weight 4s;
+}
+
+.article-animation:active {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: running;
+  animation-timing-function: linear steps(1, start);
+  transition: font-weight 4s;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: linear;
+}
+
+@keyframes article-grow {
+
+  1% {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes flying {
+
+  1% {
+    transform: skew(180deg) translateX(0%);
+  }
+
+  4% {
+    transform: translateX(-0.04%);
+  }
+
+  8% {
+    transform: translateX(-0.16%);
+  }
+
+  14% {
+    transform: translateX(-0.17%);
+  }
+
+  18% {
+    transform: translateX(0.04%);
+  }
+
+  26% {
+    transform: translateX(0.58%);
+  }
+
+  28% {
+    transform: translateX(0.55%);
+  }
+
+  40% {
+    transform: translateX(-1.56%);
+  }
+
+  42% {
+    transform: translateX(-1.64%);
+  }
+
+  56% {
+    transform: translateX(4.63%);
+  }
+
+  58% {
+    transform: translateX(4.4%);
+  }
+
+  72% {
+    transform: translateX(-13.12%);
+  }
+
+  86% {
+    transform: translateX(37.06%);
+  }
+
+  100% {
+    transform: translateX(-110%);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
