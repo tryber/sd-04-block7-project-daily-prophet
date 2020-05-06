@@ -51,8 +51,11 @@ const animateArticles = () => {
   const articles = document.querySelectorAll('article');
 
   articles.forEach((article) => {
-    article.addEventListener('click', () => {
-      article.classList.add('article-animation-anim');
+    article.addEventListener('click', (e) => {
+      e.target.style.animationName = 'article-grow';
+      e.target.style.animationDuration = '4s';
+      e.target.style.animationFillMode = 'forwards';
+      e.target.style.animationTimingFunction = 'steps(20, end)';
     });
   });
 };
