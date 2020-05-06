@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -85,7 +85,6 @@ header img {
 }
 
 .fly {
-  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -96,13 +95,13 @@ header img {
 @keyframes flying {
 
   0% {
-    bottom: 0;
     position: relative;
+    transform: translate(0, 0);
   }
 
   100% {
-    bottom: 10px;
     position: relative;
+    transform: translate(0, -10px);
   }
 }
 
@@ -113,6 +112,7 @@ header img {
   display: flex;
   font-family: Arial, Verdana, Trebuchet MS, sans-serif;
   max-height: 100px;
+  max-width: 450px;
 }
 
 .top-article , .top-article section {
@@ -156,6 +156,17 @@ nav ul li {
   .container-layout {
     background-color: yellow;
     max-width: 760px;
+  }
+
+  .exclusive {
+    display: none;
+  }
+}
+
+@media screen and ( max-width : 1170px ) {
+
+  .exclusive {
+    display: none;
   }
 }
 
