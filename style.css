@@ -375,11 +375,10 @@ article {
 }
 
 .fly {
-
-  /* animation: flying 4s ease-in-out both;
+  animation: flying 4s ease-in-out both;
   animation-delay: 3s;
   animation-direction: alternate, normal;
-  animation-iteration-count: 3; */
+  animation-iteration-count: 3;
   position: absolute;
   right: 0;
   top: 0;
@@ -404,6 +403,17 @@ article {
 }
 
 @keyframes flying {
+
+  from {
+    top: 0;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes flying-offline {
 
   0% {
     right: 0;
