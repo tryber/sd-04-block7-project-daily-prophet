@@ -11,13 +11,17 @@ h1 {
   font-weight: 800;
 }
 
+.hr1 {
+  border-top: 4px double black;
+}
+
 .container-layout {
   background-color: white;
   border-radius: 25px;
   padding: 10px;
 }
 
-header {
+.header-container {
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -36,6 +40,28 @@ header img {
 
 .logo-shield , .logo-cleanup {
   display: block;
+}
+
+.skew:hover {
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-name: skew-shield;
+}
+
+@keyframes skew-shield {
+
+  0% {
+    transform: skew(0);
+  }
+
+  50% {
+    transform: skew(20deg);
+  }
+
+  100% {
+    transform: skew(-20deg);
+  }
 }
 
 .fly {
@@ -61,9 +87,12 @@ header img {
 }
 
 .exclusive {
+  align-items: center;
   background-color: black;
   color: white;
+  display: flex;
   font-family: Arial, Verdana, Trebuchet MS, sans-serif;
+  max-height: 100px;
 }
 
 .top-article , .top-article section {
