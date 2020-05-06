@@ -3,7 +3,7 @@ window.onload = function () {
 
   for (let i = 0; i < articles.length; i += 1) {
     articles[i].addEventListener('click', function () {
-      articles[i].classList.toggle('growUp');
+      articles[i].style.animationPlayState = 'running';
     });
   }
 };

@@ -108,8 +108,9 @@
   width: 100%;
 }
 
-.growUp {
+.article-animation {
   animation: article-grow 4s;
+  animation-play-state: paused;
 }
 
 .img-article2 {
