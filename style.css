@@ -126,9 +126,7 @@ aside > p {
 }
 
 .fly {
-  animation-direction: alternate;
-  animation-iteration-count: 3;
-  animation: flying 3s;
+  animation: flying 3s 3 alternate;
 }
 
 .logo {
