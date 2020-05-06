@@ -116,11 +116,11 @@ a {
 @keyframes flying {
 
   from {
-    transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0) skew(5deg, 10deg);
   }
 
   to {
-    transform: translateY(200%) translateX(550%);
+    transform: translateY(200%) translateX(550%) skew(5deg, 15deg);
   }
 
 }
@@ -152,6 +152,11 @@ a {
     font-size: 22px;
     margin-top: 5px;
     text-align: center;
+  }
+
+  .fly {
+    left: 0;
+    width: 100px;
   }
 
 }
