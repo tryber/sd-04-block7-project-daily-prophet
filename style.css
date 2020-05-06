@@ -38,14 +38,16 @@ header img {
   display: block;
 }
 
-.logo-cleanup {
+.fly {
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: fly;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
 }
 
-@keyframes fly {
+@keyframes flying {
 
   0% {
     bottom: 0;
