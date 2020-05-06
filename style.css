@@ -105,3 +105,54 @@ a {
 .content p {
   text-align: justify;
 }
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .header {
+    background-color: yellow;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shield {
+    width: 24%;
+  }
+
+  .title {
+    width: 76%;
+  }
+
+  .header-subtitle {
+    font-size: 22px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+}
+
+@media screen and ( min-width : 761px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .header {
+    background-color: red;
+  }
+
+}
