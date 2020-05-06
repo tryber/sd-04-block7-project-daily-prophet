@@ -164,7 +164,7 @@
 }
 
 .logo-animation {
-  animation: logo-image 5s linear;
+  animation: logo-image 6s linear;
   animation-delay: 5s;
   animation-direction: alternate;
   transition: steps(5, end);
