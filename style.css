@@ -1,3 +1,11 @@
+.container-layout {
+  display: flex;
+}
+
+.container-orientation {
+  display: flex;
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -9,5 +17,13 @@
 
   .container-layout {
     background-color: red;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    background-color: wheat;
+    border: 1px solid red;
   }
 }
