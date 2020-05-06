@@ -437,6 +437,26 @@ article {
   }
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-timing-function: steps(20, end);
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: initial;
+    transform: scale(1, 1);
+  }
+
+  to {
+    font-size: calc(initial + 2em);
+    transform: scale(1.5, 1.5);
+  }
+}
+
 @media screen and ( min-width : 1000px ) {
 
   body {

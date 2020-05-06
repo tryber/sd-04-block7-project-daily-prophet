@@ -47,3 +47,16 @@
 // const animateDecrees = (type) => {
 
 // }
+const animateArticles = () => {
+  const articles = document.querySelectorAll('article');
+
+  articles.forEach((article) => {
+    article.addEventListener('click', () => {
+      article.classList.add('article-animation');
+    });
+  });
+};
+
+window.onload = () => {
+  animateArticles();
+};
