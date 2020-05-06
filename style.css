@@ -1,0 +1,155 @@
+body {
+  background: linear-gradient(45deg, rgb(224, 224, 224), transparent),
+    repeating-linear-gradient(45deg, rgb(187, 187, 187) 0%, rgb(187, 187, 187)
+    5%, transparent 5%, transparent 10%),
+    rgb(224, 224, 224) repeating-linear-gradient(-45deg, rgb(187, 187, 187, 0.5)
+    0%, rgba(187, 187, 187, 0.5) 5%, transparent 5%, transparent 10%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.main-content {
+  background-color: rgb(228, 228, 228);
+  width: 65vw;
+}
+
+.container-layout {
+  height: 1px;
+  width: 65vw;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+}
+
+.navi {
+  display: flex;
+  font-size: 3.2vw;
+  justify-content: space-around;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(23vw, 4vh);
+  }
+
+  75% {
+    transform: translate(37vw, 1vh);
+  }
+
+  100% {
+    transform: translate(55vw, 4vh);
+  }
+}
+
+@keyframes flyingMove {
+
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -576px;
+  }
+}
+
+@keyframes escudoAnim {
+
+  0% {
+    transform: skew(0, 0);
+  }
+
+  25% {
+    transform: skew(-20deg, 20deg);
+  }
+
+  75% {
+    transform: skew(20deg, -20deg);
+  }
+
+  100% {
+    transform: skew(0, 0);
+  }
+}
+
+@keyframes letrasAnim {
+
+  0% {
+    transform: scale(0.1, 0.1);
+  }
+
+  25% {
+    transform: scale(0.3, 0.3);
+  }
+
+  75% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.fly-move {
+  animation-delay: 3s;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-name: flyingMove;
+  animation-timing-function: steps(8);
+  background-image: url('img/bolinha_Harry_Poter_animation.png');
+  height: 31px;
+  width: 72px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: linear;
+}
+
+.logo-escudo {
+  animation: 2.5s escudoAnim;
+  height: 7vmax;
+  transition-timing-function: linear;
+  width: 10vw;
+}
+
+.logo-letras {
+  animation: 2.5s letrasAnim;
+  height: 7vmax;
+  max-width: 55vw;
+  transition-timing-function: linear;
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout { background-color: red; }
+
+  .logos-linesD { display: none; }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout { background-color: yellow; }
+
+  .logos-linesD { display: none; }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px red solid;
+  }
+}
