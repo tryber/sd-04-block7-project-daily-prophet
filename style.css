@@ -144,13 +144,13 @@
 }
 
 .title {
+  font-weight: 600;
   font-size: 180%;
 }
 
 .text {
   color: black;
   font-size: 18px;
-  font-weight: 200;
   margin: 10px auto;
   max-width: 90%;
   text-align: center;
@@ -206,7 +206,7 @@
   }
 
   100% {
-    font-weight: 900;
+    font-weight: 600;
     transform: scale(1.1, 1.1);
   }
 }
