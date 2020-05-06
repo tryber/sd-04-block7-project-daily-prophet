@@ -85,6 +85,7 @@ header img {
 }
 
 .fly {
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -101,7 +102,7 @@ header img {
 
   100% {
     position: relative;
-    transform: translate(0, -10px);
+    transform: translate(0, -5px);
   }
 }
 
