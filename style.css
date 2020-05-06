@@ -437,7 +437,7 @@ article {
   }
 }
 
-.article-animation {
+.article-animation-anim {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;

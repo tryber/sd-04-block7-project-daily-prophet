@@ -52,7 +52,7 @@ const animateArticles = () => {
 
   articles.forEach((article) => {
     article.addEventListener('click', () => {
-      article.classList.add('article-animation');
+      article.classList.add('article-animation-anim');
     });
   });
 };
