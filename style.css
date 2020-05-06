@@ -13,6 +13,28 @@ body {
   width: 10%;
 }
 
+.skew {
+  transform: skew(15deg);
+  transition: ease-in;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+
+.scale {
+  transform: scale(1.2);
+  transition: ease-in;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+
+.translate {
+  transform: translate(50px);
+  transition: ease-in;
+  transition-delay: 1s;
+  transition-duration: 2s;
+}
+
+
 @keyframes flying {
 
   0% {
