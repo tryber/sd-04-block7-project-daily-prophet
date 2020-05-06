@@ -1,4 +1,5 @@
 .container-layout {
+  background-color: wheat;
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -67,7 +68,6 @@ figure {
 @media only screen and ( orientation : landscape ) {
 
   .container-orientation {
-    background-color: wheat;
     border: 1px solid red;
   }
 }
