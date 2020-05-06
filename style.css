@@ -369,7 +369,7 @@ article {
   font-family: Payson_bold, sans-serif;
   font-size: 1.8em;
   text-align: center;
-  transform: scale(1, 1.5);
+  transform: skew(-5deg) scale(1, 1.5);
   word-spacing: -0.25em;
 
 }
@@ -523,7 +523,7 @@ article {
 
   .cover-footer .text {
     font-size: 2.2em;
-    transform: scale(1.02, 2);
+    transform: skew(-5deg) scale(1.02, 2);
   }
 }
 
