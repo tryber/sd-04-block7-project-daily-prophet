@@ -34,8 +34,8 @@
 
 html {
   box-sizing: border-box;
-
-  /* font-size: clamp(16px, 4vw, 45px); */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -365,7 +365,7 @@ article {
 
   /* Article title */
   .cover-title {
-    font-size: 14vh;
+    font-size: 2.6em;
     word-spacing: -40px;
   }
 
@@ -382,7 +382,7 @@ article {
   /* -- Article #1 -- */
   .part-1 {
     position: absolute;
-    top: 480px;
+    top: 625px;
     width: 885px;
   }
 
@@ -439,7 +439,7 @@ article {
   }
 
   .cover-footer .text {
-    font-size: 13vh;
+    font-size: 2.2em;
     transform: scale(1.02, 2);
   }
 }
@@ -456,7 +456,7 @@ article {
   }
 }
 
-@media screen and ( max-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
