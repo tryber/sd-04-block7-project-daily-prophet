@@ -235,7 +235,8 @@ article {
 }
 
 .magic-photo-container > img {
-  animation: photo-frame 25s infinite;
+
+  /* animation: photo-frame 25s infinite; */
   position: absolute;
   top: 0;
   width: 200px;
@@ -256,11 +257,12 @@ article {
 }
 
 .capital-letter {
-  animation-delay: 6.5s;
+
+  /* animation-delay: 6.5s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-name: capital-letter-reveal;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
   float: left;
   font-family: Corvo_grunge, sans-serif;
   font-size: 4em;
@@ -388,7 +390,8 @@ article {
 }
 
 .fly .wand-effect {
-  animation: wand-effect 2s;
+
+  /* animation: wand-effect 2s; */
   animation-delay: 6s;
   filter: contrast(30) brightness(50);
   left: 26px;
