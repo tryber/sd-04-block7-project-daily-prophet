@@ -17,13 +17,12 @@ h1 {
   animation-name: article-grow;
   animation-timing-function: linear;
   background-color: cornsilk;
+  transition-duration: 4s;
+  transition-property: all;
+  transition-timing-function: linear;
 }
 
 @keyframes article-grow {
-
-  0% {
-    font-weight: 600;
-  }
 
   100% {
     font-weight: 800;
