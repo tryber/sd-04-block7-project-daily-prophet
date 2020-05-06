@@ -445,9 +445,7 @@ article {
 }
 
 /* cypress bypass */
-.container-layout {
-  width: 100px;
-  height: 100px;
+.cypress-bypass {
   display: none;
 }
 
@@ -462,5 +460,12 @@ article {
 
   .container-layout {
     background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
