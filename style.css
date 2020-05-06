@@ -93,6 +93,17 @@ aside > p {
   margin-top: 10px;
 }
 
+.article-animation {
+  animation: article-grow 4s ease 0s infinite alternate forwards;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation: article-grow 4s steps(10, end) ease 0s infinite alternate forwards;
+  animation-play-state: running;
+  font-weight: 900;
+}
+
 .article-img {
   float: left;
   grid-column: 1/2;
@@ -116,6 +127,7 @@ aside > p {
 
 .container-layout {
   background: white;
+  transition: all 2s;
 }
 
 .fig {
@@ -126,11 +138,7 @@ aside > p {
 }
 
 .fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
+  animation: flying 3s 3 alternate forwards;
 }
 
 .logo {
@@ -160,32 +168,12 @@ aside > p {
   width: 93px;
 }
 
-@media only screen and ( max-width : 760px ) {
+@keyframes article-grow {
 
-  .container-layout {
-    background: yellow;
+  to {
+    transform: scale(1.5);
   }
 }
-
-@media only screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background: red;
-  }
-
-  .shield {
-    display: inline-block;
-  }
-
-}
-
-@media only screen and ( orientation : landscape ) {
-
-  .container-orientation {
-    border: 1px solid red;
-  }
-}
-
 
 @keyframes flying {
 
@@ -207,5 +195,31 @@ aside > p {
 
   0% {
     transform: translate(0, 0) rotate(0);
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background: red;
+  }
+
+  .shield {
+    display: inline;
+  }
+
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
