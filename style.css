@@ -98,7 +98,7 @@ body {
   }
 }
 
-.fly {
+.fly-move {
   animation-delay: 3s;
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
@@ -109,9 +109,14 @@ body {
   width: 72px;
 }
 
-.fly-move {
-  animation: 7s linear 3s  3 alternate forwards flyingMove;
-  transition-timing-function: linear;
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flyingMove;
+  animation-timing-function: linear;
 }
 
 .logo-escudo {
