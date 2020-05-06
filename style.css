@@ -245,53 +245,6 @@ h1 {
   }
 }
 
-@keyframes flying {
-
-  0% {
-    transform: translate(-370px, -50px) scaleX(1) scaleY(1) skewX(0deg);
-  }
-
-  10% {
-    transform: translate(-250px, -90px) scaleX(1.2) scaleY(1.2) skewX(1deg);
-  }
-
-  20% {
-    transform: translate(-190px, -45px) scaleX(1.4) scaleY(1.4) skewX(2deg);
-  }
-
-  30% {
-    transform: translate(-180px, -50px) scaleX(1.5) scaleY(1.5) skewX(3deg);
-  }
-
-  40% {
-    transform: translate(-95px, -90px) scaleX(1.6) scaleY(1.6) skewX(4deg);
-  }
-
-  50% {
-    transform: translate(130px, -5px) scaleX(2) scaleY(2) skewX(5deg);
-  }
-
-  60% {
-    transform: translate(120px, -5px) scaleX(2.2) scaleY(2.2);
-  }
-
-  70% {
-    transform: translate(75px, -20px) scaleX(2.1) scaleY(2.1);
-  }
-
-  80% {
-    transform: translate(20px, -30px);
-  }
-
-  90% {
-    transform: translate(10px, -35px);
-  }
-
-  100% {
-    transform: translate(-21px, -10px) scaleX(2.2) scaleY(2.2) skewX(6deg);
-  }
-}
-
 .eternal-flying {
   animation: flying 5s linear infinite;
   width: fit-content;
