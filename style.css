@@ -377,7 +377,7 @@ article {
 .fly {
   animation: flying 4s ease-in-out both;
   animation-delay: 3s;
-  animation-direction: alternate, normal;
+  animation-direction: alternate;
   animation-iteration-count: 3;
   position: absolute;
   right: 0;
