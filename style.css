@@ -101,12 +101,17 @@ h1 {
   width: 20%;
 }
 
-.hr-gray {
-  border: 1px solid gray;
+.hr-black-gray {
+  border-bottom: 1px solid gray;
+  border-top: 2px solid black;
+  height: 3px;
+  margin-top: 15px;
 }
 
-.hr-black {
-  border: 2px solid black;
+.hr-gray-black {
+  border-bottom: 2px solid black;
+  border-top: 1px solid gray;
+  height: 3px;
 }
 
 .header-content-top {
@@ -238,6 +243,18 @@ h1 {
   animation: article-grow 3s linear backwards paused;
 }
 
+@keyframes article-grow {
+
+  0% {
+    font-weight: 100;
+  }
+
+  100% {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
+  }
+}
+
 @media screen and ( orientation : landscape ) {
 
   .container-orientation {
@@ -253,19 +270,6 @@ h1 {
 
   to {
     margin-left: 70%;
-  }
-}
-
-.eternal-flying {
-  animation: flying 5s linear infinite;
-  width: fit-content;
-}
-
-@keyframes article-grow {
-
-  100% {
-    font-weight: 700;
-    transform: scale(1.5, 1.5);
   }
 }
 
