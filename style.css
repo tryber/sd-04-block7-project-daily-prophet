@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+  display: block;
+  font-family: Vollkorn, serif;
+  margin: 1% 20%;
+  width: auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-timing-function: linear;
+  background-color: cornsilk;
+  transition-duration: 4s;
+  transition-property: all;
+  transition-timing-function: linear;
+}
+
+@keyframes article-grow {
+
+  100% {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
+}
+
+.hr1 {
+  border-top: 4px double black;
+}
+
+.container-layout {
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sub-title {
+  font-family: Kreon, serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+header img {
+  max-width: 100%;
+}
+
+.logo-shield , .logo-cleanup {
+  display: block;
+}
+
+.skew:hover {
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-name: skew-shield;
+}
+
+@keyframes skew-shield {
+
+  0% {
+    transform: skew(0);
+  }
+
+  50% {
+    transform: skew(20deg);
+  }
+
+  100% {
+    transform: skew(-20deg);
+  }
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+@keyframes flying {
+
+  0% {
+    position: relative;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    position: relative;
+    transform: translate(0, -5px);
+  }
+}
+
+.exclusive {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-family: Arial, Verdana, Trebuchet MS, sans-serif;
+  max-height: 100px;
+  max-width: 450px;
+}
+
+.top-article , .top-article section {
+  display: flex;
+}
+
+.top-article section p {
+  column-count: 2;
+}
+
+.top-article section a {
+  clear: both;
+}
+
+.pages {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-weight: 800;
+  height: 20px;
+  margin-left: 20px;
+  padding: 1px;
+  text-align: center;
+  width: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    max-width: 760px;
+  }
+
+  .exclusive {
+    display: none;
+  }
+}
+
+@media screen and ( max-width : 1170px ) {
+
+  .exclusive {
+    display: none;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    font-size: 10px;
+  }
+}
