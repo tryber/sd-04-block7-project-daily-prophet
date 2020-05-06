@@ -449,6 +449,7 @@ article {
   .cover-title {
     font-size: 2.6em;
     word-spacing: -40px;
+    transition: font-size 500ms ease-out;
   }
 
   /* Article Complement */
