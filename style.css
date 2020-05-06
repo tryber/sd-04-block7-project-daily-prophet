@@ -40,7 +40,7 @@ figure {
 
 .fly {
   animation-delay: 3s;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: 3;
@@ -116,7 +116,7 @@ figure {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
