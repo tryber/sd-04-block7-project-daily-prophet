@@ -42,10 +42,10 @@ header img {
   animation-direction: alternate;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-name: flying;
+  animation-name: fly;
 }
 
-@keyframes flying {
+@keyframes fly {
 
   0% {
     bottom: 0;
