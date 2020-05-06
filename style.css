@@ -1,0 +1,225 @@
+a {
+  color: black;
+  font-family: Simonetta, cursive;
+  font-size: 1.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a > span {
+  background: black;
+  border-radius: 50%;
+  color: rgb(255, 248, 238);
+  display: inline-block;
+  height: 1.5em;
+  margin: 0 0.5em;
+  padding: 0.25rem 0 0;
+  width: 1.75em;
+}
+
+article {
+  grid-column: 1 / 5;
+  padding: 5px;
+}
+
+aside {
+  grid-column: 5 / 6;
+  padding: 5px;
+}
+
+body {
+  background: black;
+  font-family: Gentium Book Basic, serif;
+  font-size: 14px;
+  margin: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 5px;
+}
+
+footer {
+  grid-column: 1 / 6;
+}
+
+header {
+  grid-column: 1 / 6;
+  text-align: center;
+}
+
+hr {
+  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  height: 2px;
+  margin: 0;
+}
+
+h1 {
+  font-family: Averia serif Libre, cursive;
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  margin: 0;
+  text-align: justify;
+}
+
+h2 {
+  background: black;
+  color: rgb(255, 248, 238);
+  font-family: Simonetta, cursive;
+  font-size: 1.5em;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  margin: 15px 0;
+}
+
+section {
+  grid-column: 1 / 6;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+}
+
+aside > p {
+  margin-top: 10px;
+}
+
+.article-animation {
+  animation: article-grow 4s ease 0s infinite alternate forwards;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation: article-grow 4s steps(10, end) ease 0s infinite alternate forwards;
+  animation-play-state: running;
+  font-weight: 900;
+}
+
+.article-img {
+  float: left;
+  grid-column: 1/2;
+}
+
+.article-text {
+  column-count: 2;
+  grid-column: 2 / span 3;
+  text-align: justify;
+}
+
+.container {
+  background: rgb(255, 248, 238);
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  margin: 30px auto;
+  max-width: 64em;
+  padding: 20px 30px;
+}
+
+.container-layout {
+  background: white;
+  transition: all 2s;
+}
+
+.fig {
+  font-family: Simonetta, cursive;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fly {
+  animation: flying 2s 3s 3 alternate forwards;
+}
+
+.logo {
+  max-width: 80%;
+}
+
+.newspaper-articles {
+  border: 0.5px solid black;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 2px;
+}
+
+.newgrids {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+
+.newitems {
+  grid-column: 1/4;
+}
+
+.shield {
+  display: none;
+  height: 90px;
+  margin-right: 10px;
+  width: 93px;
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes flying {
+
+  100% {
+    transform: translate(0, 0) rotate(0) skew(0) scale(1);
+  }
+
+  80% {
+    transform: translate(40%, -40%) rotate(-45deg) skew(-45deg) scale(1.25);
+  }
+
+  50% {
+    transform: translate(-40%, -80%) rotate(33deg) skew(33deg) scale(0.75);
+  }
+
+  20% {
+    transform: translate(20%, -40%) rotate(-17deg) skew(-17deg) scale(2);
+  }
+
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background: red;
+  }
+
+  .shield {
+    display: inline;
+  }
+
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
