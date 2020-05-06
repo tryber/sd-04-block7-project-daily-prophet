@@ -1,9 +1,53 @@
 .container-layout {
   display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
-.container-orientation {
-  display: flex;
+figure {
+  margin: 0;
+  width: 100%;
+}
+
+.logo-shield {
+  height: 152px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 155px;
+}
+
+.titulo {
+  width: 100%;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  transition: font-weight 4s;
+}
+
+.article-animation:active {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: running;
+  animation-timing-function: linear steps(1, start);
+  transition: font-weight 4s;
+}
+
+@keyframes article-grow {
+
+  1% {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
 }
 
 @media screen and ( max-width : 760px ) {
