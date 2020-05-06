@@ -101,6 +101,7 @@ a {
   align-self: center;
   animation: vanish 5s infinite;
   font-size: 36px;
+  transition: transform 1s;
 }
 
 .content p {
