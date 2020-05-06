@@ -245,6 +245,17 @@ h1 {
   }
 }
 
+@keyframes flying {
+
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 70%;
+  }
+}
+
 .eternal-flying {
   animation: flying 5s linear infinite;
   width: fit-content;
