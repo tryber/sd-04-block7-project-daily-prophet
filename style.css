@@ -437,10 +437,11 @@ article {
   }
 }
 
-.article-animation-anim {
+.article-animation {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
+  animation-play-state: paused;
   animation-timing-function: steps(20, end);
 }
 
