@@ -106,6 +106,26 @@ a {
   text-align: justify;
 }
 
+.fly {
+  transform: scaleX(-1);
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  position: absolute;
+  left: 70px;
+}
+
+@keyframes flying {
+
+  from {
+    transform: scaleX(-1);
+    transform: translateY(0) translateX(0);
+  }
+
+  to {
+    transform: translateY(200%) translateX(550%);
+  }
+
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
