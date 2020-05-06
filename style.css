@@ -40,17 +40,17 @@ body {
   justify-content: space-around;
 }
 
-@keyframes flying {
+@keyframes flyingMove {
 
   0% {
     transform: translate(0, 0);
   }
 
-  30% {
+  25% {
     transform: translate(23vw, 4vh);
   }
 
-  60% {
+  75% {
     transform: translate(37vw, 1vh);
   }
 
@@ -59,7 +59,7 @@ body {
   }
 }
 
-@keyframes flyingMove {
+@keyframes flying {
 
   0% {
     background-position: 0;
@@ -71,14 +71,15 @@ body {
 }
 
 .fly {
-  animation: flyingMove 0.7s steps(8) infinite;
+  animation: 0.7s infinite steps(8)  flying;
   background-image: url('img/bolinha_Harry_Poter_animation.png');
   height: 31px;
   width: 72px;
 }
 
 .fly-move {
-  animation: flying 3 7s 3s alternate forwards;
+  animation: 7s linear 3s  3 alternate forwards flyingMove;
+  transition-timing-function: linear;
 }
 
 @media screen and ( min-width : 1170px ) {
