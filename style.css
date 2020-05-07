@@ -1,0 +1,127 @@
+body {
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.01px;
+  text-align: center;
+}
+
+.article-animation {
+  animation: article-grow 4s steps(4) 2 alternate paused;
+  transition: font-weight 4s;
+}
+
+.container-layout {
+  border: 1px dashed black;
+  height: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.corpo {
+  background-color: #fff8ee;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-frase {
+  color: white;
+  margin: 4px;
+  text-align: left;
+}
+
+.fly {
+  animation: flying 5s ease-in-out 3s 3 alternate forwards;
+  height: 20%;
+  position: absolute;
+  width: 20%;
+}
+
+.lado-direito {
+  border: 1px solid black;
+  width: 70%;
+}
+
+.lado-esquerdo {
+  border: 1px solid black;
+  padding: 5px;
+  width: 30%;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  border: 1px solid black;
+}
+
+.nav-text {
+  animation: andar 3s linear infinite alternate;
+  text-align: center;
+}
+
+.header-image {
+  object-fit: contain;
+}
+
+.pointer {
+  width: 10%;
+}
+
+@keyframes andar {
+
+  from {
+    transform: translate(20px, 5px);
+  }
+
+  to {
+    transform: translate(-20px, -5px);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(0.8) skew(0deg);
+  }
+
+  to {
+    font-weight: 700;
+    transform: scale(1.5) skew(30deg);
+  }
+}
+
+@keyframes flying {
+
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translate(150%, 600%);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
