@@ -207,7 +207,7 @@ h1 {
 }
 
 .article-animation {
-  animation: article-grow 4s linear backwards;
+  animation: article-grow  4s linear backwards;
 }
 
 @keyframes article-grow {
@@ -226,7 +226,7 @@ h1 {
 }
 
 .fly {
-  animation: flying 3s steps(3, end) forwards;
+  animation: flying 3s ease 3s 3 alternate forwards;
 }
 
 @keyframes flying {
@@ -288,8 +288,15 @@ h1 {
 }
 
 .footer a:hover {
-  color: #fbb03b;
-  text-shadow: none;
+  animation: animation 5s steps(5, start) forwards;
+}
+
+@keyframes animation {
+
+  to {
+    color: #fbb03b;
+    text-shadow: none;
+  }
 }
 
 @media screen and ( max-width : 760px ) {
