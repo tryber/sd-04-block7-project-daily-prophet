@@ -1,0 +1,386 @@
+body {
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.font-zero {
+  font-size: 0;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.1;
+  margin: 0;
+  padding: 4%;
+  text-align: justify;
+}
+
+.first-letter-uppercase:first-letter {
+  box-sizing: border-box;
+  color: #1c1915;
+  float: left;
+  font-size: 3.375em;
+  font-weight: 700;
+  line-height: 0.7;
+  margin: -0.02em 0.15em 0;
+  padding: 0.17em 0.15em 0;
+  text-shadow: 3px 0 0 #fbb03b;
+}
+
+ul {
+  margin: 0;
+  padding: 15px 0 0;
+}
+
+li {
+  list-style: none;
+  margin: 0 0 20px;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 2px 0 0 rgb(251, 176, 59);
+}
+
+.number-radius {
+  background-color: black;
+  border-radius: 0.75em;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  height: 1.5em;
+  line-height: 1;
+  margin: -0.25em 0 0 1em;
+  padding: 0.25em 0 0;
+  position: relative;
+  text-align: center;
+  top: -1px;
+  width: 1.5em;
+}
+
+a:hover .number-radius {
+  background-color: rgb(251, 176, 59);
+  color: black;
+  text-shadow: none;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 20px;
+  padding: 1em 0 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.italic {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.container {
+  background-color: rgb(255, 248, 238);
+}
+
+.header-content-top-img {
+  width: 3%;
+}
+
+.hr-gray {
+  border: 1px solid gray;
+}
+
+.hr-black {
+  border: 2px solid black;
+}
+
+.header-content-top {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content-top-title {
+  font-size: 0.65em;
+  width: 90%;
+}
+
+.header-content-date {
+  align-self: center;
+  border-bottom: 2px dotted black;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+}
+
+.news-content {
+  padding: 15px 0;
+}
+
+.news-content-feature {
+  background-color: black;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.news-content-h1 {
+  font-size: 1.7em;
+  margin: 0 0 0 20px;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.news-content-footer {
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  height: 1.5em;
+  line-height: 1;
+  margin: 0;
+  padding: 0.25em 1em 0;
+  position: relative;
+  text-align: right;
+  top: -1px;
+  width: 100%;
+}
+
+.news-content-footer:hover {
+  background-color: rgb(251, 176, 59);
+  color: black;
+  text-shadow: none;
+}
+
+.news-navigation-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.scandal-next-news-page {
+  align-items: center;
+  display: flex;
+  font-size: 1em;
+  font-weight: 600;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.scandal-next-news-page span:nth-child( 1 ) {
+  margin-top: 2px;
+}
+
+.scandal-new-title {
+  display: flex;
+}
+
+.box-black {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+  padding: 2px 8px;
+  text-align: right;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.article-animation {
+  animation: article-grow  4s linear backwards paused;
+}
+
+@keyframes article-grow {
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.fly {
+  animation: flying 3s ease 3s 3 alternate forwards;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(-370px, -50px) scaleX(1) scaleY(1) skewX(0deg);
+  }
+
+  10% {
+    transform: translate(-250px, -90px) scaleX(1.2) scaleY(1.2) skewX(1deg);
+  }
+
+  20% {
+    transform: translate(-190px, -45px) scaleX(1.4) scaleY(1.4) skewX(2deg);
+  }
+
+  30% {
+    transform: translate(-180px, -50px) scaleX(1.5) scaleY(1.5) skewX(3deg);
+  }
+
+  40% {
+    transform: translate(-95px, -90px) scaleX(1.6) scaleY(1.6) skewX(4deg);
+  }
+
+  50% {
+    transform: translate(-130px, -5px) scaleX(2) scaleY(2) skewX(5deg);
+  }
+
+  60% {
+    transform: translate(-120px, -5px) scaleX(2.2) scaleY(2.2);
+  }
+
+  70% {
+    transform: translate(-75px, -20px) scaleX(2.1) scaleY(2.1);
+  }
+
+  80% {
+    transform: translate(-20px, -30px);
+  }
+
+  90% {
+    transform: translate(-10px, -35px);
+  }
+
+  100% {
+    transform: translate(-21px, -10px) scaleX(2.2) scaleY(2.2) skewX(6deg);
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  text-align-last: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  animation: animation 5s steps(5, start) forwards;
+}
+
+@keyframes animation {
+
+  to {
+    color: #fbb03b;
+    text-shadow: none;
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  p {
+    padding: 1px 1%;
+  }
+
+  .content-main {
+    display: flex;
+  }
+
+  .content-main-box {
+    margin: 10px;
+  }
+
+  .content-main-box:nth-child( 1 ) {
+    flex-basis: 30%;
+  }
+
+  .content-main-box:nth-child( 2 ) {
+    flex-basis: 50%;
+  }
+
+  .content-main-box:nth-child( 3 ) {
+    flex-basis: 20%;
+  }
+
+  .news-content {
+    display: flex;
+  }
+
+  .news-content img {
+    width: 20%;
+  }
+
+  .news-content-feature {
+    background-color: black;
+    color: #fbb03b;
+    font-size: 3.5em;
+    transition: 0.8s linear;
+    width: 100%;
+  }
+
+  .news-content-feature:hover {
+    background-color: #fc0;
+    color: black;
+    transition: 0.3s linear;
+    width: 70%;
+  }
+
+  .scadal-content {
+    display: flex;
+  }
+
+  .scandal-content-next-news {
+    flex-basis: 50%;
+    margin-right: 20px;
+  }
+
+  .scandal-content-next-news-h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-circle {
+    height: 350px;
+    width: 350px;
+  }
+
+  .scandal-new {
+    flex-basis: 50%;
+  }
+
+}
