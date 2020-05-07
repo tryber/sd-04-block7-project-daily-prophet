@@ -207,7 +207,7 @@ h1 {
 }
 
 .article-animation {
-  animation: article-grow steps(4, end) 4s linear backwards;
+  animation: article-grow 4s linear backwards;
 }
 
 @keyframes article-grow {
@@ -226,7 +226,7 @@ h1 {
 }
 
 .fly {
-  animation: flying 3s ease 3s 3 alternate forwards;
+  animation: flying 3s steps(3, end) forwards;
 }
 
 @keyframes flying {
