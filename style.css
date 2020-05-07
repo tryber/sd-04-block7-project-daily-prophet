@@ -252,28 +252,44 @@ h1 {
   }
 
   50% {
-    transform: translate(130px, -5px) scaleX(2) scaleY(2) skewX(5deg);
+    transform: translate(-130px, -5px) scaleX(2) scaleY(2) skewX(5deg);
   }
 
   60% {
-    transform: translate(120px, -5px) scaleX(2.2) scaleY(2.2);
+    transform: translate(-120px, -5px) scaleX(2.2) scaleY(2.2);
   }
 
   70% {
-    transform: translate(75px, -20px) scaleX(2.1) scaleY(2.1);
+    transform: translate(-75px, -20px) scaleX(2.1) scaleY(2.1);
   }
 
   80% {
-    transform: translate(20px, -30px);
+    transform: translate(-20px, -30px);
   }
 
   90% {
-    transform: translate(10px, -35px);
+    transform: translate(-10px, -35px);
   }
 
   100% {
     transform: translate(-21px, -10px) scaleX(2.2) scaleY(2.2) skewX(6deg);
   }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  text-align-last: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #fbb03b;
+  text-shadow: none;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -322,7 +338,18 @@ h1 {
   }
 
   .news-content-feature {
+    background-color: black;
+    color: #fbb03b;
     font-size: 3.5em;
+    transition: 0.8s linear;
+    width: 100%;
+  }
+
+  .news-content-feature:hover {
+    background-color: #fc0;
+    color: black;
+    transition: 0.3s linear;
+    width: 70%;
   }
 
   .scadal-content {
@@ -349,20 +376,4 @@ h1 {
     flex-basis: 50%;
   }
 
-}
-
-.footer {
-  background-color: black;
-  color: white;
-  font-size: 1em;
-  text-align-last: center;
-}
-
-.footer a {
-  color: white;
-}
-
-.footer a:hover {
-  color: #fbb03b;
-  text-shadow: none;
 }
