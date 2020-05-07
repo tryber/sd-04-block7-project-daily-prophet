@@ -210,30 +210,18 @@ h1 {
   }
 }
 
-@media screem and ( max-width : 760px ) {
-
-  .container {
-    background-color: yellow;
-  }
-}
-
-@media screem and ( min-width : 1170px ) {
-
-  .container {
-    background-color: red;
-  }
-}
-
-@media screem and ( max-width : 760px ) {
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screem and ( min-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
   }
+
+
 }

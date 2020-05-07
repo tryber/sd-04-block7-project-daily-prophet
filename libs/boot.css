@@ -1,0 +1,49 @@
+body {
+  font-family: 'Vollkorn', serif;
+   }
+   
+   h1, h2 , h3 {
+    font-family: 'headline_onehplhs', 'HelveticaNeue-Bold', 'HelveticaNeue', 'Roboto', Arial, Verdana, 'Trebuchet MS', sans-serif;
+   }
+   
+   .img-circle {
+    border-radius: 50%;
+    float: left;
+    height: 200px;
+    shape-margin: 15px;
+    shape-outside: circle();
+    width: 200px;
+   }
+   
+   .scandal-content-next-news h1 {
+    font-size: 2em;
+   }
+   
+   .scandal-new-subtitle h1 {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+   }
+    
+   .scandal-new-subtitle h2 {
+    font-size: 58px;
+    margin: 0;
+   }
+    
+   .scandal-new-subtitle h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 12px 0 0;
+    text-transform: uppercase;
+   }
+    
+   .scandal-new-subtitle p {
+    font-size: 0.975em;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0;
+    text-align: left;
+   }
+   
