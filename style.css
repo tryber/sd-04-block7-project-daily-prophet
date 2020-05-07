@@ -1,0 +1,187 @@
+body {
+  background-color: antiquewhite;
+  margin          : 0;
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale(0.5, 2);
+  }
+
+  50% {
+    transform: scale(1.5, 0.5);
+  }
+
+  75% {
+    transform: scale(1.75, 0.75);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+
+}
+
+@keyframes skewing {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(35deg);
+  }
+
+}
+
+.eternal-skewing {
+  animation  : skewing 5s linear infinite;
+  font-size  : 45px;
+  margin-left: 5%;
+  width      : fit-content;
+}
+
+.container-layout {
+  animation  : skewing 2s linear infinite;
+  font-size  : 65px;
+  margin-left: 35%;
+  width      : fit-content;
+}
+
+.initial-scale {
+  animation       : scaling 4s linear infinite alternate;
+  background-color: rgb(216, 216, 191);
+  color           : rgb(34, 138, 138);
+  height          : 100px;
+  margin-left     : 50%;
+  margin-top      : 5%;
+  width           : 75px;
+}
+
+.flying_object {
+  animation-delay          : 2s;
+  animation-direction      : initial;
+  animation-duration       : 5s;
+  animation-iteration-count: infinite;
+  animation-name           : flying;
+  animation-timing-function: linear;
+  position                 : absolute;
+  transform                : rotateY(180deg);
+  width                    : 10vw;
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: -20%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+
+}
+
+@keyframes translating {
+
+  0% {
+    transform: translate(20px, 10px);
+  }
+
+  100% {
+    transform: translate(-20px, -10px);
+  }
+
+}
+
+.translation {
+  animation       : translating 1s linear infinite alternate;
+  background-color: seashell;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 200;
+    transform  : scale(1, 1);
+  }
+
+  100% {
+    max-width: 800px;
+    transform: scale(2, 2);
+  }
+
+}
+
+.article-animation {
+  animation: article-grow 4s forwards steps(40, end) paused;
+}
+
+section {
+  background : rgb(216, 216, 191);
+  float      : left;
+  height     : 760px;
+  margin-left: 64px;
+  margin-top : 175px;
+  padding    : 8px;
+  text-align : left;
+  width      : 950px;
+}
+
+.main-container {
+  background-color: seashell;
+}
+
+.titulos-skew {
+  text-align: center;
+  transition: transform 1s;
+}
+
+.titulos-skew:hover {
+  transform: skew(-45deg);
+}
+
+aside {
+  background  : rgb(216, 216, 191);
+  float       : right;
+  height      : 400px;
+  margin-right: 63px;
+  margin-top  : 80px;
+  padding     : 4px;
+  text-align  : left;
+}
+
+footer {
+  background-color: seashell;
+  float           : left;
+  margin-bottom   : 20px;
+  margin-left     : 64px;
+  margin-top      : 20px;
+  text-align      : center;
+  width           : 1160px;
+}
