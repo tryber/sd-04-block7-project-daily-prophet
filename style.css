@@ -139,7 +139,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 5s linear 4 alternate paused;
+  animation: article-grow 4s forwards steps(40, end) paused;
 }
 
 section {
