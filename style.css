@@ -207,7 +207,7 @@ h1 {
 }
 
 .article-animation {
-  animation: article-grow  4s linear backwards;
+  animation: article-grow  4s linear backwards paused;
 }
 
 @keyframes article-grow {
