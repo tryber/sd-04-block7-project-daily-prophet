@@ -177,11 +177,11 @@ h1 {
 }
 
 .fly {
-  animation: flying 5s ease 3s 3 alternate forwards;
+  animation: flying 3s ease 3s 3 alternate forwards;
 }
 
-.artcle-animation {
-  animation: article-grow 3s linear backwards paused;
+.article-animation {
+  animation: article-grow 4s linear backwards paused;
 }
 
 @media screen and ( orientation : landscape ) {
@@ -202,16 +202,25 @@ h1 {
   }
 }
 
-.eternal-flying {
-  animation: flying 5s linear infinite;
-  width: fit-content;
-}
-
 @keyframes article-grow {
 
   100% {
     font-weight: 700;
     transform: scale(1.5, 1.5);
+  }
+}
+
+@media screem and ( max-width : 760px ) {
+
+  .container {
+    background-color: yellow;
+  }
+}
+
+@media screem and ( min-width : 1170px ) {
+
+  .container {
+    background-color: red;
   }
 }
 
@@ -227,8 +236,4 @@ h1 {
   .container-layout {
     background-color: red;
   }
-}
-
-.container-layout {
-  background-color: yellow;
 }
