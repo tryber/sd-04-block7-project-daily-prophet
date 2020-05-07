@@ -139,8 +139,14 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s forwards steps(50, end) paused;
+  animation: article-grow 5s linear 4 alternate paused;
 }
+
+/* 
+sua para ativar e pausa pós contagem
+animation-iteration-count: 3;
+alternat forward */
+
 
 section {
   background : rgb(216, 216, 191);
@@ -155,6 +161,15 @@ section {
 
 .main-container {
   background-color: seashell;
+}
+
+.titulos-skew {
+  text-align: center;
+  transition: transform 1s;
+}
+
+.titulos-skew:hover {
+  transform: skew(-45deg);
 }
 
 aside {
