@@ -5,6 +5,7 @@ body {
 
 .fly {
   animation-delay: 3s;
+  animation-timing-function: steps(3,end);
   animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: forwards;
