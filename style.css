@@ -118,8 +118,7 @@ article {
 }
 
 .article-animation:active {
-  animation: 4s steps(30, end) forwards 1;
-  animation-name: article-grow;
+  animation: article-grow 4s steps(1000, end) 1 forwards paused;
 }
 
 @keyframes article-grow {
