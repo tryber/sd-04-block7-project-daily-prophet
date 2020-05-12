@@ -117,7 +117,7 @@ article {
   }
 }
 
-.article-animation:active {
+.article-animation {
   animation: article-grow 4s steps(1000, end) 1 forwards paused;
 }
 
