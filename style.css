@@ -1,0 +1,158 @@
+/* * {
+  border: tomato solid 1px;
+} */
+
+body {
+  align-items: center;
+  background-color: #282d34;
+  display: flex;
+  flex-direction: column;
+  font-family: serif;
+  margin: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 1000px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 15px;
+  padding: 0;
+  width: 970px;
+}
+
+.header-img {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  width: 950px;
+  z-index: 2;
+}
+
+.img-shield {
+  height: 140px;
+  opacity: 1;
+}
+
+.img-logo {
+  height: 120px;
+}
+
+.top {
+  border-bottom: black solid 1px;
+  border-left: none;
+  border-right: none;
+  border-top: black solid 3px;
+  height: 3px;
+  position: relative;
+  top: 25px;
+  width: 950px;
+  z-index: 1;
+}
+
+.bott {
+  border-bottom: black solid 3px;
+  border-left: none;
+  border-right: none;
+  border-top: black solid 1px;
+  height: 3px;
+  position: relative;
+  width: 950px;
+  z-index: 1;
+}
+
+.main-container {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+article {
+  border: chartreuse solid 1px;
+  height: 500px;
+  width: 500px;
+}
+
+.fly {
+  animation: flying 3s ease-in-out  3s alternate 3;
+  animation-fill-mode: forwards;
+  transition-duration: 0.2s;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(0, 0) rotate(-10deg) skew(5deg, 2deg);
+  }
+
+  25% {
+    transform: translate(400px, 100px) rotate(10deg) skew(-2deg, -5deg) scale(1.2);
+  }
+
+  50% {
+    transform: translate(800px, 0) rotate(-10deg) skew(5deg, 2deg) scale(0.7);
+  }
+
+  75% {
+    transform: translate(400px, -150px) rotate(10deg) skew(-2deg, -5deg) scale(0.2);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s steps(1000, end) 1 forwards paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 16px;
+    font-weight: 100;
+    transform: scale(1) translate(2px, 2px);
+  }
+
+  to {
+    font-size: 24px;
+    font-weight: 900;
+    transform: scale(1.5) translate(85px, 85px);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: red solid 1px;
+  }
+}
