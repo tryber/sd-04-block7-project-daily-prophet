@@ -11,3 +11,10 @@
     background-color: red;
   }
 }
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: solid 1px red;
+  }
+}
