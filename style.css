@@ -1,0 +1,64 @@
+body {
+  background-color: gray;
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: solid 1px red;
+  }
+}
+
+.fly {
+  animation: flying 3s ease 3s 3 alternate forwards;
+}
+
+@keyframes flying {
+
+  15% {
+    transform: translate(45px, 25px) rotate(100deg);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translate(375px, 115px) rotate(40deg);
+  }
+
+  100% {
+    transform: translate(300px, 120px) rotate(35deg);
+    visibility: visible;
+  }
+}
+
+h1 {
+  text-align: center;
+  transform: skew(5deg);
+  transition: 3s ease-in-out;
+}
+
+.article-animation {
+  animation: article-grow 4s steps(150, end);
+  animation-play-state: paused;
+}
+
+@keyframes article-grow {
+
+  to {
+    position: relative;
+    transform: scale(2);
+  }
+}
