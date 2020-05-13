@@ -20,4 +20,5 @@
 }
 
 .fly {
+  animation: flying 3s ease 3s 3 alternate forwards;
 }
