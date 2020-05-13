@@ -22,3 +22,20 @@
 .fly {
   animation: flying 3s ease 3s 3 alternate forwards;
 }
+
+@keyframes flying {
+
+  15% {
+    transform: translate(45px, 25px) rotate(100deg);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translate(375px, 115px) rotate(40deg);
+  }
+
+  100% {
+    transform: translate(300px, 120px) rotate(35deg);
+    visibility: visible;
+  }
+}
