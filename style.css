@@ -49,3 +49,16 @@ header h1 {
   transform: skew(5deg);
   transition: 3s ease-in-out;
 }
+
+.article-animation {
+  animation: article-grow 4s steps(150, end);
+  animation-play-state: paused;
+}
+
+@keyframes article-grow {
+
+  to {
+    position: relative;
+    transform: scale(2);
+  }
+}
