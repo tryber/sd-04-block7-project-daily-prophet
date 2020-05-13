@@ -1,3 +1,7 @@
+body {
+  background-color: gray;
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -38,4 +42,10 @@
     transform: translate(300px, 120px) rotate(35deg);
     visibility: visible;
   }
+}
+
+header h1 {
+  text-align: center;
+  transform: skew(5deg);
+  transition: 3s ease-in-out;
 }
