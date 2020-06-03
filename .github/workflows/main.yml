@@ -8,7 +8,7 @@ jobs:
     name: Evaluator job
     steps:
       - name: Wait for build to succeed
-        uses: betrybe/action-wait-for-check@v2
+        uses: betrybe/action-wait-for-check@master
         id: wait-for-build
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -18,10 +18,10 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: Cypress evaluator step
         id: cypress
-        uses: betrybe/cypress-evaluator-action@v1
+        uses: betrybe/cypress-evaluator-action@master
         if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: Store evaluation step
-        uses: betrybe/store-evaluation-action@v1
+        uses: betrybe/store-evaluation-action@master
         if: steps.wait-for-build.outputs.conclusion == 'success'
         with:
           evaluation-data: ${{ steps.cypress.outputs.result }}
