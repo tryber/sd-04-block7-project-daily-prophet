@@ -1,0 +1,83 @@
+@keyframes leviosa {
+
+  from {
+    transform: skew(0) scale(1) translate(0);
+  }
+
+  to {
+    transform: skew(-80deg, 80deg) scale(3) translate(1000%, 200%);
+  }
+}
+
+.fly {
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  position: absolute;
+  transform: translateX(-300%);
+}
+
+@keyframes flying {
+
+  from {
+    transform: translateY(0) translateX(-300%) rotate(30deg);
+  }
+
+  to {
+    transform: translateY(100%) translateX(700%) rotate(30deg);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
+}
+
+body {
+  background-color: seashell;
+}
+
+.leviosa {
+  animation: leviosa 4s steps(400, end);
+  animation-delay: 5s;
+  transition: leviosa 2s;
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.footer {
+  transition: transform 1s;
+}
+
+.footer:hover {
+  transform: skew(-15deg);
+}

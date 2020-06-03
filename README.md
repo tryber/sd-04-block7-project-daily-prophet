@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do projeto de _animações_ e _mobile first_!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_!!! #vqv 🚀
+Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
@@ -44,11 +44,13 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 ### 3 - Você deve criar dois layouts: um para telas que tenham até `760px` de largura, e outro para telas que tenham no mínimo `1170px` de largura.
 
   Pontos importantes:
+
     - Crie a classe `container-layout`
     - Com o tamanho de até `760px` a classe `container-layout` deve definir a propriedade `background-color` com o valor `rgb(255, 255, 0)` (yellow)
     - Com o tamanho de no mínimo `1170px` a classe `container-layout` deve definir a propriedade `background-color` com o valor `rgb(255, 0, 0)` (red)
 
   Pontos importantes:
+
     - Lembre-se que você pode aproveitar bastante os estilos que criar se utilizar a abordagem _mobile first_!
 
 ### 4 - Você deve implementar uma regra de estilo específica para quando a orientação da tela estiver em `landscape`.
@@ -102,7 +104,7 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-04-block7-project-daily-prophet.git`.
+  * `git clone https://github.com/tryber/sd-03-block7-project-daily-prophet.git`.
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -115,7 +117,7 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 
 3. Crie na raiz do projeto os arquivos que você precisará desenvolver:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-04-block7-project-daily-prophet**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-03-block7-project-daily-prophet**_
   * Crie os arquivos `index.html`, `style.css` e `script.js`
     * Exemplo:
       * `touch index.html style.css script.js`
@@ -136,13 +138,13 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
   * Usando o exemplo anterior: `git push -u origin joaozinho-daily-prophet-project`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-04-block7-project-daily-prophet/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-03-block7-project-daily-prophet/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-04-block7-project-daily-prophet/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-03-block7-project-daily-prophet/pulls) e confira que o seu _Pull Request_ está criado
 
   ---
 
@@ -170,7 +172,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-0x`
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-03`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
