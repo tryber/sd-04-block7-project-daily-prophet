@@ -1,9 +1,12 @@
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
   .container-layout {
+
     background-color: yellow;
   }
 }
-@media screen and (min-width: 1170px) {
+
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
