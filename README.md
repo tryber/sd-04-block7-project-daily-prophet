@@ -44,13 +44,13 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 ### 3 - Você deve criar dois layouts: um para telas que tenham até `760px` de largura, e outro para telas que tenham no mínimo `1170px` de largura.
 
   Pontos importantes:
-  
+
     - Crie a classe `container-layout`
     - Com o tamanho de até `760px` a classe `container-layout` deve definir a propriedade `background-color` com o valor `rgb(255, 255, 0)` (yellow)
     - Com o tamanho de no mínimo `1170px` a classe `container-layout` deve definir a propriedade `background-color` com o valor `rgb(255, 0, 0)` (red)
 
   Pontos importantes:
-  
+
     - Lembre-se que você pode aproveitar bastante os estilos que criar se utilizar a abordagem _mobile first_!
 
 ### 4 - Você deve implementar uma regra de estilo específica para quando a orientação da tela estiver em `landscape`.
