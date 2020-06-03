@@ -9,14 +9,20 @@
   }
 }
 
-@keyframes fly {
+.fly {
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  position: absolute;
+  transform: translateX(-300%);
+}
+
+@keyframes flying {
 
   from {
-    transform: skew(0) scale(1) translate(0);
+    transform: translateY(0) translateX(-300%) rotate(30deg);
   }
 
   to {
-    transform: skew(-80deg, 80deg) scale(3) translateX(100%);
+    transform: translateY(100%) translateX(700%) rotate(30deg);
   }
 }
 
@@ -43,12 +49,6 @@ body {
   transition: leviosa 2s;
 }
 
-.fly {
-  animation: fly 4s steps(400, end) 3 alternate;
-  animation-delay: 5s;
-  width: 10em;
-}
-
 .article-animation {
   animation: article-grow 4s linear 2 alternate paused;
 }
@@ -65,4 +65,19 @@ body {
   .container-layout {
     background-color: red;
   }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.footer {
+  transition: transform 1s;
+}
+
+.footer:hover {
+  transform: skew(-15deg);
 }
