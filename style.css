@@ -33,8 +33,10 @@ body {
 
 .article-animation {
   animation-duration: 4s;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-name: article-grow;
+  animation-play-state: paused;
+  transition: font-weight 4s;
 }
 
 .article-animation:active {
