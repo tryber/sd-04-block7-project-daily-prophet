@@ -2,7 +2,7 @@ body {
   margin: 3px;
   padding: 3px;
 }
-  
+
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -12,109 +12,109 @@ body {
   animation-name: flying;
   width: 10%;
 }
-  
+
 .skew {
-  text-align: center;
-  font-size: 20px;
   animation-duration: 1s;
   animation-name: skew;
+  font-size: 20px;
+  text-align: center;
 }
-  
+
 .scale {
   animation-duration: 1s;
   animation-name: scale;
 }
-  
+
 .translate {
   animation-duration: 1s;
   animation-name: translate;
 }
-  
+
 .article-animation {
   animation-duration: 4s;
   animation-iteration-count: 1;
   animation-name: article-grow;
 }
-  
+
 @keyframes skew {
-  
+
   from {
     transform: skew(0deg);
   }
-  
+
   to {
     transform: skew(15deg);
     transition: ease-in;
   }
 }
-  
+
 @keyframes scale {
-  
+
   from {
     transform: scale(1);
   }
-  
+
   to {
     transform: scale(1.2);
     transition: ease-in;
   }
 }
-  
- @keyframes translate {
-  
+
+@keyframes translate {
+
   from {
     transform: translate(0);
   }
-  
+
   to {
     transform: translate(50px);
     transition: ease-in;
   }
 }
-  
+
 @keyframes flying {
-  
+
   0% {
     margin-left: 0;
     margin-top: 0;
   }
-  
+
   100% {
     margin-left: 100%;
     margin-top: 0;
   }
 }
-  
+
 @keyframes article-grow {
-  
+
   from {
     font-weight: 300;
     transform: scale(1);
   }
-  
+
   to {
     font-weight: 700;
     transform: scale(1.5);
     transition: ease-in-out;
   }
 }
-  
+
 @media only screen and ( max-width : 760px ) {
-  
+
   .container-layout {
     background-color: yellow;
   }
 }
-  
+
 @media only screen and ( min-width : 1170px ) {
-  
+
   .container-layout {
     background-color: red;
   }
 }
-  
+
 @media only screen and ( orientation : landscape ) {
-  
+
   .container-orientation {
     border: 1px solid red;
   }
