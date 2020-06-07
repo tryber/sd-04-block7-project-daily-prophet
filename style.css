@@ -1,0 +1,133 @@
+body {
+  margin: 3px;
+  padding: 3px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: steps(3, end);
+  width: 10%;
+}
+
+.skew {
+  animation-duration: 1s;
+  animation-name: skew;
+  font-size: 20px;
+  text-align: center;
+}
+
+.scale {
+  animation-duration: 1s;
+  animation-name: scale;
+}
+
+.translate {
+  animation-duration: 1s;
+  animation-name: translate;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  transition: font-weight 4s;
+}
+
+.article-animation:active {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: running;
+  animation-timing-function: linear steps(1, start);
+  transition: font-weight 4s;
+}
+
+@keyframes skew {
+
+  from {
+    transform: skew(0deg);
+  }
+
+  to {
+    transform: skew(15deg);
+    transition: ease-in;
+  }
+}
+
+@keyframes scale {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+    transition: ease-in;
+  }
+}
+
+@keyframes translate {
+
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(50px);
+    transition: ease-in;
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  100% {
+    margin-left: 100%;
+    margin-top: 0;
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 300;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 700;
+    transform: scale(1.5);
+    transition: ease-in-out;
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
